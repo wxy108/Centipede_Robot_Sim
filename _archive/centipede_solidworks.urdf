@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="unit_main_for urdf.SLDASM">
+  <link
+    name="Chasis1">
+    <inertial>
+      <origin
+        xyz="-3.49333740741467E-09 -0.023000003893861 0.0153118131896663"
+        rpy="0 0 0" />
+      <mass
+        value="0.0822549887870204" />
+      <inertia
+        ixx="5.22543924761398E-05"
+        ixy="-4.47367741219368E-11"
+        ixz="-4.31139643281512E-14"
+        iyy="9.49198617781208E-05"
+        iyz="-1.186664212577E-13"
+        izz="4.6341392529109E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Chasis1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.596078431372549 0.137254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Chasis1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="ShoulderMotor1_R">
+    <inertial>
+      <origin
+        xyz="-0.0120022089817768 -0.0204040287497491 0.000443265877616639"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569176277607129" />
+      <inertia
+        ixx="1.02303468442476E-05"
+        ixy="-2.09020395116953E-09"
+        ixz="-1.74773672918662E-08"
+        iyy="1.43924882902027E-05"
+        iyz="3.43997650075875E-07"
+        izz="1.43924316353895E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/ShoulderMotor1_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/ShoulderMotor1_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Shoulder1_R"
+    type="revolute">
+    <origin
+      xyz="0.028978 0.0048688 -0.0021"
+      rpy="1.5708 0 -3.1372" />
+    <parent
+      link="Chasis1" />
+    <child
+      link="ShoulderMotor1_R" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Leg1_R">
+    <inertial>
+      <origin
+        xyz="-0.00184985798128927 -0.0040122423711912 0.0523936763240532"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299419971153301" />
+      <inertia
+        ixx="2.06646034600082E-05"
+        ixy="-9.05824817372947E-10"
+        ixz="-1.24902975320456E-06"
+        iyy="1.49498632717337E-05"
+        iyz="3.62891699731154E-06"
+        izz="1.49567689907672E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Leg1_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Leg1_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg1_R"
+    type="revolute">
+    <origin
+      xyz="-0.024 -0.0209 -0.00010521"
+      rpy="-3.1416 -1.5664 3.1416" />
+    <parent
+      link="ShoulderMotor1_R" />
+    <child
+      link="Leg1_R" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ShoulderMotor1_L">
+    <inertial>
+      <origin
+        xyz="-0.0120022089817768 -0.020404028749749 0.000443265877616623"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569176277607128" />
+      <inertia
+        ixx="1.02303468442476E-05"
+        ixy="-2.09020395116674E-09"
+        ixz="-1.74773672918661E-08"
+        iyy="1.43924882902027E-05"
+        iyz="3.43997650075874E-07"
+        izz="1.43924316353894E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/ShoulderMotor1_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/ShoulderMotor1_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Shoulder1_L"
+    type="revolute">
+    <origin
+      xyz="-0.029022 0.0048688 -0.0021"
+      rpy="1.5708 0 0.0043839" />
+    <parent
+      link="Chasis1" />
+    <child
+      link="ShoulderMotor1_L" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Leg1_L">
+    <inertial>
+      <origin
+        xyz="0.00183497417950078 0.0040122388304664 -0.0523936608603332"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299420004088521" />
+      <inertia
+        ixx="2.06646092046242E-05"
+        ixy="9.00109355049291E-10"
+        ixz="-1.25962604911903E-06"
+        iyy="1.49498717495408E-05"
+        iyz="3.62891720691267E-06"
+        izz="1.49567717560704E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Leg1_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Leg1_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg1_L"
+    type="revolute">
+    <origin
+      xyz="-0.024 -0.0209 -0.00010521"
+      rpy="0 -1.5664 3.1416" />
+    <parent
+      link="ShoulderMotor1_L" />
+    <child
+      link="Leg1_L" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LinkMotor1_PnY">
+    <inertial>
+      <origin
+        xyz="-0.0120022089817767 -0.020404028749749 0.000443265877616744"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569176277607128" />
+      <inertia
+        ixx="1.02303468442476E-05"
+        ixy="-2.09020395116729E-09"
+        ixz="-1.74773672918363E-08"
+        iyy="1.43924882902027E-05"
+        iyz="3.43997650075875E-07"
+        izz="1.43924316353894E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/LinkMotor1_PnY.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/LinkMotor1_PnY.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Link1_Y"
+    type="revolute">
+    <origin
+      xyz="-2.1623E-05 -0.046131 -0.0021"
+      rpy="1.5708 0 1.5752" />
+    <parent
+      link="Chasis1" />
+    <child
+      link="LinkMotor1_PnY" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LinkMotor1_R">
+    <inertial>
+      <origin
+        xyz="-8.115030942178E-06 0.00865029421868163 0.0336589010462912"
+        rpy="0 0 0" />
+      <mass
+        value="0.0592286702139213" />
+      <inertia
+        ixx="1.49197855089342E-05"
+        ixy="4.40820066555061E-09"
+        ixz="-5.23306093471459E-09"
+        iyy="1.64849639689959E-05"
+        iyz="1.59453552023042E-07"
+        izz="1.7087820132961E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/LinkMotor1_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/LinkMotor1_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Link1_P"
+    type="revolute">
+    <origin
+      xyz="-0.025 -0.0209 -0.0001096"
+      rpy="-3.1416 -1.5664 3.1416" />
+    <parent
+      link="LinkMotor1_PnY" />
+    <child
+      link="LinkMotor1_R" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Chasis2">
+    <inertial>
+      <origin
+        xyz="-3.49908535194076E-09 -3.89641729992007E-09 0.0463077939408685"
+        rpy="0 0 0" />
+      <mass
+        value="0.082254988760721" />
+      <inertia
+        ixx="5.22543924742276E-05"
+        ixy="-4.47357160285977E-11"
+        ixz="-4.35005151316264E-14"
+        iyy="9.49198617774598E-05"
+        iyz="-1.23151703083669E-13"
+        izz="4.63413925267726E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Chasis2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://unit_main_for urdf.SLDASM/meshes/Chasis2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Link1_R"
+    type="revolute">
+    <origin
+      xyz="0 0 0.058"
+      rpy="0 0 3.1416" />
+    <parent
+      link="LinkMotor1_R" />
+    <child
+      link="Chasis2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
