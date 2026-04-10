@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Simulation outputs (videos, CSVs, sensor .npz)
+output/
+
+# MuJoCo scratch files
+_terrain_tmp.xml
