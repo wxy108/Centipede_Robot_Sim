@@ -1,0 +1,50 @@
+[
+  {
+    "N_wave": 1.0,
+    "amplitude_deg": 15.0,
+    "phase_deg": 0.0,
+    "evaluation_cycles": 12,
+    "warmup_cycles": 4,
+    "stage": "coarse",
+    "duration_s": 18.85,
+    "forward_displacement_m": 3.209333597903227,
+    "lateral_displacement_m": 0.0030360777781875264,
+    "mean_forward_speed_m_s": 0.17025642429194837,
+    "min_chassis_up_z": 0.9634915692580496,
+    "rms_body_tracking_error_deg": 5.90822576049943,
+    "rms_pitch_tracking_error_deg": 13.429054146735245,
+    "body_joint_actual_peak_deg": 15.211043831090507,
+    "batch_warning_count": 0,
+    "feasible": true,
+    "gates": {
+      "finite": true,
+      "clock_continuous": true,
+      "no_warnings": true,
+      "all_chassis_upright_at_20Hz": true
+    }
+  },
+  {
+    "N_wave": 1.0,
+    "amplitude_deg": 40.0,
+    "phase_deg": 0.0,
+    "evaluation_cycles": 12,
+    "warmup_cycles": 4,
+    "stage": "coarse",
+    "duration_s": 18.85,
+    "forward_displacement_m": 7.450693084241317,
+    "lateral_displacement_m": 1.0347158948084498,
+    "mean_forward_speed_m_s": 0.3952622325857462,
+    "min_chassis_up_z": 0.9544873215439811,
+    "rms_body_tracking_error_deg": 15.041018659218256,
+    "rms_pitch_tracking_error_deg": 14.724032995069516,
+    "body_joint_actual_peak_deg": 39.24024447923513,
+    "batch_warning_count": 0,
+    "feasible": true,
+    "gates": {
+      "finite": true,
+      "clock_continuous": true,
+      "no_warnings": true,
+      "all_chassis_upright_at_20Hz": true
+    }
+  }
+]

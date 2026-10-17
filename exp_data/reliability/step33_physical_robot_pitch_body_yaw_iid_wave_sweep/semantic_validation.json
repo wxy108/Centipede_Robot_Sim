@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "process": "Bernoulli(0.5) independently across wave, trial, window, segment, and side",
+  "cross_wave_streams_differ": true,
+  "rows": [
+    {
+      "N_wave": 0.5,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.49765625,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.061168734764206915,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 1.0,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.50087890625,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.05118574444227102,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 1.5,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.4981608072916667,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.04758724605839116,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 2.0,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.5000651041666667,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.06103364827924599,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 2.5,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.49949544270833335,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.04287594620324352,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 3.0,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.5014811197916667,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.04243960575796947,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 3.5,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.4984049479166667,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.04535590034666444,
+      "phi_matches_definition": true
+    },
+    {
+      "N_wave": 4.0,
+      "N_segments": 10,
+      "N_legs": 20,
+      "trials": 128,
+      "windows_per_trial": 24,
+      "draw_count": 61440,
+      "empirical_down_probability": 0.49700520833333334,
+      "four_sigma_probability_tolerance": 0.01,
+      "max_abs_leg_pair_correlation": 0.041249971874047525,
+      "phi_matches_definition": true
+    }
+  ],
+  "control_contract": {
+    "passed": true,
+    "rows": [
+      {
+        "N_wave": 0.5,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 1.0,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 1.5,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 2.0,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 2.5,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 3.0,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 3.5,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      },
+      {
+        "N_wave": 4.0,
+        "leg_yaw_locked": true,
+        "leg_pitch_is_binary": true,
+        "leg_pitch_matches_IID_state": true,
+        "body_yaw_matches_requested_wave": true,
+        "body_pitch_locked": true,
+        "decision_state_constant_within_window": true,
+        "passed": true
+      }
+    ]
+  }
+}

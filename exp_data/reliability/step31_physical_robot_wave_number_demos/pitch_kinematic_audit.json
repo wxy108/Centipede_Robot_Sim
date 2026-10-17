@@ -1,0 +1,211 @@
+{
+  "model_path": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+  "method": "MuJoCo forward kinematics over every physical leg mesh",
+  "rows": [
+    {
+      "segment": 1,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012673620250502,
+      "down_min_leg_geom_z_m": -0.0007225085855605134,
+      "lift_margin_m": 0.11084924478806553,
+      "down_is_lower": true
+    },
+    {
+      "segment": 1,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012656192494516,
+      "down_min_leg_geom_z_m": -0.0007233140379871439,
+      "lift_margin_m": 0.1108498759629323,
+      "down_is_lower": true
+    },
+    {
+      "segment": 2,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012683219244987,
+      "down_min_leg_geom_z_m": -0.0007219692149649792,
+      "lift_margin_m": 0.11084880140741485,
+      "down_is_lower": true
+    },
+    {
+      "segment": 2,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012648138915532,
+      "down_min_leg_geom_z_m": -0.0007238550518762626,
+      "lift_margin_m": 0.11085033644103158,
+      "down_is_lower": true
+    },
+    {
+      "segment": 3,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012683634680792,
+      "down_min_leg_geom_z_m": -0.0007219695150705308,
+      "lift_margin_m": 0.11084880586187845,
+      "down_is_lower": true
+    },
+    {
+      "segment": 3,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012648893596984,
+      "down_min_leg_geom_z_m": -0.000723844871073201,
+      "lift_margin_m": 0.11085033380704304,
+      "down_is_lower": true
+    },
+    {
+      "segment": 4,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012684567978208,
+      "down_min_leg_geom_z_m": -0.0007219646365596022,
+      "lift_margin_m": 0.11084881031634168,
+      "down_is_lower": true
+    },
+    {
+      "segment": 4,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012650166140053,
+      "down_min_leg_geom_z_m": -0.0007238295116538257,
+      "lift_margin_m": 0.11085033117305436,
+      "down_is_lower": true
+    },
+    {
+      "segment": 5,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012686019137251,
+      "down_min_leg_geom_z_m": -0.0007219545794322352,
+      "lift_margin_m": 0.11084881477080474,
+      "down_is_lower": true
+    },
+    {
+      "segment": 5,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012651956544746,
+      "down_min_leg_geom_z_m": -0.0007238089736180536,
+      "lift_margin_m": 0.11085032853906551,
+      "down_is_lower": true
+    },
+    {
+      "segment": 6,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012687988158464,
+      "down_min_leg_geom_z_m": -0.000721939343682948,
+      "lift_margin_m": 0.11084881922526758,
+      "down_is_lower": true
+    },
+    {
+      "segment": 6,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012654264811614,
+      "down_min_leg_geom_z_m": -0.0007237832569602226,
+      "lift_margin_m": 0.11085032590507636,
+      "down_is_lower": true
+    },
+    {
+      "segment": 7,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.110126904750407,
+      "down_min_leg_geom_z_m": -0.000721918929323162,
+      "lift_margin_m": 0.11084882367973016,
+      "down_is_lower": true
+    },
+    {
+      "segment": 7,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012657090939498,
+      "down_min_leg_geom_z_m": -0.0007237523616920871,
+      "lift_margin_m": 0.11085032327108707,
+      "down_is_lower": true
+    },
+    {
+      "segment": 8,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012693479784555,
+      "down_min_leg_geom_z_m": -0.0007218933363469515,
+      "lift_margin_m": 0.1108488281341925,
+      "down_is_lower": true
+    },
+    {
+      "segment": 8,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012660434929009,
+      "down_min_leg_geom_z_m": -0.0007237162878072495,
+      "lift_margin_m": 0.11085032063709734,
+      "down_is_lower": true
+    },
+    {
+      "segment": 9,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012697002390033,
+      "down_min_leg_geom_z_m": -0.000721862564754247,
+      "lift_margin_m": 0.11084883258865458,
+      "down_is_lower": true
+    },
+    {
+      "segment": 9,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012664296780139,
+      "down_min_leg_geom_z_m": -0.0007236750353060983,
+      "lift_margin_m": 0.11085031800310749,
+      "down_is_lower": true
+    },
+    {
+      "segment": 10,
+      "side": "R",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012701042857127,
+      "down_min_leg_geom_z_m": -0.0007218266145452429,
+      "lift_margin_m": 0.11084883704311652,
+      "down_is_lower": true
+    },
+    {
+      "segment": 10,
+      "side": "L",
+      "up_target_deg": -40.0,
+      "down_target_deg": 5.0,
+      "up_min_leg_geom_z_m": 0.11012668676492887,
+      "down_min_leg_geom_z_m": -0.0007236286041884671,
+      "lift_margin_m": 0.11085031536911734,
+      "down_is_lower": true
+    }
+  ],
+  "n_legs": 20,
+  "all_down_targets_lower_leg_geometry": true,
+  "minimum_lift_margin_m": 0.11084880140741485,
+  "mean_lift_margin_m": 0.11084957134620395,
+  "maximum_lift_margin_m": 0.11085033644103158
+}

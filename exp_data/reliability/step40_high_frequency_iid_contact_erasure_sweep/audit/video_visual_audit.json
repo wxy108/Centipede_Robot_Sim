@@ -1,0 +1,415 @@
+{
+  "passed": true,
+  "expected_videos": 14,
+  "audited_videos": 14,
+  "all_frames_audited": 6356,
+  "failures": [],
+  "videos": [
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_1p0_trial196_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 7,
+      "minimum_luminance_mean": 152.37171936035156,
+      "maximum_luminance_mean": 181.22898864746094,
+      "minimum_luminance_std": 84.94110107421875,
+      "median_interframe_mean_absolute_difference": 5.368668079376221
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_1p0_trial013_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 21,
+      "minimum_luminance_mean": 154.4464569091797,
+      "maximum_luminance_mean": 169.37742614746094,
+      "minimum_luminance_std": 88.84661865234375,
+      "median_interframe_mean_absolute_difference": 4.0754899978637695
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_1p5_trial298_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 26,
+      "minimum_luminance_mean": 146.8959197998047,
+      "maximum_luminance_mean": 182.0987091064453,
+      "minimum_luminance_std": 84.89593505859375,
+      "median_interframe_mean_absolute_difference": 5.47050666809082
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_1p5_trial359_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 21,
+      "minimum_luminance_mean": 159.62777709960938,
+      "maximum_luminance_mean": 168.54638671875,
+      "minimum_luminance_std": 88.79683685302734,
+      "median_interframe_mean_absolute_difference": 3.6689541339874268
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_2p0_trial112_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 11,
+      "minimum_luminance_mean": 163.83824157714844,
+      "maximum_luminance_mean": 183.0611572265625,
+      "minimum_luminance_std": 84.36027526855469,
+      "median_interframe_mean_absolute_difference": 4.8137664794921875
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_2p0_trial191_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 16,
+      "minimum_luminance_mean": 160.6294708251953,
+      "maximum_luminance_mean": 166.498291015625,
+      "minimum_luminance_std": 88.67292785644531,
+      "median_interframe_mean_absolute_difference": 3.0308823585510254
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_2p5_trial149_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 19,
+      "minimum_luminance_mean": 175.19357299804688,
+      "maximum_luminance_mean": 183.81655883789062,
+      "minimum_luminance_std": 84.2528305053711,
+      "median_interframe_mean_absolute_difference": 4.452900409698486
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_2p5_trial015_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 17,
+      "minimum_luminance_mean": 159.9721221923828,
+      "maximum_luminance_mean": 163.98028564453125,
+      "minimum_luminance_std": 88.57597351074219,
+      "median_interframe_mean_absolute_difference": 2.718219041824341
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_3p0_trial052_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 30,
+      "minimum_luminance_mean": 178.3031768798828,
+      "maximum_luminance_mean": 185.4009246826172,
+      "minimum_luminance_std": 84.13911437988281,
+      "median_interframe_mean_absolute_difference": 4.0436272621154785
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_3p0_trial200_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 17,
+      "minimum_luminance_mean": 158.98287963867188,
+      "maximum_luminance_mean": 161.78961181640625,
+      "minimum_luminance_std": 88.58392333984375,
+      "median_interframe_mean_absolute_difference": 2.5198938846588135
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_3p5_trial449_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 14,
+      "minimum_luminance_mean": 176.5652618408203,
+      "maximum_luminance_mean": 183.1410675048828,
+      "minimum_luminance_std": 83.95402526855469,
+      "median_interframe_mean_absolute_difference": 3.998570203781128
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_3p5_trial480_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 18,
+      "minimum_luminance_mean": 158.50018310546875,
+      "maximum_luminance_mean": 160.93936157226562,
+      "minimum_luminance_std": 88.5538330078125,
+      "median_interframe_mean_absolute_difference": 2.372875928878784
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N05_Nwave10_4p0_trial055_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 18,
+      "minimum_luminance_mean": 174.05421447753906,
+      "maximum_luminance_mean": 180.36935424804688,
+      "minimum_luminance_std": 84.30487060546875,
+      "median_interframe_mean_absolute_difference": 3.8856618404388428
+    },
+    {
+      "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demos\\N10_Nwave10_4p0_trial062_iid_contact_erasure.mp4",
+      "passed": true,
+      "checks": {
+        "file_exists_and_nonempty": true,
+        "frame_count_matches_manifest": true,
+        "frame_shape_locked": true,
+        "no_blank_frames": true,
+        "no_large_luminance_strobes": true,
+        "motion_present_throughout": true,
+        "erasure_red_visible_in_viewport": true,
+        "renderer_gates_pass": true,
+        "exact_numeric_replay": true
+      },
+      "frame_count": 454,
+      "shape": [
+        662,
+        960,
+        3
+      ],
+      "blank_frames": 0,
+      "strobe_jumps": 0,
+      "frozen_transitions": 0,
+      "minimum_viewport_red_sample_count": 18,
+      "minimum_luminance_mean": 158.87884521484375,
+      "maximum_luminance_mean": 160.11474609375,
+      "minimum_luminance_std": 88.49856567382812,
+      "median_interframe_mean_absolute_difference": 2.3165440559387207
+    }
+  ]
+}

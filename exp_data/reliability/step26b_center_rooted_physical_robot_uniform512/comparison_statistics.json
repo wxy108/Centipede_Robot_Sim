@@ -1,0 +1,29 @@
+{
+  "bootstrap_replicates": 5000,
+  "equal_trial_count_per_N": 512,
+  "robot_null_pairing": "matched by N and seed",
+  "matched_command_fields": [
+    "commanded_down_fraction",
+    "both_down_pair_fraction",
+    "both_up_pair_fraction",
+    "one_down_pair_fraction",
+    "mean_abs_pairwise_state_correlation",
+    "max_abs_pairwise_state_correlation"
+  ],
+  "matched_command_audit_pass": true,
+  "pooled_robot_mean_displacement_m": 0.02907084137885902,
+  "pooled_null_mean_displacement_m": 0.0008640501585626417,
+  "pooled_robot_minus_null_mean_m": 0.02820679122029638,
+  "pooled_difference_ci95_low_m": 0.026956882948534017,
+  "pooled_difference_ci95_high_m": 0.029498036177217843,
+  "robot_mean_vs_N_slope_m_per_segment": 0.0009953285158396895,
+  "robot_slope_ci95_low_m_per_segment": 0.0003068880554145175,
+  "robot_slope_ci95_high_m_per_segment": 0.0016366672220264012,
+  "null_mean_vs_N_slope_m_per_segment": 9.979958124207915e-05,
+  "null_slope_ci95_low_m_per_segment": -0.00048030787738034277,
+  "null_slope_ci95_high_m_per_segment": 0.0006660628639411409,
+  "robot_minus_null_slope_m_per_segment": 0.0008955289345976117,
+  "slope_difference_ci95_low_m_per_segment": 0.00025121681030043527,
+  "slope_difference_ci95_high_m_per_segment": 0.0015117765689185757,
+  "interpretation_guardrail": "A positive robot-null offset supports retained physical fore-aft polarity; a segment-number slope is a separate claim and requires its CI to exclude zero."
+}

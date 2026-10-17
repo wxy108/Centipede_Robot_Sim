@@ -1,0 +1,30 @@
+{
+  "segments": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "ordinary_trials_requested_per_N": 512,
+  "ordinary_trials_by_N": {
+    "4": 512,
+    "5": 512,
+    "6": 512,
+    "7": 512,
+    "8": 512,
+    "9": 512,
+    "10": 512
+  },
+  "complement_pairs_per_N": 16,
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "sample_hz": 100.0,
+  "body_yaw_half_amplitude_deg": 15.0,
+  "spatial_phase_increment_rad": -3.141592653589793,
+  "leg_yaw_locked": true,
+  "pitch_process": "IID Bernoulli(0.5) per leg per half-cycle",
+  "initialization": "straight all-down, body-wave-off symmetric settle"
+}

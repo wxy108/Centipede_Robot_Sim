@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+<mujoco model="centipede_4module">
+  <compiler angle="radian" meshdir="../meshes"/>
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+  </visual>
+  <asset>
+    <hfield name="treadmill" file="../terrain/treadmill_hfield16.png"
+          nrow="60" ncol="8" size="0.35 1.7145 0.0254 0.001"/>
+    <!-- Checkerboard texture and material -->
+    <texture name="checker" type="2d" builtin="checker" width="512" height="512"
+             rgb1="0.2 0.2 0.2" rgb2="0.9 0.9 0.9"/>
+    <material name="checker_mat" texture="checker" texrepeat="8 8" reflectance="0.2"/>
+    <!-- Chasis meshes -->
+    <mesh name="Chasis1" content_type="model/stl" file="Chasis1.STL"/>
+    <mesh name="Chasis2" content_type="model/stl" file="Chasis2.STL"/>
+    <mesh name="Chasis3" content_type="model/stl" file="Chasis2.STL"/>
+    <mesh name="Chasis4" content_type="model/stl" file="Chasis2.STL"/>
+    <!-- Module 1 meshes -->
+    <mesh name="ShoulderMotor1_R" content_type="model/stl" file="ShoulderMotor1_R.STL"/>
+    <mesh name="Leg1_R" content_type="model/stl" file="Leg1_R.STL"/>
+    <mesh name="ShoulderMotor1_L" content_type="model/stl" file="ShoulderMotor1_L.STL"/>
+    <mesh name="Leg1_L" content_type="model/stl" file="Leg1_L.STL"/>
+    <mesh name="LinkMotor1_PnY" content_type="model/stl" file="LinkMotor1_PnY.STL"/>
+    <mesh name="LinkMotor1_R" content_type="model/stl" file="LinkMotor1_R.STL"/>
+    <!-- Module 2 meshes -->
+    <mesh name="ShoulderMotor2_R" content_type="model/stl" file="ShoulderMotor1_R.STL"/>
+    <mesh name="Leg2_R" content_type="model/stl" file="Leg1_R.STL"/>
+    <mesh name="ShoulderMotor2_L" content_type="model/stl" file="ShoulderMotor1_L.STL"/>
+    <mesh name="Leg2_L" content_type="model/stl" file="Leg1_L.STL"/>
+    <mesh name="LinkMotor2_PnY" content_type="model/stl" file="LinkMotor1_PnY.STL"/>
+    <mesh name="LinkMotor2_R" content_type="model/stl" file="LinkMotor1_R.STL"/>
+    <!-- Module 3 meshes -->
+    <mesh name="ShoulderMotor3_R" content_type="model/stl" file="ShoulderMotor1_R.STL"/>
+    <mesh name="Leg3_R" content_type="model/stl" file="Leg1_R.STL"/>
+    <mesh name="ShoulderMotor3_L" content_type="model/stl" file="ShoulderMotor1_L.STL"/>
+    <mesh name="Leg3_L" content_type="model/stl" file="Leg1_L.STL"/>
+    <mesh name="LinkMotor3_PnY" content_type="model/stl" file="LinkMotor1_PnY.STL"/>
+    <mesh name="LinkMotor3_R" content_type="model/stl" file="LinkMotor1_R.STL"/>
+    <!-- Module 4 meshes -->
+    <mesh name="ShoulderMotor4_R" content_type="model/stl" file="ShoulderMotor1_R.STL"/>
+    <mesh name="Leg4_R" content_type="model/stl" file="Leg1_R.STL"/>
+    <mesh name="ShoulderMotor4_L" content_type="model/stl" file="ShoulderMotor1_L.STL"/>
+    <mesh name="Leg4_L" content_type="model/stl" file="Leg1_L.STL"/>
+  </asset>
+  <!--
+    Contact filtering via contype / conaffinity (bitwise AND must be >0 BOTH ways):
+    floor  : contype=1  conaffinity=4   → only touches legs
+    body   : contype=2  conaffinity=0   → touches nothing
+    leg    : contype=4  conaffinity=5   → touches floor (4&1 AND 1&4) + other legs (4&5 AND 4&5)
+    Verification:
+      floor ↔ leg  : (1 & 5=1)✓  (4 & 4=4)✓  → CONTACT
+      floor ↔ body : (1 & 0=0)✗              → NO CONTACT
+      leg   ↔ leg  : (4 & 5=4)✓  (4 & 5=4)✓  → CONTACT
+      leg   ↔ body : (4 & 0=0)✗              → NO CONTACT
+      body  ↔ body : (2 & 0=0)✗              → NO CONTACT
+  -->
+  <default>
+    <joint damping="0.0013" armature="0.0083" frictionloss="0.069"/>
+    <geom condim="4" friction="0.4 0.005 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001"/>
+  </default>
+  <worldbody>
+    <!-- Floor: collides with legs only -->
+    <!-- <geom name="floor" type="plane" size="5 5 0.1" material="checker_mat" pos="0 0 0" -->
+          <!-- contype="1" conaffinity="4"/> -->
+    <geom type="hfield" hfield="treadmill" pos="0 0 0"/>
+    <body name="robot_root" pos="0 0 0.15">
+      <freejoint name="root"/>
+      <!-- ============ MODULE 1: Chasis1 ============ -->
+      <inertial pos="-3.493e-09 -0.023000 0.015312" mass="0.083"
+                diaginertia="5.27276757e-05 9.57795812e-05 4.67611196e-05"/>
+      <!-- body geom: contype=2 conaffinity=0 → no collision -->
+      <geom type="mesh" rgba="1 0.596078431372549 0.137254901960784 1" mesh="Chasis1"
+            contype="2" conaffinity="0"/>
+      <body name="ShoulderMotor1_R" pos="0.029 0.004996 -0.0021" quat="0.00155303 0.00155304 -0.707106 -0.707104">
+        <joint name="Shoulder1_R" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+        <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                  diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+        <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor1_R"
+              contype="2" conaffinity="0"/>
+        <body name="Leg1_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+          <joint name="Leg1_R" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+          <inertial pos="-0.001850 -0.004012 0.052394" mass="0.0688"
+                    fullinertia="4.74826203e-05 3.43514283e-05 3.4367306e-05 -2.08138241e-09 -2.86999106e-06 8.3384381e-06"/>
+          <!-- leg geom: contype=4 conaffinity=5 → collides with floor + other legs -->
+          <geom type="mesh" rgba="1 1 1 1" mesh="Leg1_R"
+                contype="4" conaffinity="5"/>
+        </body>
+      </body>
+      <body name="ShoulderMotor1_L" pos="-0.029 0.004996 -0.0021" quat="0.707104 0.707106 0.00154994 0.00154994">
+        <joint name="Shoulder1_L" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+        <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                  diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+        <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor1_L"
+              contype="2" conaffinity="0"/>
+        <body name="Leg1_L" pos="-0.024 -0.0209 -0.00010521" quat="-2.60305e-06 0.705551 2.59163e-06 0.708659">
+          <joint name="Leg1_L" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+          <inertial pos="0.001835 0.004012 -0.052394" mass="0.0688"
+                    fullinertia="4.74826381e-05 3.43514475e-05 3.43673022e-05 2.06824948e-09 -2.89433797e-06 8.33843718e-06"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="Leg1_L"
+                contype="4" conaffinity="5"/>
+        </body>
+      </body>
+      <!-- Link Motors connecting Chasis1 to Chasis2 -->
+      <body name="LinkMotor1_PnY" pos="0 -0.046004 -0.0021" quat="0.498897 0.498899 0.501101 0.501099">
+        <joint name="Link1_Y" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+        <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                  diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+        <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="LinkMotor1_PnY"
+              contype="2" conaffinity="0"/>
+        <body name="LinkMotor1_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+          <joint name="Link1_P" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+          <inertial pos="-8.115e-06 0.008650 0.033659" mass="0.019"
+                    diaginertia="4.78612822e-06 5.28822003e-06 5.48161184e-06"/>
+          <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="LinkMotor1_R"
+                contype="2" conaffinity="0"/>
+          <!-- ============ MODULE 2: Chasis2 ============ -->
+          <body name="Chasis2" pos="0 0 0.059" quat="-3.67321e-06 -0 0 1">
+            <!--joint name="Link1_R" pos="0 0 0" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/-->
+            <inertial pos="-3.499e-09 -3.896e-09 0.046308" mass="0.083"
+                      diaginertia="5.27276757e-05 9.57795813e-05 4.67611196e-05"/>
+            <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="Chasis2"
+                  contype="2" conaffinity="0"/>
+            <body name="ShoulderMotor2_R" pos="-0.029 -0.0209 0.026" quat="0 1 0 0">
+              <joint name="Shoulder2_R" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+              <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                        diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+              <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor2_R"
+                    contype="2" conaffinity="0"/>
+              <body name="Leg2_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+                <joint name="Leg2_R" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                <inertial pos="-0.001850 -0.004012 0.052394" mass="0.0688"
+                          fullinertia="4.74826203e-05 3.43514283e-05 3.4367306e-05 -2.08138241e-09 -2.86999106e-06 8.3384381e-06"/>
+                <geom type="mesh" rgba="1 1 1 1" mesh="Leg2_R" contype="4" conaffinity="5"/>
+              </body>
+            </body>
+            <body name="ShoulderMotor2_L" pos="0.029 -0.0209 0.026" quat="0 0 0 -1">
+              <joint name="Shoulder2_L" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+              <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                        diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+              <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor2_L"
+                    contype="2" conaffinity="0"/>
+              <body name="Leg2_L" pos="-0.024 -0.0209 -0.00010521" quat="-2.60305e-06 0.705551 2.59163e-06 0.708659">
+                <joint name="Leg2_L" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                <inertial pos="0.001835 0.004012 -0.052394" mass="0.0688"
+                          fullinertia="4.74826381e-05 3.43514475e-05 3.43673022e-05 2.06824948e-09 -2.89433797e-06 8.33843718e-06"/>
+                <geom type="mesh" rgba="1 1 1 1" mesh="Leg2_L" contype="4" conaffinity="5"/>
+              </body>
+            </body>
+            <!-- Link Motors connecting Chasis2 to Chasis3 -->
+            <body name="LinkMotor2_PnY" pos="0 -0.0209 0.077" quat="-2.60305e-06 0.708659 -2.59163e-06 -0.705551">
+              <joint name="Link2_Y" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+              <inertial pos="-0.012002 0.000496 0.000443" mass="0.0982"
+                        diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+              <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="LinkMotor2_PnY"
+                    contype="2" conaffinity="0"/>
+              <body name="LinkMotor2_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+                <joint name="Link2_P" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                <inertial pos="-8.115e-06 0.008650 0.033659" mass="0.019"
+                          diaginertia="4.78612822e-06 5.28822003e-06 5.48161184e-06"/>
+                <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="LinkMotor2_R"
+                      contype="2" conaffinity="0"/>
+                <!-- ============ MODULE 3: Chasis3 ============ -->
+                <body name="Chasis3" pos="0 0 0.059" quat="-3.67321e-06 -0 0 1">
+                  <!--joint name="Link2_R" pos="0 0 0" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/-->
+                  <inertial pos="-3.499e-09 -3.896e-09 0.046308" mass="0.083"
+                            diaginertia="5.27276757e-05 9.57795813e-05 4.67611196e-05"/>
+                  <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="Chasis3"
+                        contype="2" conaffinity="0"/>
+                  <body name="ShoulderMotor3_R" pos="-0.029 -0.0209 0.026" quat="0 1 0 0">
+                    <joint name="Shoulder3_R" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                    <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                              diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+                    <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor3_R"
+                          contype="2" conaffinity="0"/>
+                    <body name="Leg3_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+                      <joint name="Leg3_R" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                      <inertial pos="-0.001850 -0.004012 0.052394" mass="0.0688"
+                                fullinertia="4.74826203e-05 3.43514283e-05 3.4367306e-05 -2.08138241e-09 -2.86999106e-06 8.3384381e-06"/>
+                      <geom type="mesh" rgba="1 1 1 1" mesh="Leg3_R" contype="4" conaffinity="5"/>
+                    </body>
+                  </body>
+                  <body name="ShoulderMotor3_L" pos="0.029 -0.0209 0.026" quat="0 0 0 -1">
+                    <joint name="Shoulder3_L" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                    <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                              diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+                    <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor3_L"
+                          contype="2" conaffinity="0"/>
+                    <body name="Leg3_L" pos="-0.024 -0.0209 -0.00010521" quat="-2.60305e-06 0.705551 2.59163e-06 0.708659">
+                      <joint name="Leg3_L" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                      <inertial pos="0.001835 0.004012 -0.052394" mass="0.0688"
+                                fullinertia="4.74826381e-05 3.43514475e-05 3.43673022e-05 2.06824948e-09 -2.89433797e-06 8.33843718e-06"/>
+                      <geom type="mesh" rgba="1 1 1 1" mesh="Leg3_L" contype="4" conaffinity="5"/>
+                    </body>
+                  </body>
+                  <!-- Link Motors connecting Chasis3 to Chasis4 -->
+                  <body name="LinkMotor3_PnY" pos="0 -0.0209 0.077" quat="-2.60305e-06 0.708659 -2.59163e-06 -0.705551">
+                    <joint name="Link3_Y" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                    <inertial pos="-0.012002 0.000496 0.000443" mass="0.0982"
+                              diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+                    <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="LinkMotor3_PnY"
+                          contype="2" conaffinity="0"/>
+                    <body name="LinkMotor3_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+                      <joint name="Link3_P" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                      <inertial pos="-8.115e-06 0.008650 0.033659" mass="0.019"
+                                diaginertia="4.78612822e-06 5.28822003e-06 5.48161184e-06"/>
+                      <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="LinkMotor3_R"
+                            contype="2" conaffinity="0"/>
+                      <!-- ============ MODULE 4: Chasis4 ============ -->
+                      <body name="Chasis4" pos="0 0 0.059" quat="-3.67321e-06 -0 0 1">
+                        <!--joint name="Link3_R" pos="0 0 0" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/-->
+                        <inertial pos="-3.499e-09 -3.896e-09 0.046308" mass="0.083"
+                                  diaginertia="5.27276757e-05 9.57795813e-05 4.67611196e-05"/>
+                        <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="Chasis4"
+                              contype="2" conaffinity="0"/>
+                        <body name="ShoulderMotor4_R" pos="-0.029 -0.0209 0.026" quat="0 1 0 0">
+                          <joint name="Shoulder4_R" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                          <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                                    diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+                          <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor4_R"
+                                contype="2" conaffinity="0"/>
+                          <body name="Leg4_R" pos="-0.024 -0.0209 -0.00010521" quat="0.705551 1.14188e-08 -0.708659 -1.14188e-08">
+                            <joint name="Leg4_R" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                            <inertial pos="-0.001850 -0.004012 0.052394" mass="0.0688"
+                                      fullinertia="4.74826203e-05 3.43514283e-05 3.4367306e-05 -2.08138241e-09 -2.86999106e-06 8.3384381e-06"/>
+                            <geom type="mesh" rgba="1 1 1 1" mesh="Leg4_R" contype="4" conaffinity="5"/>
+                          </body>
+                        </body>
+                        <body name="ShoulderMotor4_L" pos="0.029 -0.0209 0.026" quat="0 0 0 -1">
+                          <joint name="Shoulder4_L" pos="0 0 0" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                          <inertial pos="-0.012002 -0.020404 0.000443" mass="0.0982"
+                                    diaginertia="1.76504259e-05 2.48313673e-05 2.48312637e-05"/>
+                          <geom type="mesh" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" mesh="ShoulderMotor4_L"
+                                contype="2" conaffinity="0"/>
+                          <body name="Leg4_L" pos="-0.024 -0.0209 -0.00010521" quat="-2.60305e-06 0.705551 2.59163e-06 0.708659">
+                            <joint name="Leg4_L" pos="0 0 0" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5"/>
+                            <inertial pos="0.001835 0.004012 -0.052394" mass="0.0688"
+                                      fullinertia="4.74826381e-05 3.43514475e-05 3.43673022e-05 2.06824948e-09 -2.89433797e-06 8.33843718e-06"/>
+                            <geom type="mesh" rgba="1 1 1 1" mesh="Leg4_L" contype="4" conaffinity="5"/>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body> <!-- end robot_root -->
+  </worldbody>
+  <actuator>
+    <!-- Module 1 -->
+    <position name="act_Shoulder1_R" joint="Shoulder1_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8"/>
+    <position name="act_Leg1_R" joint="Leg1_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <position name="act_Shoulder1_L" joint="Shoulder1_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57"/>
+    <position name="act_Leg1_L" joint="Leg1_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <!-- Link 1 -->
+    <position name="act_Link1_Y" joint="Link1_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7"/>
+    <position name="act_Link1_P" joint="Link1_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <!--position name="act_Link1_R" joint="Link1_R" kp="10000" ctrllimited="true" ctrlrange="-1.5 1.5"/-->
+    <!-- Module 2 -->
+    <position name="act_Shoulder2_R" joint="Shoulder2_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8"/>
+    <position name="act_Leg2_R" joint="Leg2_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <position name="act_Shoulder2_L" joint="Shoulder2_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57"/>
+    <position name="act_Leg2_L" joint="Leg2_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <!-- Link 2 -->
+    <position name="act_Link2_Y" joint="Link2_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7"/>
+    <position name="act_Link2_P" joint="Link2_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <!--position name="act_Link2_R" joint="Link2_R" kp="10000" ctrllimited="true" ctrlrange="-1.5 1.5"/-->
+    <!-- Module 3 -->
+    <position name="act_Shoulder3_R" joint="Shoulder3_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8"/>
+    <position name="act_Leg3_R" joint="Leg3_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <position name="act_Shoulder3_L" joint="Shoulder3_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57"/>
+    <position name="act_Leg3_L" joint="Leg3_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <!-- Link 3 -->
+    <position name="act_Link3_Y" joint="Link3_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7"/>
+    <position name="act_Link3_P" joint="Link3_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <!--position name="act_Link3_R" joint="Link3_R" kp="10000" ctrllimited="true" ctrlrange="-1.5 1.5"/-->
+    <!-- Module 4 -->
+    <position name="act_Shoulder4_R" joint="Shoulder4_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8"/>
+    <position name="act_Leg4_R" joint="Leg4_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+    <position name="act_Shoulder4_L" joint="Shoulder4_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57"/>
+    <position name="act_Leg4_L" joint="Leg4_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5"/>
+  </actuator>
+</mujoco>

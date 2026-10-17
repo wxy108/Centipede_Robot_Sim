@@ -1,0 +1,8 @@
+{
+  "all_mass_and_inertia_checks_pass": true,
+  "all_count_and_name_checks_pass": true,
+  "max_forward_kinematics_position_error_m": 8.540872154422439e-12,
+  "max_forward_kinematics_rotation_error_rad": 6.322027276634106e-08,
+  "all_stability_smoke_trials_pass": true,
+  "maximum_warning_count": 0
+}

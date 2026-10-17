@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="centipede_8seg_center_rooted_dynamic_null">
+  <compiler angle="radian" inertiafromgeom="true" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" solver="Newton" iterations="200" tolerance="1e-12" cone="elliptic" noslip_iterations="50" noslip_tolerance="1e-12" />
+  <visual>
+    <headlight ambient="0.45 0.45 0.45" diffuse="0.8 0.8 0.8" specular="0.12 0.12 0.12" />
+  </visual>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1="0.22 0.22 0.22" rgb2="0.88 0.88 0.88" />
+    <material name="grid_mat" texture="grid" texrepeat="10 10" reflectance="0.15" />
+  </asset>
+  <default>
+    <joint damping="0.0013" armature="0.0083" frictionloss="0.069" />
+    <geom condim="4" friction="0.4 0.005 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" contype="2" conaffinity="0" />
+  </default>
+  <worldbody>
+    <geom name="floor" type="plane" size="5 5 0.1" material="grid_mat" contype="1" conaffinity="0" />
+    <light pos="0 0 3" dir="0 0 -1" diffuse="0.8 0.8 0.8" />
+    <body name="robot_root" pos="0 0 0.088">
+      <freejoint name="root" />
+      <geom name="link_yaw_parent_half_geom_4" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" />
+      <geom name="link_yaw_geom_4" type="box" size="0.03 0.018 0.014" mass="0" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+      <geom name="link_pitch_parent_half_geom_4" type="sphere" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" />
+      <geom name="link_pitch_geom_4" type="sphere" size="0.018" mass="0" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+      <body name="CenterHeadYaw">
+        <joint name="CenterHead_Y" axis="0 0 1" range="-0.75 0.75" actuatorfrcrange="-1.5 1.5" damping="0.0026" armature="0.0166" frictionloss="0.069" />
+        <geom name="center_head_yaw_mass_geom" type="box" size="0.03 0.018 0.014" mass="0.02455" rgba="0.40 0.55 0.82 1" contype="2" conaffinity="0" />
+        <body name="CenterHeadPitch">
+          <joint name="CenterHead_P" axis="1 0 0" range="-0.75 0.75" actuatorfrcrange="-1.5 1.5" damping="0.0026" armature="0.0166" frictionloss="0.069" />
+          <geom name="center_head_pitch_mass_geom" type="sphere" size="0.018" mass="0.00475" rgba="0.69 0.75 0.89 1" contype="2" conaffinity="0" />
+          <body name="Chasis4" pos="0 0.08 0">
+            <geom name="chassis_geom_4" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+            <site name="chasis4_site" pos="0 0 0" size="0.003" />
+            <body name="ShoulderMotor4_R" pos="0.052 0 0">
+              <joint name="Shoulder4_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+              <geom name="shoulder_geom_4_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+              <body name="Leg4_R">
+                <joint name="Leg4_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                <geom name="leg_geom_4_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                <geom name="foot_geom_4_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                <site name="foot4_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+              </body>
+            </body>
+            <body name="ShoulderMotor4_L" pos="-0.052 0 0">
+              <joint name="Shoulder4_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+              <geom name="shoulder_geom_4_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+              <body name="Leg4_L">
+                <joint name="Leg4_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                <geom name="leg_geom_4_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                <geom name="foot_geom_4_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                <site name="foot4_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+              </body>
+            </body>
+            <geom name="link_yaw_parent_half_geom_3" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" pos="0 0.08 0" />
+            <geom name="link_pitch_parent_half_geom_3" type="sphere" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" pos="0 0.08 0" />
+            <body name="LinkMotor3_R" pos="0 0.08 0">
+              <joint name="Link3_P" axis="-1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+              <geom name="link_pitch_geom_3" type="sphere" size="0.018" mass="0.0095" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+              <body name="LinkMotor3_PnY">
+                <joint name="Link3_Y" axis="0 0 -1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                <geom name="link_yaw_geom_3" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                <body name="Chasis3" pos="0 0.08 0">
+                  <geom name="chassis_geom_3" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+                  <site name="chasis3_site" pos="0 0 0" size="0.003" />
+                  <body name="ShoulderMotor3_R" pos="0.052 0 0">
+                    <joint name="Shoulder3_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+                    <geom name="shoulder_geom_3_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                    <body name="Leg3_R">
+                      <joint name="Leg3_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                      <geom name="leg_geom_3_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                      <geom name="foot_geom_3_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                      <site name="foot3_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                    </body>
+                  </body>
+                  <body name="ShoulderMotor3_L" pos="-0.052 0 0">
+                    <joint name="Shoulder3_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+                    <geom name="shoulder_geom_3_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                    <body name="Leg3_L">
+                      <joint name="Leg3_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                      <geom name="leg_geom_3_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                      <geom name="foot_geom_3_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                      <site name="foot3_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                    </body>
+                  </body>
+                  <geom name="link_yaw_parent_half_geom_2" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" pos="0 0.08 0" />
+                  <geom name="link_pitch_parent_half_geom_2" type="sphere" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" pos="0 0.08 0" />
+                  <body name="LinkMotor2_R" pos="0 0.08 0">
+                    <joint name="Link2_P" axis="-1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                    <geom name="link_pitch_geom_2" type="sphere" size="0.018" mass="0.0095" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+                    <body name="LinkMotor2_PnY">
+                      <joint name="Link2_Y" axis="0 0 -1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                      <geom name="link_yaw_geom_2" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                      <body name="Chasis2" pos="0 0.08 0">
+                        <geom name="chassis_geom_2" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+                        <site name="chasis2_site" pos="0 0 0" size="0.003" />
+                        <body name="ShoulderMotor2_R" pos="0.052 0 0">
+                          <joint name="Shoulder2_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+                          <geom name="shoulder_geom_2_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                          <body name="Leg2_R">
+                            <joint name="Leg2_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                            <geom name="leg_geom_2_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                            <geom name="foot_geom_2_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                            <site name="foot2_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                          </body>
+                        </body>
+                        <body name="ShoulderMotor2_L" pos="-0.052 0 0">
+                          <joint name="Shoulder2_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+                          <geom name="shoulder_geom_2_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                          <body name="Leg2_L">
+                            <joint name="Leg2_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                            <geom name="leg_geom_2_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                            <geom name="foot_geom_2_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                            <site name="foot2_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                          </body>
+                        </body>
+                        <geom name="link_yaw_parent_half_geom_1" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" pos="0 0.08 0" />
+                        <geom name="link_pitch_parent_half_geom_1" type="sphere" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" pos="0 0.08 0" />
+                        <body name="LinkMotor1_R" pos="0 0.08 0">
+                          <joint name="Link1_P" axis="-1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                          <geom name="link_pitch_geom_1" type="sphere" size="0.018" mass="0.0095" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+                          <body name="LinkMotor1_PnY">
+                            <joint name="Link1_Y" axis="0 0 -1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                            <geom name="link_yaw_geom_1" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                            <body name="Chasis1" pos="0 0.08 0">
+                              <geom name="chassis_geom_1" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+                              <site name="chasis1_site" pos="0 0 0" size="0.003" />
+                              <site name="imu_site" pos="0 0 0.012" size="0.003" />
+                              <body name="ShoulderMotor1_R" pos="0.052 0 0">
+                                <joint name="Shoulder1_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+                                <geom name="shoulder_geom_1_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                                <body name="Leg1_R">
+                                  <joint name="Leg1_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                                  <geom name="leg_geom_1_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                                  <geom name="foot_geom_1_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                                  <site name="foot1_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                                </body>
+                              </body>
+                              <body name="ShoulderMotor1_L" pos="-0.052 0 0">
+                                <joint name="Shoulder1_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+                                <geom name="shoulder_geom_1_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                                <body name="Leg1_L">
+                                  <joint name="Leg1_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                                  <geom name="leg_geom_1_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                                  <geom name="foot_geom_1_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                                  <site name="foot1_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="CenterTailYaw">
+        <joint name="CenterTail_Y" axis="0 0 1" range="-0.75 0.75" actuatorfrcrange="-1.5 1.5" damping="0.0026" armature="0.0166" frictionloss="0.069" />
+        <geom name="center_tail_yaw_mass_geom" type="box" size="0.03 0.018 0.014" mass="0.02455" rgba="0.40 0.55 0.82 1" contype="2" conaffinity="0" />
+        <body name="CenterTailPitch">
+          <joint name="CenterTail_P" axis="1 0 0" range="-0.75 0.75" actuatorfrcrange="-1.5 1.5" damping="0.0026" armature="0.0166" frictionloss="0.069" />
+          <geom name="center_tail_pitch_mass_geom" type="sphere" size="0.018" mass="0.00475" rgba="0.69 0.75 0.89 1" contype="2" conaffinity="0" />
+          <body name="Chasis5" pos="0 -0.08 0">
+            <geom name="chassis_geom_5" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+            <site name="chasis5_site" pos="0 0 0" size="0.003" />
+            <body name="ShoulderMotor5_R" pos="0.052 0 0">
+              <joint name="Shoulder5_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+              <geom name="shoulder_geom_5_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+              <body name="Leg5_R">
+                <joint name="Leg5_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                <geom name="leg_geom_5_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                <geom name="foot_geom_5_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                <site name="foot5_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+              </body>
+            </body>
+            <body name="ShoulderMotor5_L" pos="-0.052 0 0">
+              <joint name="Shoulder5_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+              <geom name="shoulder_geom_5_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+              <body name="Leg5_L">
+                <joint name="Leg5_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                <geom name="leg_geom_5_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                <geom name="foot_geom_5_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                <site name="foot5_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+              </body>
+            </body>
+            <geom name="link_yaw_parent_half_geom_5" type="box" pos="0 -0.08 0" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" />
+            <geom name="link_pitch_parent_half_geom_5" type="sphere" pos="0 -0.08 0" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" />
+            <body name="LinkMotor5_PnY" pos="0 -0.08 0">
+              <joint name="Link5_Y" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+              <geom name="link_yaw_geom_5" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+              <body name="LinkMotor5_R">
+                <joint name="Link5_P" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                <geom name="link_pitch_geom_5" type="sphere" size="0.018" mass="0.0095" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+                <body name="Chasis6" pos="0 -0.08 0">
+                  <geom name="chassis_geom_6" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+                  <site name="chasis6_site" pos="0 0 0" size="0.003" />
+                  <body name="ShoulderMotor6_R" pos="0.052 0 0">
+                    <joint name="Shoulder6_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+                    <geom name="shoulder_geom_6_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                    <body name="Leg6_R">
+                      <joint name="Leg6_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                      <geom name="leg_geom_6_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                      <geom name="foot_geom_6_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                      <site name="foot6_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                    </body>
+                  </body>
+                  <body name="ShoulderMotor6_L" pos="-0.052 0 0">
+                    <joint name="Shoulder6_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+                    <geom name="shoulder_geom_6_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                    <body name="Leg6_L">
+                      <joint name="Leg6_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                      <geom name="leg_geom_6_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                      <geom name="foot_geom_6_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                      <site name="foot6_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                    </body>
+                  </body>
+                  <geom name="link_yaw_parent_half_geom_6" type="box" pos="0 -0.08 0" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" />
+                  <geom name="link_pitch_parent_half_geom_6" type="sphere" pos="0 -0.08 0" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" />
+                  <body name="LinkMotor6_PnY" pos="0 -0.08 0">
+                    <joint name="Link6_Y" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                    <geom name="link_yaw_geom_6" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                    <body name="LinkMotor6_R">
+                      <joint name="Link6_P" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                      <geom name="link_pitch_geom_6" type="sphere" size="0.018" mass="0.0095" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+                      <body name="Chasis7" pos="0 -0.08 0">
+                        <geom name="chassis_geom_7" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+                        <site name="chasis7_site" pos="0 0 0" size="0.003" />
+                        <body name="ShoulderMotor7_R" pos="0.052 0 0">
+                          <joint name="Shoulder7_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+                          <geom name="shoulder_geom_7_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                          <body name="Leg7_R">
+                            <joint name="Leg7_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                            <geom name="leg_geom_7_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                            <geom name="foot_geom_7_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                            <site name="foot7_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                          </body>
+                        </body>
+                        <body name="ShoulderMotor7_L" pos="-0.052 0 0">
+                          <joint name="Shoulder7_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+                          <geom name="shoulder_geom_7_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                          <body name="Leg7_L">
+                            <joint name="Leg7_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                            <geom name="leg_geom_7_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                            <geom name="foot_geom_7_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                            <site name="foot7_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                          </body>
+                        </body>
+                        <geom name="link_yaw_parent_half_geom_7" type="box" pos="0 -0.08 0" size="0.03 0.018 0.014" mass="0.0491" rgba="0.34 0.50 0.78 1" contype="2" conaffinity="0" />
+                        <geom name="link_pitch_parent_half_geom_7" type="sphere" pos="0 -0.08 0" size="0.018" mass="0.0095" rgba="0.65 0.72 0.88 1" contype="2" conaffinity="0" />
+                        <body name="LinkMotor7_PnY" pos="0 -0.08 0">
+                          <joint name="Link7_Y" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                          <geom name="link_yaw_geom_7" type="box" size="0.03 0.018 0.014" mass="0.0491" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                          <body name="LinkMotor7_R">
+                            <joint name="Link7_P" axis="1 0 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                            <geom name="link_pitch_geom_7" type="sphere" size="0.018" mass="0.0095" rgba="0.72 0.78 0.90 1" contype="2" conaffinity="0" />
+                            <body name="Chasis8" pos="0 -0.08 0">
+                              <geom name="chassis_geom_8" type="box" size="0.038 0.052 0.016" mass="0.083" rgba="0.93 0.55 0.16 1" contype="2" conaffinity="0" />
+                              <site name="chasis8_site" pos="0 0 0" size="0.003" />
+                              <body name="ShoulderMotor8_R" pos="0.052 0 0">
+                                <joint name="Shoulder8_R" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="-0.0872664625997" />
+                                <geom name="shoulder_geom_8_R" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                                <body name="Leg8_R">
+                                  <joint name="Leg8_R" axis="0 1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                                  <geom name="leg_geom_8_R" type="capsule" fromto="0 0 0 0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                                  <geom name="foot_geom_8_R" type="sphere" pos="0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                                  <site name="foot8_R" pos="0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                                </body>
+                              </body>
+                              <body name="ShoulderMotor8_L" pos="-0.052 0 0">
+                                <joint name="Shoulder8_L" axis="0 0 1" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" ref="0.0872664625997" />
+                                <geom name="shoulder_geom_8_L" type="cylinder" size="0.014 0.018" quat="0.707106781187 0 0.707106781187 0" mass="0.0982" rgba="0.45 0.60 0.86 1" contype="2" conaffinity="0" />
+                                <body name="Leg8_L">
+                                  <joint name="Leg8_L" axis="0 -1 0" range="-1.5 1.5" actuatorfrcrange="-1.5 1.5" />
+                                  <geom name="leg_geom_8_L" type="capsule" fromto="0 0 0 -0.075 0 -0.06" size="0.008" mass="0.0458" rgba="0.92 0.92 0.95 1" contype="4" conaffinity="4" />
+                                  <geom name="foot_geom_8_L" type="sphere" pos="-0.075 0 -0.06" size="0.015" mass="0.023" rgba="0.95 0.95 0.98 1" contype="4" conaffinity="4" />
+                                  <site name="foot8_L" pos="-0.075 0 -0.06" size="0.004" rgba="0.1 0.8 0.2 0.5" />
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="mirror_center_yaw" joint1="CenterHead_Y" polycoef="0 -1 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" joint2="CenterTail_Y" />
+    <joint name="mirror_center_pitch" joint1="CenterHead_P" polycoef="0 -1 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" joint2="CenterTail_P" />
+    <joint name="lock_center_pitch" joint1="CenterTail_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+    <joint name="lock_Link1_P" joint1="Link1_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+    <joint name="lock_Link2_P" joint1="Link2_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+    <joint name="lock_Link3_P" joint1="Link3_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+    <joint name="lock_Link5_P" joint1="Link5_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+    <joint name="lock_Link6_P" joint1="Link6_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+    <joint name="lock_Link7_P" joint1="Link7_P" polycoef="0 0 0 0 0" solref="0.0002 1" solimp="0.9999 0.9999 0.0001" />
+  </equality>
+  <actuator>
+    <position name="act_Shoulder1_R" joint="Shoulder1_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg1_R" joint="Leg1_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder1_L" joint="Shoulder1_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg1_L" joint="Leg1_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link1_Y" joint="Link1_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" />
+    <position name="act_Link1_P" joint="Link1_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder2_R" joint="Shoulder2_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg2_R" joint="Leg2_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder2_L" joint="Shoulder2_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg2_L" joint="Leg2_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link2_Y" joint="Link2_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" />
+    <position name="act_Link2_P" joint="Link2_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder3_R" joint="Shoulder3_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg3_R" joint="Leg3_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder3_L" joint="Shoulder3_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg3_L" joint="Leg3_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link3_Y" joint="Link3_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" />
+    <position name="act_Link3_P" joint="Link3_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder4_R" joint="Shoulder4_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg4_R" joint="Leg4_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder4_L" joint="Shoulder4_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg4_L" joint="Leg4_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link4_Y" joint="CenterTail_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" gear="2" />
+    <position name="act_Link4_P" joint="CenterTail_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" gear="2" />
+    <position name="act_Shoulder5_R" joint="Shoulder5_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg5_R" joint="Leg5_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder5_L" joint="Shoulder5_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg5_L" joint="Leg5_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link5_Y" joint="Link5_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" />
+    <position name="act_Link5_P" joint="Link5_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder6_R" joint="Shoulder6_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg6_R" joint="Leg6_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder6_L" joint="Shoulder6_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg6_L" joint="Leg6_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link6_Y" joint="Link6_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" />
+    <position name="act_Link6_P" joint="Link6_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder7_R" joint="Shoulder7_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg7_R" joint="Leg7_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder7_L" joint="Shoulder7_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg7_L" joint="Leg7_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Link7_Y" joint="Link7_Y" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.7 0.7" />
+    <position name="act_Link7_P" joint="Link7_P" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder8_R" joint="Shoulder8_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.57 0.8" />
+    <position name="act_Leg8_R" joint="Leg8_R" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+    <position name="act_Shoulder8_L" joint="Shoulder8_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-0.8 0.57" />
+    <position name="act_Leg8_L" joint="Leg8_L" kp="32.7670866" kv="2.08601752" forcelimited="true" forcerange="-0.94 0.94" ctrllimited="true" ctrlrange="-1.5 1.5" />
+  </actuator>
+  <contact>
+    <pair name="ground_pair_000" geom1="floor" geom2="chassis_geom_4" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_001" geom1="floor" geom2="chassis_geom_5" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_002" geom1="floor" geom2="shoulder_geom_5_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_003" geom1="floor" geom2="shoulder_geom_4_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_004" geom1="floor" geom2="shoulder_geom_4_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_005" geom1="floor" geom2="shoulder_geom_5_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_006" geom1="floor" geom2="leg_geom_5_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_007" geom1="floor" geom2="leg_geom_4_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_008" geom1="floor" geom2="leg_geom_4_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_009" geom1="floor" geom2="leg_geom_5_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_010" geom1="floor" geom2="foot_geom_5_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_011" geom1="floor" geom2="foot_geom_4_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_012" geom1="floor" geom2="foot_geom_4_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_013" geom1="floor" geom2="foot_geom_5_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_014" geom1="floor" geom2="chassis_geom_6" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_015" geom1="floor" geom2="chassis_geom_3" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_016" geom1="floor" geom2="shoulder_geom_3_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_017" geom1="floor" geom2="shoulder_geom_6_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_018" geom1="floor" geom2="shoulder_geom_6_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_019" geom1="floor" geom2="shoulder_geom_3_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_020" geom1="floor" geom2="leg_geom_3_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_021" geom1="floor" geom2="leg_geom_6_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_022" geom1="floor" geom2="leg_geom_6_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_023" geom1="floor" geom2="leg_geom_3_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_024" geom1="floor" geom2="foot_geom_3_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_025" geom1="floor" geom2="foot_geom_6_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_026" geom1="floor" geom2="foot_geom_6_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_027" geom1="floor" geom2="foot_geom_3_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_028" geom1="floor" geom2="chassis_geom_2" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_029" geom1="floor" geom2="chassis_geom_7" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_030" geom1="floor" geom2="shoulder_geom_7_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_031" geom1="floor" geom2="shoulder_geom_2_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_032" geom1="floor" geom2="shoulder_geom_2_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_033" geom1="floor" geom2="shoulder_geom_7_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_034" geom1="floor" geom2="leg_geom_7_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_035" geom1="floor" geom2="leg_geom_2_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_036" geom1="floor" geom2="leg_geom_2_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_037" geom1="floor" geom2="leg_geom_7_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_038" geom1="floor" geom2="foot_geom_7_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_039" geom1="floor" geom2="foot_geom_2_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_040" geom1="floor" geom2="foot_geom_2_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_041" geom1="floor" geom2="foot_geom_7_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_042" geom1="floor" geom2="chassis_geom_8" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_043" geom1="floor" geom2="chassis_geom_1" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_044" geom1="floor" geom2="shoulder_geom_1_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_045" geom1="floor" geom2="shoulder_geom_8_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_046" geom1="floor" geom2="shoulder_geom_8_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_047" geom1="floor" geom2="shoulder_geom_1_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_048" geom1="floor" geom2="leg_geom_1_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_049" geom1="floor" geom2="leg_geom_8_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_050" geom1="floor" geom2="leg_geom_8_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_051" geom1="floor" geom2="leg_geom_1_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_052" geom1="floor" geom2="foot_geom_1_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_053" geom1="floor" geom2="foot_geom_8_R" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_054" geom1="floor" geom2="foot_geom_8_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_055" geom1="floor" geom2="foot_geom_1_L" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_056" geom1="floor" geom2="link_yaw_parent_half_geom_4" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_057" geom1="floor" geom2="link_yaw_geom_4" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_058" geom1="floor" geom2="link_pitch_parent_half_geom_4" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_059" geom1="floor" geom2="link_pitch_geom_4" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_060" geom1="floor" geom2="link_yaw_parent_half_geom_3" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_061" geom1="floor" geom2="link_yaw_parent_half_geom_5" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_062" geom1="floor" geom2="link_yaw_geom_5" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_063" geom1="floor" geom2="link_yaw_geom_3" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_064" geom1="floor" geom2="link_pitch_parent_half_geom_3" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_065" geom1="floor" geom2="link_pitch_parent_half_geom_5" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_066" geom1="floor" geom2="link_pitch_geom_5" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_067" geom1="floor" geom2="link_pitch_geom_3" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_068" geom1="floor" geom2="link_yaw_parent_half_geom_2" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_069" geom1="floor" geom2="link_yaw_parent_half_geom_6" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_070" geom1="floor" geom2="link_yaw_geom_6" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_071" geom1="floor" geom2="link_yaw_geom_2" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_072" geom1="floor" geom2="link_pitch_parent_half_geom_2" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_073" geom1="floor" geom2="link_pitch_parent_half_geom_6" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_074" geom1="floor" geom2="link_pitch_geom_6" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_075" geom1="floor" geom2="link_pitch_geom_2" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_076" geom1="floor" geom2="link_yaw_parent_half_geom_1" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_077" geom1="floor" geom2="link_yaw_parent_half_geom_7" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_078" geom1="floor" geom2="link_yaw_geom_7" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_079" geom1="floor" geom2="link_yaw_geom_1" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_080" geom1="floor" geom2="link_pitch_parent_half_geom_1" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_081" geom1="floor" geom2="link_pitch_parent_half_geom_7" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_082" geom1="floor" geom2="link_pitch_geom_7" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_083" geom1="floor" geom2="link_pitch_geom_1" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_084" geom1="floor" geom2="center_head_yaw_mass_geom" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_085" geom1="floor" geom2="center_tail_yaw_mass_geom" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_086" geom1="floor" geom2="center_tail_pitch_mass_geom" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+    <pair name="ground_pair_087" geom1="floor" geom2="center_head_pitch_mass_geom" condim="4" friction="0.4 0.4 0.005 0.0001 0.0001" solref="0.02 1" solimp="0.98 0.98 0.001" />
+  </contact>
+</mujoco>

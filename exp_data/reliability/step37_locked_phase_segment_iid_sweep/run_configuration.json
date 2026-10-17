@@ -1,0 +1,41 @@
+{
+  "experiment": "locked reference-10 phase offset x physical segment count under IID leg pitch",
+  "reference_segment_count": 10,
+  "segments": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "N_wave_ref10": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "locked_phase_formula": "Delta_phi=-2*pi*N_wave_ref10/(10-1)",
+  "effective_wave_formula": "N_wave_eff=N_wave_ref10*(N_segments-1)/9",
+  "body_yaw_half_amplitude_deg": 19.0,
+  "body_yaw_omega_rad_s": 4.0,
+  "body_yaw_pd": "moderate",
+  "body_yaw_pd_scales": {
+    "kp_scale": 2.0,
+    "kv_scale": 1.4142135623730951,
+    "force_scale": 2.0
+  },
+  "leg_yaw_locked": true,
+  "pitch_process": "IID Bernoulli(0.5) per physical leg per half-gait-cycle window",
+  "random_independence": "reference phase, N, trial, window, segment, side",
+  "trials_per_condition": 128,
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "evaluation_time_s": 18.84955592153876,
+  "contact_audit_sample_hz": 20.0,
+  "primary_distribution_width": "IQR of signed forward displacement",
+  "predeclared_trend": "linear IQR slope versus N with within-N bootstrap 95% CI"
+}

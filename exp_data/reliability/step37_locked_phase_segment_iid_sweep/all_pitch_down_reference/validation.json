@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "expected_conditions": 7,
+  "condition_count": 7,
+  "all_down_is_command_not_forced_contact": true,
+  "mujoco_version": "3.3.7",
+  "maximum_warning_count": 0,
+  "comparison_runtime_caveat": "The earlier IID sweep did not record its MuJoCo version; the overlay is descriptive, not a matched-runtime causal effect estimate."
+}

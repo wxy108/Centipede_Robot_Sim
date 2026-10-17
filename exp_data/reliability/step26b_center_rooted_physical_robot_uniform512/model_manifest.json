@@ -1,0 +1,65 @@
+[
+  {
+    "n_segments": 4,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_4seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_4seg_center_rooted_physical_robot.xml",
+    "sha256": "51e4a4226a7f401fc5987851ef9cc5a67b070f7e70fb060a5da91eb5f99c2960",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  },
+  {
+    "n_segments": 5,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_5seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_5seg_center_rooted_physical_robot.xml",
+    "sha256": "ba136ad1cc8ccb189cae3f5f7c70b537363c4d5c64150feb285ed8e456b1ad8f",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  },
+  {
+    "n_segments": 6,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_6seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_6seg_center_rooted_physical_robot.xml",
+    "sha256": "619ba013b848e40ddd39559b5f7e0e2f7e99b09d717bd37e548c8aee3da380d4",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  },
+  {
+    "n_segments": 7,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_7seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_7seg_center_rooted_physical_robot.xml",
+    "sha256": "039d2a4427025fde4b26ec8d9b02fb4ce65b26c1d226a8b4bbdbc15722e60feb",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  },
+  {
+    "n_segments": 8,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_8seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_8seg_center_rooted_physical_robot.xml",
+    "sha256": "5366c182929664528af40d9d445db455c23b8ac29b5ec8263fe0aaf81f5bbfdb",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  },
+  {
+    "n_segments": 9,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_9seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_9seg_center_rooted_physical_robot.xml",
+    "sha256": "dcbc03ec9a8549e8a5291cc26f322c8ed0a8c5f50c41888f81855126340f68e1",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  },
+  {
+    "n_segments": 10,
+    "source_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+    "experiment_model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+    "sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93",
+    "root_representation": "center_rooted",
+    "fore_aft_geometry_symmetrized": false,
+    "source_stl_and_inertials_preserved": true
+  }
+]

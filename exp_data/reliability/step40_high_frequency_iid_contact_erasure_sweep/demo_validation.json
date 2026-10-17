@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "expected_demo_count": 14,
+  "demo_count": 14,
+  "selection": "closest passing trial to the condition median, N=5 and N=10 per phase",
+  "red_semantics": "physical-leg collision channel erased in the current T_g/50 window",
+  "green_semantics": "channel enabled and the leg has realized contact",
+  "gray_semantics": "channel enabled without realized contact"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "n_segments": 4,
+    "seed": 335,
+    "selection": "nearest completed trial to within-N median displacement",
+    "duration_s": 6.0,
+    "fps": 30,
+    "frame_count": 181,
+    "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demos\\N4_center_rooted_physical_iid_seed335.mp4",
+    "preview": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demos\\N4_center_rooted_physical_iid_seed335_preview.png"
+  },
+  {
+    "n_segments": 7,
+    "seed": 176,
+    "selection": "nearest completed trial to within-N median displacement",
+    "duration_s": 6.0,
+    "fps": 30,
+    "frame_count": 181,
+    "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demos\\N7_center_rooted_physical_iid_seed176.mp4",
+    "preview": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demos\\N7_center_rooted_physical_iid_seed176_preview.png"
+  },
+  {
+    "n_segments": 10,
+    "seed": 195,
+    "selection": "nearest completed trial to within-N median displacement",
+    "duration_s": 6.0,
+    "fps": 30,
+    "frame_count": 181,
+    "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demos\\N10_center_rooted_physical_iid_seed195.mp4",
+    "preview": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demos\\N10_center_rooted_physical_iid_seed195_preview.png"
+  }
+]

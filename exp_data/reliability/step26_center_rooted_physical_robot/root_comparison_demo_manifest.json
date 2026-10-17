@@ -1,0 +1,38 @@
+[
+  {
+    "n_segments": 4,
+    "seed": 2,
+    "duration_s": 6.0,
+    "fps": 30,
+    "frame_count": 181,
+    "head_final_displacement_m": 0.018982631664136995,
+    "center_final_displacement_m": 0.013955245289872232,
+    "tail_final_displacement_m": 0.011769165677504523,
+    "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\demos\\root_comparison\\N4_head_center_tail_same_iid_seed002.mp4",
+    "preview": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\demos\\root_comparison\\N4_head_center_tail_same_iid_seed002_preview.png"
+  },
+  {
+    "n_segments": 7,
+    "seed": 3,
+    "duration_s": 6.0,
+    "fps": 30,
+    "frame_count": 181,
+    "head_final_displacement_m": 0.03562932320609019,
+    "center_final_displacement_m": 0.031211841516027142,
+    "tail_final_displacement_m": 0.025122442871734707,
+    "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\demos\\root_comparison\\N7_head_center_tail_same_iid_seed003.mp4",
+    "preview": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\demos\\root_comparison\\N7_head_center_tail_same_iid_seed003_preview.png"
+  },
+  {
+    "n_segments": 10,
+    "seed": 15,
+    "duration_s": 6.0,
+    "fps": 30,
+    "frame_count": 181,
+    "head_final_displacement_m": 0.0035533251053608828,
+    "center_final_displacement_m": -0.004426946623488487,
+    "tail_final_displacement_m": -0.012916071137538121,
+    "video": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\demos\\root_comparison\\N10_head_center_tail_same_iid_seed015.mp4",
+    "preview": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\demos\\root_comparison\\N10_head_center_tail_same_iid_seed015_preview.png"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "model": "center-rooted physical measured-STL robot",
+  "segments": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "reference_wave_labels": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "locked_phase_formula": "Delta_phi=-2*pi*N_wave_ref10/9",
+  "trials_per_condition": 512,
+  "q": 0.5,
+  "master_seed": 4020260904,
+  "rng_key": "[master_seed, N, wave_token, trial_index, rng_tag]",
+  "windows_per_cycle": 50,
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "leg_pitch": "always commanded down at 5 deg",
+  "leg_yaw": "fixed",
+  "erasure_object": "each physical leg collision geom independently",
+  "body_yaw_half_amplitude_deg": 19.0,
+  "body_yaw_pd": "moderate",
+  "control_discretization": "body-yaw target zero-order held within each T_g/50 channel window",
+  "primary_performance": "direct signed COM forward displacement in meters"
+}

@@ -1,38 +1,19 @@
-# Centipede Robot Simulation
+# Centipede Robot — reliability experiments
 
-MuJoCo simulation of the CAD-derived centipede robot, including generated segment variants, flat-ground locomotion tests and rough-terrain benchmarks.
+Current local canonical workspace synchronized on 2026-10-17. This supersedes the old April simulation tree; the old layout and full history remain available through Git and the pre-sync tag.
 
-This is the maintained repository for the former [`Centipede_robot`](https://github.com/wxy108/Centipede_robot) project. All 45 files at that repository's source head (`163be1f3ffb78b153aac1415a629d570c6120af1`) were already present here byte-for-byte before consolidation. Its full history is an ancestor of this repository and is also preserved on [`legacy/centipede-robot/main`](https://github.com/wxy108/Centipede_Robot_Sim/tree/legacy/centipede-robot/main).
+## Start here
 
-## Contents
+- [Current code and entry points](centipede_sim/reliability/README.md).
+- [Evidence index](exp_data/reliability/README.md).
+- [Step40 final report](exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/FINAL_REPORT.md) and [validation receipt](exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/validation.json).
+- [Step40 trial table](exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/iid_contact_erasure_trials.csv).
+- [Directional-bias diagnosis](exp_data/reliability/step27_directional_bias_diagnosis/REPORT.md).
 
-| Path | Purpose |
-| --- | --- |
-| `model/` | MuJoCo XML models, including 3/5/6/7/8/15-segment variants and the original four-module model |
-| `meshes/` | STL robot parts referenced by the models |
-| `scripts/` | Model/terrain generation, locomotion tests, parameter sweeps and plotting |
-| `terrain/` | Terrain heightfields and metadata |
-| `output/` | Existing sensor, summary and video examples; new output is ignored by Git |
-| `_archive/` | Original CAD/URDF/ROS exports and legacy examples |
+The main evidence is a center-rooted measured-STL physical robot and its controlled symmetric null. The current Step40 dataset has **42 conditions × 512 trials = 21,504 trials** at q=0.5, with all individual physical legs commanded down and IID erasure applied to collision channels. Its existing receipt reports all gates passed and zero erased-contact violations; the copied raw CSV row/condition counts were independently checked during synchronization.
 
-## Running the existing examples
+Step38/39 duty-factor studies, Step25b/26b matched null/physical baselines and current code are retained with their definitions. Step30 has a superseded pitch mapping; Step31 is explicitly invalid diagnostic evidence. Older Step1–24 material remains in the local frozen archive rather than being revived here. Strong historical displacement trends were partly affected by representation/root bias; the existing causal report must accompany interpretation.
 
-Use a Python environment with MuJoCo and NumPy installed. Terrain generation also uses Pillow; the terrain plotting script uses Matplotlib. Refer to each script's own arguments for additional options.
+The latest histogram plotting source contains the corrected shared-axis/bin logic. Large time-series tables, raw NPZ trajectories and videos remain local, while compact tables, contracts and receipts are preserved. See `LOCAL_SOURCE_MANIFEST.json` for source paths, hashes and omitted large files. This update did not rerun trials, rewrite raw observations or change source model/controller parameters.
 
-From the repository root:
-
-```bash
-# Open the five-segment model in the viewer
-python scripts/test_models.py --viewer 5
-
-# Run the existing headless model test without video recording
-python scripts/test_models.py --no-video --segments 5
-```
-
-The scripts write generated data under `output/`. Repository consolidation did not rerun these simulations or change their control logic, models or parameters. Two tracked Python bytecode cache files were removed; source files and recorded examples are preserved.
-
-## Related projects
-
-- [Centipede_MuJoCo](https://github.com/wxy108/Centipede_MuJoCo): biological centipede locomotion research and controllers.
-- [Centipede_isaac_rl](https://github.com/wxy108/Centipede_isaac_rl): Isaac Lab reinforcement learning and rendering reference.
-- [Terrain_model](https://github.com/wxy108/Terrain_model): standalone printable terrain generation.
+Run locations and dependencies are documented in the current code README. Completed sweeps must not be rerun just because an old runner is present. The original local workspace README is preserved under `provenance/LOCAL_WORKSPACE_README.md`.

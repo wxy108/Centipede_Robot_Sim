@@ -1,0 +1,13 @@
+visual_id,label,source_path
+1,Body-wave direction audit,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\_archive\frozen_2026-08-31\causal_diagnostics\step21_pitch_down_contact_direction_audit\demos\N7_phi_minus_vs_plus_pi_over_2_preview.png
+2,World-frame rotation audit,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\_archive\frozen_2026-08-31\causal_diagnostics\step21_pitch_down_contact_direction_audit\demos\N7_world_yaw_0_vs_180_preview.png
+3,Static versus body-wave control,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\_archive\frozen_2026-08-31\causal_diagnostics\step22_forward_motion_causal_audit\demos\N7_static_vs_body_wave_preview.png
+4,Point-foot geometry audit,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\_archive\frozen_2026-08-31\causal_diagnostics\step22_forward_motion_causal_audit\demos\N7_centered_vs_mirrored_point_feet_preview.png
+5,Exact-reflection ensemble null,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\_archive\frozen_2026-08-31\causal_diagnostics\step23_fore_aft_symmetric_null_iid\demos\N7_original_vs_null_ensemble_seed000_preview.png
+6,Primitive symmetric null,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\_archive\frozen_2026-08-31\causal_diagnostics\step24_physical_primitive_null\demos\N7_source_vs_physical_null_seed067_preview.png
+7,Center-rooted dynamic null,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\step25_center_rooted_dynamic_null\demos\N7_center_rooted_iid_seed103_preview.png
+8,Head / center / tail root audit,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\step26_center_rooted_physical_robot\demos\root_comparison\N7_head_center_tail_same_iid_seed003_preview.png
+9,Final physical center-root simulation,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\step26b_center_rooted_physical_robot_uniform512\demos\N7_center_rooted_physical_iid_seed176_preview.png
+10,Final null distribution (512/N),C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\step25b_center_rooted_dynamic_null_uniform512\figures\iid_displacement_histograms.png
+11,Final physical distribution (512/N),C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\step26b_center_rooted_physical_robot_uniform512\figures\iid_displacement_histograms.png
+12,Root-location displacement result,C:\Users\wxy22\Documents\Centipede_robot_MUJOCO\exp_data\reliability\step26_center_rooted_physical_robot\figures\root_location_mean_displacement_vs_N.png

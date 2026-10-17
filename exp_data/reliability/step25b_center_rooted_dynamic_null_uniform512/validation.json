@@ -1,0 +1,21 @@
+{
+  "all_trials_pass": true,
+  "ordinary_trial_count": 3584,
+  "ordinary_trials_by_N": {
+    "4": 512,
+    "5": 512,
+    "6": 512,
+    "7": 512,
+    "8": 512,
+    "9": 512,
+    "10": 512
+  },
+  "complement_pairs_per_N": 16,
+  "symmetric_initialization": true,
+  "center_rooted": true,
+  "explicit_mirror_contact_pairs": true,
+  "mean_complement_pair_bias_m": 0.0020751804133957107,
+  "max_abs_N_mean_complement_pair_bias_m": 0.01006265766641197,
+  "signed_mean_slope_m_per_segment": 9.979958124207901e-05,
+  "maximum_absolute_ensemble_mean_m": 0.002654585314718143
+}

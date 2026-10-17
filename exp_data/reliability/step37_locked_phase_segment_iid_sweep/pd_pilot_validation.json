@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "selection": "moderate",
+  "rule": "preselected moderate 2x Kp/force, sqrt(2)x Kv; require all pilot trials pass and mean tracking error improve over baseline",
+  "summary": [
+    {
+      "pd_name": "baseline",
+      "kp_scale": 1.0,
+      "kv_scale": 1.0,
+      "force_scale": 1.0,
+      "n_trials": 24,
+      "pass_fraction": 1.0,
+      "mean_rms_body_yaw_tracking_error_deg": 5.932373988666467,
+      "maximum_roll_deg": 22.737257987914163,
+      "maximum_pitch_deg": 18.281076013500197,
+      "tracking_error_reduction_vs_baseline_percent": 0.0
+    },
+    {
+      "pd_name": "moderate",
+      "kp_scale": 2.0,
+      "kv_scale": 1.4142135623730951,
+      "force_scale": 2.0,
+      "n_trials": 24,
+      "pass_fraction": 1.0,
+      "mean_rms_body_yaw_tracking_error_deg": 3.732331668712041,
+      "maximum_roll_deg": 23.63560796342944,
+      "maximum_pitch_deg": 16.825882495296757,
+      "tracking_error_reduction_vs_baseline_percent": 37.0853611750963
+    },
+    {
+      "pd_name": "strong",
+      "kp_scale": 3.0,
+      "kv_scale": 1.7320508075688772,
+      "force_scale": 3.0,
+      "n_trials": 24,
+      "pass_fraction": 1.0,
+      "mean_rms_body_yaw_tracking_error_deg": 3.2729423410925604,
+      "maximum_roll_deg": 23.970045387228044,
+      "maximum_pitch_deg": 16.8257064743684,
+      "tracking_error_reduction_vs_baseline_percent": 44.829130001827785
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "N_wave": 0.5,
+      "time_samples": 781,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "time_samples": 784,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "time_samples": 781,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "time_samples": 784,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "time_samples": 781,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "time_samples": 787,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "time_samples": 781,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "time_samples": 784,
+      "same_cave_same_state": true,
+      "left_right_complementary": true,
+      "pitch_matches_corrected_step32": true,
+      "yaw_targets_constant": true,
+      "body_matches_step33": true,
+      "exact_periodicity": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+stage_id,stage_key,stage_title,N,mean_mm,ci95_low_mm,ci95_high_mm,metric,source
+1,original_physical_endpoint,"Original physical, endpoint root",4,51.2815086982529,43.0052251862761,59.5577922102298,Signed mean,Step24 iid_physical_null_summary.csv: source
+1,original_physical_endpoint,"Original physical, endpoint root",5,54.8363325714134,47.5991169104808,62.0735482323461,Signed mean,Step24 iid_physical_null_summary.csv: source
+1,original_physical_endpoint,"Original physical, endpoint root",6,60.8488612293895,53.5395913205586,68.1581311382204,Signed mean,Step24 iid_physical_null_summary.csv: source
+1,original_physical_endpoint,"Original physical, endpoint root",7,74.4159250645776,67.1419658442029,81.6898842849523,Signed mean,Step24 iid_physical_null_summary.csv: source
+1,original_physical_endpoint,"Original physical, endpoint root",8,73.9026084263797,68.2330108731528,79.5722059796066,Signed mean,Step24 iid_physical_null_summary.csv: source
+1,original_physical_endpoint,"Original physical, endpoint root",9,80.8340472272037,74.6914040733092,86.9766903810981,Signed mean,Step24 iid_physical_null_summary.csv: source
+1,original_physical_endpoint,"Original physical, endpoint root",10,91.8134764708721,86.077845838373,97.5491071033712,Signed mean,Step24 iid_physical_null_summary.csv: source
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",4,59.2273655068575,51.2994157594064,67.1553152543086,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",5,58.9543563668194,51.6024927186408,66.3062200149979,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",6,63.0169598649802,55.4733270266944,70.560592703266,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",7,76.6309562646734,69.2462209827924,84.0156915465545,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",8,75.201375418555,69.771243055958,80.6315077811519,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",9,82.698499815835,76.383443938618,89.013555693052,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+2,chassis_centered_endpoint,"Chassis-centered, endpoint root",10,93.4933830194893,87.5270557969615,99.4597102420171,Signed mean,Step24 iid_physical_null_summary.csv: chassis_centered
+3,exact_reflected_physical,"Exact reflected physical model",4,-51.2815086982529,-59.5577922102298,-43.0052251862761,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+3,exact_reflected_physical,"Exact reflected physical model",5,-54.8363325714134,-62.0735482323461,-47.5991169104808,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+3,exact_reflected_physical,"Exact reflected physical model",6,-60.8488612293895,-68.1581311382204,-53.5395913205586,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+3,exact_reflected_physical,"Exact reflected physical model",7,-74.4159250645776,-81.6898842849523,-67.1419658442029,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+3,exact_reflected_physical,"Exact reflected physical model",8,-73.9026084263797,-79.5722059796066,-68.2330108731528,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+3,exact_reflected_physical,"Exact reflected physical model",9,-80.8340472272037,-86.9766903810981,-74.6914040733092,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+3,exact_reflected_physical,"Exact reflected physical model",10,-91.8134764708721,-97.5491071033712,-86.077845838373,Signed mean,Step23 exact mechanical reflection; CI width inherited from paired source
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",4,2.00794027128387,-10.1544216338827,14.1703021764504,Signed mean,Step23 iid_summary.csv: orientation randomized
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",5,-2.78597853355804,-14.7484788706925,9.17652180357642,Signed mean,Step23 iid_summary.csv: orientation randomized
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",6,11.400535059836,-1.30744319424776,24.1085133139199,Signed mean,Step23 iid_summary.csv: orientation randomized
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",7,3.20520493893827,-11.6308833367595,18.041293214636,Signed mean,Step23 iid_summary.csv: orientation randomized
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",8,-0.610626975760185,-14.6583980383481,13.4371440868277,Signed mean,Step23 iid_summary.csv: orientation randomized
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",9,7.86600605595277,-7.41504632876089,23.1470584406664,Signed mean,Step23 iid_summary.csv: orientation randomized
+4,orientation_randomized_reflection_null,"Orientation-randomized reflection null",10,-1.76270734441069,-18.7271518573362,15.2017371685148,Signed mean,Step23 iid_summary.csv: orientation randomized
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",4,12.6648985776457,6.15666374289145,19.1731334123999,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",5,17.3783364301441,11.6033966552102,23.1532762050779,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",6,12.8637657995685,7.09507926933721,18.6324523297998,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",7,24.8663802727764,19.0246058216845,30.7081547238683,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",8,20.8746673789698,15.2395656004173,26.5097691575223,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",9,20.6760281896272,14.8086175627544,26.5434388164999,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+5,primitive_symmetric_endpoint_null,"Primitive symmetric null, endpoint root",10,28.9156966614973,23.5464395603936,34.284953762601,Signed mean,Step24 iid_physical_null_summary.csv: full_primitive_null
+6,corrected_physical_head_root,"Corrected physical, head root",4,48.1481583002863,31.2877283620421,65.6601794138363,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+6,corrected_physical_head_root,"Corrected physical, head root",5,36.8799078483311,24.0633835358855,49.4710139156339,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+6,corrected_physical_head_root,"Corrected physical, head root",6,53.4472021059874,38.0767406470417,70.187446934889,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+6,corrected_physical_head_root,"Corrected physical, head root",7,50.6812483096211,38.0998151737385,63.0563302153927,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+6,corrected_physical_head_root,"Corrected physical, head root",8,58.8248901479931,48.1773961400881,68.6376985065603,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+6,corrected_physical_head_root,"Corrected physical, head root",9,53.6038451613961,41.2030283649948,66.5127368775809,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+6,corrected_physical_head_root,"Corrected physical, head root",10,63.1097205355111,51.5575143958672,75.509172189477,Signed mean,Step26 iid_root_summary.csv: head_endpoint
+7,corrected_physical_center_root,"Corrected physical, center root",4,34.6908994389006,17.9432560115404,51.9857461644398,Signed mean,Step26 iid_root_summary.csv: center_rooted
+7,corrected_physical_center_root,"Corrected physical, center root",5,22.8333411757471,9.95977206326982,35.1093093433993,Signed mean,Step26 iid_root_summary.csv: center_rooted
+7,corrected_physical_center_root,"Corrected physical, center root",6,37.7188761234383,22.6073113287602,54.0058661252479,Signed mean,Step26 iid_root_summary.csv: center_rooted
+7,corrected_physical_center_root,"Corrected physical, center root",7,31.12949282564,19.0388017245287,43.0718365000447,Signed mean,Step26 iid_root_summary.csv: center_rooted
+7,corrected_physical_center_root,"Corrected physical, center root",8,37.5409135298149,26.9780461715344,47.3514682840316,Signed mean,Step26 iid_root_summary.csv: center_rooted
+7,corrected_physical_center_root,"Corrected physical, center root",9,29.1521788038088,16.7859848354286,42.3491777344435,Signed mean,Step26 iid_root_summary.csv: center_rooted
+7,corrected_physical_center_root,"Corrected physical, center root",10,36.2036820184911,24.8211381926046,47.8301268198848,Signed mean,Step26 iid_root_summary.csv: center_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",4,19.9438488670182,2.95016563650559,37.4299837967483,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",5,7.30832784594076,-5.60658271402515,20.6349235163413,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",6,19.2728850851124,4.13212380936666,35.7087037365965,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",7,10.5716142784805,-1.0052515586363,22.8324482478699,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",8,15.0248264042997,4.23564932847196,25.0379079034895,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",9,4.29777512062449,-7.9095098138091,16.8128566600868,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+8,corrected_physical_tail_root,"Corrected physical, tail root",10,8.76437800555653,-3.16838427278144,21.4890854613805,Signed mean,Step26 iid_root_summary.csv: tail_rooted
+9,endpoint_average_debiased,"Endpoint-average debiased physical",4,34.0460035836523,16.9287646188368,50.8993847990737,Signed mean,Step26 root_paired_summary.csv: endpoint average
+9,endpoint_average_debiased,"Endpoint-average debiased physical",5,22.0941178471359,9.17744510672241,34.7834925343107,Signed mean,Step26 root_paired_summary.csv: endpoint average
+9,endpoint_average_debiased,"Endpoint-average debiased physical",6,36.3600435955499,21.4494519482057,52.678971112948,Signed mean,Step26 root_paired_summary.csv: endpoint average
+9,endpoint_average_debiased,"Endpoint-average debiased physical",7,30.6264312940508,18.810028599541,42.6775998807191,Signed mean,Step26 root_paired_summary.csv: endpoint average
+9,endpoint_average_debiased,"Endpoint-average debiased physical",8,36.9248582761464,26.2262199226184,46.4596935242982,Signed mean,Step26 root_paired_summary.csv: endpoint average
+9,endpoint_average_debiased,"Endpoint-average debiased physical",9,28.9508101410103,16.9453069213919,41.7691633010747,Signed mean,Step26 root_paired_summary.csv: endpoint average
+9,endpoint_average_debiased,"Endpoint-average debiased physical",10,35.9370492705338,24.2813600331943,48.2706072991353,Signed mean,Step26 root_paired_summary.csv: endpoint average
+10,root_bias_amplitude,"Root-bias amplitude",4,14.102154716634,13.2894326617316,14.9569299630387,Bias amplitude,Step26 root_paired_summary.csv: root bias
+10,root_bias_amplitude,"Root-bias amplitude",5,14.7857900011952,13.9179304082689,15.6744076160643,Bias amplitude,Step26 root_paired_summary.csv: root bias
+10,root_bias_amplitude,"Root-bias amplitude",6,17.0871585104375,16.3721325348154,17.8245077207676,Bias amplitude,Step26 root_paired_summary.csv: root bias
+10,root_bias_amplitude,"Root-bias amplitude",7,20.0548170155703,19.3956925405541,20.7087231261356,Bias amplitude,Step26 root_paired_summary.csv: root bias
+10,root_bias_amplitude,"Root-bias amplitude",8,21.9000318718467,21.1270874410386,22.6701865116779,Bias amplitude,Step26 root_paired_summary.csv: root bias
+10,root_bias_amplitude,"Root-bias amplitude",9,24.6530350203858,24.0653172568964,25.2845416983315,Bias amplitude,Step26 root_paired_summary.csv: root bias
+10,root_bias_amplitude,"Root-bias amplitude",10,27.1726712649773,26.5319943081821,27.8290124538226,Bias amplitude,Step26 root_paired_summary.csv: root bias
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",4,1.14179171870606,-1.95869060843544,4.33367059389696,Signed mean,Step25b iid_summary.csv: 512 trials per N
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",5,1.9646282351864,-0.934022358674901,4.86478891414227,Signed mean,Step25b iid_summary.csv: 512 trials per N
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",6,-2.65458531471814,-5.8060021097857,0.459731479365379,Signed mean,Step25b iid_summary.csv: 512 trials per N
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",7,2.44713483385677,-0.526929284056482,5.50310646080401,Signed mean,Step25b iid_summary.csv: 512 trials per N
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",8,0.760040351907405,-2.23073832285663,3.72271615642801,Signed mean,Step25b iid_summary.csv: 512 trials per N
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",9,0.433629620356383,-2.53181950769981,3.34385665493071,Signed mean,Step25b iid_summary.csv: 512 trials per N
+11,final_symmetric_null_uniform512,"Final symmetric null, center root (512)",10,1.95571166464362,-1.00902234794562,4.71303793563474,Signed mean,Step25b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",4,30.6401860878032,26.6246156982215,34.5093760643139,Signed mean,Step26b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",5,23.1281802287884,19.1891259937443,27.0651620526919,Signed mean,Step26b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",6,26.47964300145,22.8806813854079,30.1204544747612,Signed mean,Step26b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",7,26.6257476296042,23.1363436772388,30.2919424330637,Signed mean,Step26b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",8,33.0258568589606,29.7223216706542,36.2011830759701,Signed mean,Step26b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",9,31.2889242292334,28.3339773262104,34.4794716545455,Signed mean,Step26b iid_summary.csv: 512 trials per N
+12,final_physical_center_root_uniform512,"Final physical robot, center root (512)",10,32.3073516161734,29.3393681763792,35.3059058546655,Signed mean,Step26b iid_summary.csv: 512 trials per N
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",4,29.4983943690971,25.8327152153678,33.1778480545315,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",5,21.163551993602,17.8060532398668,24.7704600135047,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",6,29.1342283161681,25.7743283447056,32.6130724488705,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",7,24.1786127957474,20.9420811411782,27.4336931663352,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",8,32.2658165070532,29.0002304373028,35.4967798547734,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",9,30.855294608877,27.8785106536776,34.0062804521259,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed
+13,final_physical_minus_null_uniform512,"Final physical minus symmetric null (512)",10,30.3516399515298,27.3731320888353,33.2755962795199,Signed difference,Step26b robot_null_comparison.csv: matched by N and seed

@@ -1,0 +1,30 @@
+{
+  "model_family": "measured_stl_physical_robot",
+  "model_variant": "center_rooted_physical_robot",
+  "model_path": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+  "n_segments": 10,
+  "N_wave": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "phase_offset_deg": 0.0,
+  "warmup_cycles": 4,
+  "audit_duration_cycles": 2.0,
+  "demo_duration_cycles": 4.0,
+  "fps": 30,
+  "controller_source": "run_center_rooted_dynamic_null_wave_flip.py; exact Step-30 coupling",
+  "body_wave_half_amplitude_rad": 0.4,
+  "leg_yaw_body_phase_offset_rad": 1.5707963267948966,
+  "leg_pitch_body_phase_offset_rad": 4.71238898038469,
+  "left_right_pitch_phase_offset_rad": 3.141592653589793,
+  "pitch_targets_deg": {
+    "up": -40.0,
+    "down": 5.0
+  }
+}

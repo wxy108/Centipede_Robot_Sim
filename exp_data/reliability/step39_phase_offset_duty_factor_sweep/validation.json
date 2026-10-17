@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "conditions_expected": 63,
+  "conditions_completed": 63,
+  "conditions_marked_PASS": 63,
+  "videos_expected": 21,
+  "videos_present": 21,
+  "maximum_warning_count": 0,
+  "checks": {
+    "completed_full_parameter_grid": true,
+    "all_conditions_passed_numerical_media_gates": true,
+    "controller_audit_passed": true,
+    "source_xml_unchanged": true,
+    "expected_video_count_present": true,
+    "all_rendered_videos_readable": true,
+    "all_metrics_and_videos_from_same_rollout": true,
+    "commands_not_forced_contacts": true
+  },
+  "media_headers_repaired_and_frame_checked": true,
+  "media_headers_repaired_count": 21
+}

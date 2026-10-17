@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "trial_count": 1024,
+  "expected_trial_count": 1024,
+  "all_trials_pass": true,
+  "maximum_mujoco_warning_count": 0,
+  "seed_audit": {
+    "0.5": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "1.0": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "1.5": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "2.0": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "2.5": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "3.0": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "3.5": {
+      "count": 128,
+      "unique_seed_count": 128
+    },
+    "4.0": {
+      "count": 128,
+      "unique_seed_count": 128
+    }
+  },
+  "strict_independent_rng_across_wave": true,
+  "demo_count": 8,
+  "expected_demo_count": 8
+}

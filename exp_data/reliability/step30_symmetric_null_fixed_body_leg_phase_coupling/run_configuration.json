@@ -1,0 +1,57 @@
+{
+  "n_segments": 10,
+  "N_wave": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "N_wave_definition": "absolute full spatial waves over the head-to-tail segment span",
+  "spatial_phase_increment_formula": "phi_body=-2*pi*N_wave/(N_segments-1)",
+  "definition_source": "Centipede_IsaacLab_RL/controllers/impedance_controller_torch.py and configs/farms_controller.yaml",
+  "phase_offsets_deg": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "modes": [
+    "canonical_coupled_contact",
+    "lr_pitch_phase_flipped"
+  ],
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "sample_hz": 100.0,
+  "body_wave_half_amplitude_rad": 0.4,
+  "body_wave_half_amplitude_deg": 22.918311805232932,
+  "leg_yaw_body_phase_offset_rad": 1.5707963267948966,
+  "leg_yaw_body_phase_offset_deg": 90.0,
+  "leg_pitch_body_phase_offset_rad": 4.71238898038469,
+  "leg_pitch_body_phase_offset_deg": 270.0,
+  "left_right_pitch_phase_offset_rad": 3.141592653589793,
+  "pitch_step_rule": "continuous precursor sin(theta+3*pi/2); up when >0, down when <=0",
+  "flip_intervention": "exchange LEG_R and LEG_L pitch commands only",
+  "model_path": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_10seg_center_rooted_dynamic_null.xml",
+  "control_contract": {
+    "passed": true,
+    "flip_samples_checked": 584,
+    "coupling_samples_checked": 5840,
+    "body_yaw_unchanged": true,
+    "leg_yaw_unchanged": true,
+    "pitch_is_exact_lr_exchange": true,
+    "absolute_wave_number_definition_verified": true,
+    "body_wave_amplitude_0p4_rad_verified": true,
+    "fixed_leg_yaw_phase_pi_over_2_verified": true,
+    "pitch_precursor_phase_3pi_over_2_verified": true,
+    "pitch_zero_crossing_step_verified": true,
+    "left_right_pitch_antiphase_verified": true
+  }
+}

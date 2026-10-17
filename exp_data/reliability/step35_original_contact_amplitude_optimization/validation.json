@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "model_unchanged": true,
+    "coarse_grid_complete": true,
+    "unique_trial_keys": true,
+    "phase_checks_complete": true,
+    "long_checks_complete": true,
+    "all_selected_feasible": true,
+    "refinement_grid_complete": true
+  },
+  "all_trials_feasible": true,
+  "trial_count": 232
+}

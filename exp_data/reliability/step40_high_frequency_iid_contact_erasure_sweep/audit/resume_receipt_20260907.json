@@ -1,0 +1,92 @@
+[
+  {
+    "condition": "Nwave10_3p5_Nseg08",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N08\\trials_Nwave10_3p5_Nseg08.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N08\\trials_Nwave10_3p5_Nseg08.csv",
+    "saved_rows_at_resume": 488,
+    "checkpoint_sha256": "88A08EF0B6E59D74867261193E1CA28F0F562E24D9C5849C16A1061751470219",
+    "pid": 22196,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_2p0_Nseg09",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N09\\trials_Nwave10_2p0_Nseg09.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N09\\trials_Nwave10_2p0_Nseg09.csv",
+    "saved_rows_at_resume": 496,
+    "checkpoint_sha256": "4E200D47A62EAA4C26981832C0248EEBAF186B979E33BE1DB152A4EC80A8F798",
+    "pid": 27424,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_2p5_Nseg09",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N09\\trials_Nwave10_2p5_Nseg09.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N09\\trials_Nwave10_2p5_Nseg09.csv",
+    "saved_rows_at_resume": 472,
+    "checkpoint_sha256": "FFFA00895645A60B9FFAB1DF38E4818A0244FA18B633AFCAD6F87E06B5BFA52A",
+    "pid": 23532,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_3p0_Nseg09",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N09\\trials_Nwave10_3p0_Nseg09.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N09\\trials_Nwave10_3p0_Nseg09.csv",
+    "saved_rows_at_resume": 432,
+    "checkpoint_sha256": "9E3465957F97AA4312D3888852617D5F6F776DC84F74D5F26C68C6FFDA914855",
+    "pid": 16188,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_3p5_Nseg09",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N09\\trials_Nwave10_3p5_Nseg09.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N09\\trials_Nwave10_3p5_Nseg09.csv",
+    "saved_rows_at_resume": 336,
+    "checkpoint_sha256": "F41D46764590505574E20D971C4B517E0E17FDD72B97FF6EA0914E34298A1FCB",
+    "pid": 32328,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_3p0_Nseg10",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N10\\trials_Nwave10_3p0_Nseg10.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N10\\trials_Nwave10_3p0_Nseg10.csv",
+    "saved_rows_at_resume": 496,
+    "checkpoint_sha256": "8E357F3182BE4087932B2DE513365A193F6B32094C15EF3FAEA07D5D8FCCD8B5",
+    "pid": 24928,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_3p5_Nseg10",
+    "source": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\parts\\N10\\trials_Nwave10_3p5_Nseg10.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N10\\trials_Nwave10_3p5_Nseg10.csv",
+    "saved_rows_at_resume": 376,
+    "checkpoint_sha256": "64F645BAC5CA265C1BBF4EF8B5F0240B5AB45A82AC0AB836AFD8611CEBE52E1A",
+    "pid": 34260,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_4p0_Nseg08",
+    "source": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N08\\trials_Nwave10_4p0_Nseg08.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N08\\trials_Nwave10_4p0_Nseg08.csv",
+    "saved_rows_at_resume": 368,
+    "checkpoint_sha256": "829852CE23A58AEF1D7B5C2177433AC098FB113171917142E5530E28C03FF75F",
+    "pid": 33656,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_4p0_Nseg09",
+    "source": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N09\\trials_Nwave10_4p0_Nseg09.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N09\\trials_Nwave10_4p0_Nseg09.csv",
+    "saved_rows_at_resume": 264,
+    "checkpoint_sha256": "68934CEF31415CEA4DE6F7076AD5A8C6CE9027E00D6C6F4ECBC6992CA647C43B",
+    "pid": 18120,
+    "launched_at": "2026-09-07 19:14:16"
+  },
+  {
+    "condition": "Nwave10_4p0_Nseg10",
+    "source": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N10\\trials_Nwave10_4p0_Nseg10.csv",
+    "destination": "C:\\Users\\wxy22\\Documents\\Codex\\2026-08-05\\niq\\work\\step40_staging_output\\parts\\N10\\trials_Nwave10_4p0_Nseg10.csv",
+    "saved_rows_at_resume": 296,
+    "checkpoint_sha256": "383BE53199F20B4F016DB122615DCEA5FE0D050CB205CB2B6BBDD99FA9D7532D",
+    "pid": 5220,
+    "launched_at": "2026-09-07 19:14:16"
+  }
+]
