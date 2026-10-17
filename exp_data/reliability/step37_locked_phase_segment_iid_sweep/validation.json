@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "trial_count": 5376,
+  "expected_trial_count": 5376,
+  "unique_condition_trial_keys": 5376,
+  "all_trials_pass": true,
+  "maximum_warning_count": 0,
+  "semantic_validation_passed": true
+}

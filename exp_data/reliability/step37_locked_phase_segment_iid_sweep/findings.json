@@ -1,0 +1,79 @@
+{
+  "largest_observed_IQR_slope": {
+    "N_wave_ref10": 3.0,
+    "locked_spatial_phase_offset_rad": -2.0943951023931953,
+    "locked_spatial_phase_offset_deg": -119.99999999999999,
+    "iqr_slope_m_per_segment": -0.0029009431021758047,
+    "iqr_slope_bootstrap_ci95_low": -0.008817499907645002,
+    "iqr_slope_bootstrap_ci95_high": 0.0035849138384223267,
+    "sd_slope_m_per_segment": -0.0032868031614982553,
+    "sd_slope_bootstrap_ci95_low": -0.006060194955517888,
+    "sd_slope_bootstrap_ci95_high": -0.0004144946861967469,
+    "predeclared_IQR_trend_class": "no_resolved_monotone_IQR_trend"
+  },
+  "most_negative_observed_IQR_slope": {
+    "N_wave_ref10": 1.0,
+    "locked_spatial_phase_offset_rad": -0.6981317007977318,
+    "locked_spatial_phase_offset_deg": -40.0,
+    "iqr_slope_m_per_segment": -0.03587111858137899,
+    "iqr_slope_bootstrap_ci95_low": -0.05148577685122088,
+    "iqr_slope_bootstrap_ci95_high": -0.017817391367252345,
+    "sd_slope_m_per_segment": -0.021430099300754013,
+    "sd_slope_bootstrap_ci95_low": -0.028070115160876586,
+    "sd_slope_bootstrap_ci95_high": -0.014352756041758038,
+    "predeclared_IQR_trend_class": "dispersed_to_concentrated"
+  },
+  "all_observed_IQR_slopes_are_nonpositive": true,
+  "resolved_positive_trends": [],
+  "resolved_negative_trends": [
+    {
+      "N_wave_ref10": 1.0,
+      "locked_spatial_phase_offset_rad": -0.6981317007977318,
+      "locked_spatial_phase_offset_deg": -40.0,
+      "iqr_slope_m_per_segment": -0.03587111858137899,
+      "iqr_slope_bootstrap_ci95_low": -0.05148577685122088,
+      "iqr_slope_bootstrap_ci95_high": -0.017817391367252345,
+      "sd_slope_m_per_segment": -0.021430099300754013,
+      "sd_slope_bootstrap_ci95_low": -0.028070115160876586,
+      "sd_slope_bootstrap_ci95_high": -0.014352756041758038,
+      "predeclared_IQR_trend_class": "dispersed_to_concentrated"
+    },
+    {
+      "N_wave_ref10": 2.5,
+      "locked_spatial_phase_offset_rad": -1.7453292519943295,
+      "locked_spatial_phase_offset_deg": -100.0,
+      "iqr_slope_m_per_segment": -0.009199074179514953,
+      "iqr_slope_bootstrap_ci95_low": -0.01733100174753781,
+      "iqr_slope_bootstrap_ci95_high": -0.001317101908641925,
+      "sd_slope_m_per_segment": -0.007062884308899589,
+      "sd_slope_bootstrap_ci95_low": -0.01054549984130185,
+      "sd_slope_bootstrap_ci95_high": -0.0035043960688472707,
+      "predeclared_IQR_trend_class": "dispersed_to_concentrated"
+    },
+    {
+      "N_wave_ref10": 3.5,
+      "locked_spatial_phase_offset_rad": -2.443460952792061,
+      "locked_spatial_phase_offset_deg": -140.0,
+      "iqr_slope_m_per_segment": -0.012506856042006279,
+      "iqr_slope_bootstrap_ci95_low": -0.019454180143917095,
+      "iqr_slope_bootstrap_ci95_high": -0.005420613859068807,
+      "sd_slope_m_per_segment": -0.006739976534484138,
+      "sd_slope_bootstrap_ci95_low": -0.009343924918646147,
+      "sd_slope_bootstrap_ci95_high": -0.0040912350227070545,
+      "predeclared_IQR_trend_class": "dispersed_to_concentrated"
+    },
+    {
+      "N_wave_ref10": 4.0,
+      "locked_spatial_phase_offset_rad": -2.792526803190927,
+      "locked_spatial_phase_offset_deg": -160.0,
+      "iqr_slope_m_per_segment": -0.011258685456936618,
+      "iqr_slope_bootstrap_ci95_low": -0.01677472733258078,
+      "iqr_slope_bootstrap_ci95_high": -0.005347024375926092,
+      "sd_slope_m_per_segment": -0.00689217317939421,
+      "sd_slope_bootstrap_ci95_low": -0.009429914161469852,
+      "sd_slope_bootstrap_ci95_high": -0.004282088393465044,
+      "predeclared_IQR_trend_class": "dispersed_to_concentrated"
+    }
+  ],
+  "interpretation_limit": "descriptive phase-specific physical-model evidence; not an information-theoretic scaling law by itself"
+}

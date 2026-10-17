@@ -1,0 +1,42 @@
+{
+  "n_segments": 10,
+  "N_wave": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "amplitude_range_deg": [
+    0,
+    40
+  ],
+  "coarse_step_deg": 2.5,
+  "refinement_step_deg": 0.5,
+  "body_omega_rad_s": 4.0,
+  "original_contact": true,
+  "iid": false,
+  "leg_yaw_targets_deg": {
+    "R": -5,
+    "L": 5
+  },
+  "pitch_targets_deg": {
+    "down": 5,
+    "up": -40
+  },
+  "primary_evaluation_cycles": 12,
+  "primary_duration_s": 18.85,
+  "warmup_cycles": 4,
+  "dt_s": 0.001,
+  "model_sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93",
+  "mujoco_version": "3.9.0",
+  "self_collision_enabled": false,
+  "objective": "signed whole-robot COM displacement along world +y",
+  "workers": 8,
+  "controller_source_sha256": "6c8589b65db9e2b7c9c48d7d9d94643a85a64219884e212268fbdf055a1433bf",
+  "control_builder_sha256": "cbce8cc39eb855c21eeb1eac03d5dac3ff8aa93adba90d0877202ca3ca663469",
+  "measurement_function_sha256": "ccd9415fabc72b13b1012093e3be54c1c8b7de913db4452c655eb8bba971ea4c"
+}

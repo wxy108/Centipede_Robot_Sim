@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "model_unchanged": true,
+    "all_48_coarse_candidates_present": true,
+    "unique_condition_keys": true,
+    "all_trials_feasible": true,
+    "all_available_step35_replays_match": true,
+    "all_selected_pass_separate_wobble_limits": true,
+    "selected_boundaries_refined": true
+  },
+  "trial_count": 80
+}

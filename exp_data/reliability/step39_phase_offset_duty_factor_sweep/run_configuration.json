@@ -1,0 +1,69 @@
+{
+  "experiment": "fixed N=10 adjacent-phase-offset x peak-centered commanded-duty sweep",
+  "n_segments": 10,
+  "N_wave_ref10": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "spatial_phase_increment_deg": [
+    -40.0,
+    -59.99999999999999,
+    -80.0,
+    -100.0,
+    -119.99999999999999,
+    -140.0,
+    -160.0
+  ],
+  "phase_formula": "Delta_phi=-2*pi*N_wave_ref10/9",
+  "duty_factors": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "render_duty_factors": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "render_policy": "representative duties per phase",
+  "window_rule": "unchanged per-side sine carriers; down iff u>=cos(pi*d); peak-centered half-open windows",
+  "duty_0p5_role": "canonical-contact regression point at every phase offset",
+  "leg_pitch_down_deg": 5.0,
+  "leg_pitch_up_deg": -40.0,
+  "leg_yaw_fixed": true,
+  "body_yaw_half_amplitude_deg": 19.0,
+  "body_yaw_PD": {
+    "kp_scale": 2.0,
+    "kv_scale": 1.4142135623730951,
+    "force_scale": 2.0
+  },
+  "omega_rad_s": 4.0,
+  "gait_period_s": 1.5707963267948966,
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "randomization": "none",
+  "contact_erasure": false,
+  "model_path": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+  "model_sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93",
+  "source_XML_not_modified": true,
+  "mujoco_version": "3.3.7",
+  "numpy_version": "2.5.2",
+  "imageio_version": "2.37.0",
+  "matplotlib_version": "3.10.6",
+  "python_version": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "runner_sha256": "c9e67d072c419fd33798cd57ddb57bf1b3d3a1acbdcc213af968f92d5c8fa435",
+  "contact_sample_Hz": 50.0,
+  "video_fps": 20,
+  "media_header_label": "N_wave_ref10; repaired and visually spot-checked"
+}

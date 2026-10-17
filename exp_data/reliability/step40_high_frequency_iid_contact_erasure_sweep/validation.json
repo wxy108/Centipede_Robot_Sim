@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "expected_trials": 21504,
+  "trial_count": 21504,
+  "unique_condition_trial_keys": 21504,
+  "unique_erasure_masks": 21504,
+  "condition_count": 42,
+  "trials_per_condition": 512,
+  "all_trial_gates_pass": true,
+  "all_clean_reference_gates_pass": true,
+  "maximum_erased_contact_violation_count": 0,
+  "mean_empirical_q": 0.4999699056081851,
+  "mean_cross_leg_correlation": 4.386490384805767e-06,
+  "mean_lag1_temporal_correlation": -0.00024747303579525674
+}

@@ -1,0 +1,11 @@
+{
+  "all_trials_pass": true,
+  "trial_count": 672,
+  "trials_per_root_per_N": 32,
+  "matched_seed_design": true,
+  "source_stl_and_inertials_preserved": true,
+  "geometric_fore_aft_symmetry_imposed": false,
+  "maximum_warning_count": 0,
+  "maximum_mean_root_spread_m": 0.05434534252995461,
+  "maximum_absolute_center_residual_mean_m": 0.0013588325278884588
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "demo_count": 8,
+  "all_180_frames": true,
+  "all_replay_errors_below_1e_6_m": true
+}

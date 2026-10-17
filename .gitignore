@@ -1,10 +1,19 @@
-# Python
+# Generated/local-only files
+.git/
+.venv/
 __pycache__/
 *.pyc
-*.pyo
-
-# Simulation outputs (videos, CSVs, sensor .npz)
+.vs/
+.vscode/
+.idea/
+.env*
+outputs/
 output/
-
-# MuJoCo scratch files
-_terrain_tmp.xml
+runs/
+logs/
+videos/
+demos/
+cache/
+warp_cache/
+*.log
+*.tmp

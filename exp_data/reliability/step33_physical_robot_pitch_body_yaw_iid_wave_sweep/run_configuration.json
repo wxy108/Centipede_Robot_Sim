@@ -1,0 +1,29 @@
+{
+  "experiment": "physical robot: body yaw + IID leg pitch; leg yaw locked",
+  "model_path": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+  "model_variant": "center_rooted_physical_robot",
+  "n_segments": 10,
+  "N_wave": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "spatial_phase_increment": "-2*pi*N_wave/(N_segments-1)",
+  "body_yaw_half_amplitude_deg": 15.0,
+  "body_omega_rad_s": 4.0,
+  "leg_yaw_locked": true,
+  "pitch_process": "IID Bernoulli(0.5) per physical leg per half-gait-cycle window",
+  "random_independence": "wave number, trial, window, segment, side",
+  "trials_per_N_wave": 128,
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "evaluation_time_s": 18.84955592153876,
+  "decision_window_s": 0.7853981633974483,
+  "sample_hz": 20.0,
+  "initialization": "straight all-down, body-wave-off settle; cosine bridge; IID warmup"
+}

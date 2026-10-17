@@ -1,0 +1,38 @@
+{
+  "model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+  "model_sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93",
+  "matches_step33_model": true,
+  "n_segments": 10,
+  "N_wave": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "body_yaw_half_amplitude_deg": 15.0,
+  "body_omega_rad_s": 4.0,
+  "leg_yaw_targets_deg": {
+    "R": -5,
+    "L": 5
+  },
+  "leg_pitch_targets_deg": {
+    "down": 5.0,
+    "up": -40.0
+  },
+  "Delta_phi": "-2*pi*N_wave/(N_segments-1)",
+  "segment_phase": "omega*t+(i-0.5)*Delta_phi; i=0,...,N-1",
+  "pitch_rule": "even floor((segment_phase+1e-12)/pi): R down, L up; odd: exchange",
+  "randomization": "none",
+  "contact_erasure": false,
+  "settle_s": 1.5,
+  "bridge_s": 0.4,
+  "warmup_cycles": 4,
+  "demo_duration_s": 6.0,
+  "fps": 30,
+  "dt_s": 0.001,
+  "mujoco_version": "3.9.0"
+}

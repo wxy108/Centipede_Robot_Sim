@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "N_wave": 0.5,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 0.5,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 0.5,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 0.5,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "amplitude_deg": 0,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "amplitude_deg": 15,
+      "phase_deg": 0,
+      "max_control_error_rad": 0.0,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "amplitude_deg": 40,
+      "phase_deg": 0,
+      "max_control_error_rad": 2.220446049250313e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "amplitude_deg": 23.5,
+      "phase_deg": 90,
+      "max_control_error_rad": 1.1102230246251565e-16,
+      "within_control_limits": true,
+      "stance_flags_match_pitch_commands": true,
+      "passed": true
+    }
+  ]
+}

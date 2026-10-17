@@ -1,0 +1,10 @@
+stage,label,slope_m_per_added_segment,ci95_low_m_per_added_segment,ci95_high_m_per_added_segment,ci_contains_zero,interpretation
+source,"Original physical robot, endpoint root",0.006665895708086717,0.005358358959479626,0.007954810027262267,False,Historical endpoint-root progression
+chassis_centered,"Chassis-centered ablation, endpoint root",0.00580252696391076,0.004459761219501451,0.007128463874782641,False,Historical endpoint-root progression
+full_primitive_null,"Symmetric primitive null, endpoint root",0.0022628099767829455,0.0011870156350693548,0.003370812832095774,False,Historical endpoint-root progression
+center_rooted_dynamic_null,Center Rooted Dynamic Null,4.4040275001322467e-05,-0.001147604740500797,0.001232170676716671,True,Step25/26 stratified bootstrap
+physical_head_root,Physical Head Root,0.0029896517633503585,0.0003092768339970018,0.005660522212332293,False,Step25/26 stratified bootstrap
+physical_center_root,Physical Center Root,0.0006070735857596874,-0.002088332886029632,0.0032483641534860833,True,Step25/26 stratified bootstrap
+physical_tail_root,Physical Tail Root,-0.0015645563112796558,-0.004249285058849143,0.0011051803153863371,True,Step25/26 stratified bootstrap
+physical_endpoint_average,Physical Endpoint Average,0.0007125477260353512,-0.001937745179003312,0.0032838751701966605,True,Step25/26 stratified bootstrap
+physical_root_bias_amplitude,Physical Root Bias Amplitude,0.0022771040373150064,0.0021345890621346096,0.0024182059391932107,False,Step25/26 stratified bootstrap

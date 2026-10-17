@@ -1,0 +1,7 @@
+{
+  "all_trials_pass": true,
+  "trial_count": 63,
+  "maximum_warning_count": 0,
+  "maximum_absolute_wave_off_displacement_m": 2.210889706200092e-06,
+  "maximum_absolute_center_endpoint_residual_m": 0.007313606754761254
+}

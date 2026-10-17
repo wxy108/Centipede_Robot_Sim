@@ -1,0 +1,9 @@
+{
+  "all_structure_mass_checks_pass": true,
+  "all_structure_actuator_checks_pass": true,
+  "max_static_mirror_error_m": 5.551115123125783e-17,
+  "all_deterministic_trials_pass": true,
+  "maximum_absolute_wave_on_displacement_m": 0.0036431170921120857,
+  "maximum_absolute_wave_off_displacement_m": 4.904302214284867e-07,
+  "mean_wave_on_displacement_m": -0.0010235451532703244
+}

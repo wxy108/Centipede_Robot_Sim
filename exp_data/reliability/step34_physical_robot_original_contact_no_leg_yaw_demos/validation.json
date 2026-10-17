@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "demo_count": 8,
+  "expected_demo_count": 8,
+  "controller_checks_passed": true,
+  "model_unchanged_from_step33": true,
+  "no_randomization": true,
+  "leg_yaw_constant_targets": true
+}

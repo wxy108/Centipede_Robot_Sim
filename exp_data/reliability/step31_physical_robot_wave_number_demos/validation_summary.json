@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "gates": {
+    "all_physical_legs_have_correct_pitch_direction": true,
+    "all_dynamic_states_finite": true,
+    "left_right_commands_are_exactly_complementary": true,
+    "commanded_down_fraction_is_one_half": true,
+    "one_video_per_requested_wave_number": true,
+    "all_video_files_exist_and_are_nonempty": true
+  },
+  "warnings": [
+    {
+      "N_wave": 0.5,
+      "issue": "non-negligible contact while pitch-up is commanded",
+      "contact_given_up": 0.1510184595798854
+    }
+  ],
+  "pitch_transition_diagnostic": {
+    "interpretation": "The 45-deg binary target jump creates a transient tracking tail; this is not a pitch-sign failure.",
+    "mean_p95_abs_tracking_error_deg": 39.65050322281122,
+    "maximum_abs_tracking_error_deg": 49.756310783366025
+  }
+}

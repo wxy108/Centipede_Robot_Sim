@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "model": "C:\\Users\\wxy22\\Documents\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+  "model_sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93",
+  "actuator_order_matches_physical_joint_names": true,
+  "actuator_count": 58,
+  "integration_timestep_s": 0.001,
+  "scope": "XML actuator order and vectorized controls versus scalar controller; not a dynamics-convergence proof",
+  "leg_yaw_contract": "constant servo position targets, not removed degrees of freedom",
+  "rows": [
+    {
+      "N_wave": 0.5,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "seeds": [
+        0,
+        127
+      ],
+      "checked_time_indices_per_seed": 352,
+      "max_absolute_control_error_rad": 0.0,
+      "all_control_values_finite": true,
+      "passed": true
+    }
+  ]
+}

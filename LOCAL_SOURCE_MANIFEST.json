@@ -1,0 +1,2909 @@
+{
+  "captured_date": "2026-10-17",
+  "source_roots": {
+    "isaac": "X:\\Projects\\Centipede_IsaacLab_RL",
+    "robot": "X:\\Projects\\Centipede_robot_MUJOCO",
+    "mujoco": "X:\\Projects\\Centipede_MUJOCO-main",
+    "clean": "X:\\Projects\\Centipede_IsaacLab_RL_Clean",
+    "sim2sim": "C:\\Users\\wxy22\\Documents\\Centipede_Sim2Sim_2026-09-11",
+    "tracking": "X:\\Projects\\Centipede_Tracking",
+    "benchmark": "C:\\Users\\wxy22\\Documents\\Centipede_Tracking_Methods_20261017"
+  },
+  "files": [
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\MAINLINE_MANIFEST_2026-08-31.csv",
+      "path": "MAINLINE_MANIFEST_2026-08-31.csv",
+      "bytes": 87863,
+      "sha256": "2dbc14c601338d3dd5e417b27839ae8f57bd38f1b5c3f24547be4d0a4338d5b7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\README.md",
+      "path": "provenance/LOCAL_WORKSPACE_README.md",
+      "bytes": 5347,
+      "sha256": "bf25e721ee93d16282b4542b606559ea01d3bc95d219db8c480fcd8283e2101b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\.gitignore",
+      "path": "centipede_sim/.gitignore",
+      "bytes": 133,
+      "sha256": "7f4d92314e3a2c38196b7744fa3baa576fcd1d1fa92f1e15927dad13257de1c1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\Chasis1.STL",
+      "path": "centipede_sim/meshes/Chasis1.STL",
+      "bytes": 2492784,
+      "sha256": "17ca0ea8f8b8c1e53d49e014ad8bb0bda1e460e2fee15e9ded8f08b7a7d9a051"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\Chasis2.STL",
+      "path": "centipede_sim/meshes/Chasis2.STL",
+      "bytes": 2492784,
+      "sha256": "bdf1cdf4f9ca49a23af428e5a5dcb2a27c1417c2d7ac19e4b53d404cbb414d35"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\Leg1_L.STL",
+      "path": "centipede_sim/meshes/Leg1_L.STL",
+      "bytes": 205484,
+      "sha256": "75c776a2019e2c13a0f22807b3bff2546ebf02f8597439469fa878110dec4d8c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\Leg1_R.STL",
+      "path": "centipede_sim/meshes/Leg1_R.STL",
+      "bytes": 206184,
+      "sha256": "dfe01d936dc21362935a16f135fff5fb6e0ae0bbec7a0688c472c51f5d7d27d1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\LinkMotor1_PnY.STL",
+      "path": "centipede_sim/meshes/LinkMotor1_PnY.STL",
+      "bytes": 2310184,
+      "sha256": "b7d0d6531536ea3d90c2a010bd266d1089cacc21f53eae5dec9e5aa67137de3c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\LinkMotor1_R.STL",
+      "path": "centipede_sim/meshes/LinkMotor1_R.STL",
+      "bytes": 874434,
+      "sha256": "c1ff3dbacdb556195de5fc45fef8f902afbc830df433ce9fa91e75a4102c950f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\ShoulderMotor1_L.STL",
+      "path": "centipede_sim/meshes/ShoulderMotor1_L.STL",
+      "bytes": 2310184,
+      "sha256": "c0530a27a282367c5bf7fc111c2cd9bb5646a9abb1b327f29cf189aba19fc936"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\meshes\\ShoulderMotor1_R.STL",
+      "path": "centipede_sim/meshes/ShoulderMotor1_R.STL",
+      "bytes": 2310184,
+      "sha256": "2966f4288090d0d13f80096097865542497408ae71831e28c550b248435b76df"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_10seg.xml",
+      "path": "centipede_sim/model/centipede_10seg.xml",
+      "bytes": 74539,
+      "sha256": "580513a776039a42cae8b216ef4a4d9ff9aa166c44c304c21ab9f85b850bd8b6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_15seg.xml",
+      "path": "centipede_sim/model/centipede_15seg.xml",
+      "bytes": 121179,
+      "sha256": "094469c54f866418944ae0a3a70f0f005f563bb01eb0e70a9a49a4effb862b7f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_3seg.xml",
+      "path": "centipede_sim/model/centipede_3seg.xml",
+      "bytes": 19660,
+      "sha256": "feb202adbbb6acb4b3774c3c380fd6263acd845f961ab1197a94dd97f84eba16"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_4module.xml",
+      "path": "centipede_sim/model/centipede_4module.xml",
+      "bytes": 23496,
+      "sha256": "747fc760b14a16849e98a767d1e4ec82a1614f49860bbf8ddcb123a612af2112"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_4seg.xml",
+      "path": "centipede_sim/model/centipede_4seg.xml",
+      "bytes": 26788,
+      "sha256": "4a78ca2fc4d5278942e30f2b37a6d86aed7a746853f12344bb69927f95c54566"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_5seg.xml",
+      "path": "centipede_sim/model/centipede_5seg.xml",
+      "bytes": 34149,
+      "sha256": "16c946a4f11c596409ef75a21ffd9d1e35e24b9fe8bd4f81b102d7965b485efb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_6seg.xml",
+      "path": "centipede_sim/model/centipede_6seg.xml",
+      "bytes": 41746,
+      "sha256": "02454fc406f7f9e9fc7e127ec05e944a94934a5164da69106a0cfeb43acf2b6a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_7seg.xml",
+      "path": "centipede_sim/model/centipede_7seg.xml",
+      "bytes": 49575,
+      "sha256": "bc3f262ee671859b53901bb941bcb02dda0254593353de1ae493e8e48de12dec"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_8seg.xml",
+      "path": "centipede_sim/model/centipede_8seg.xml",
+      "bytes": 57640,
+      "sha256": "0a040956710538e22a8fed66baf5fb65348b5fca73702bfa11a36b9ddae670fb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\model\\centipede_9seg.xml",
+      "path": "centipede_sim/model/centipede_9seg.xml",
+      "bytes": 65938,
+      "sha256": "f38ebb856a915c6f52327b6f8dbe220ae09aa2fd18733d10dc58ee35ba7cf1dd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\README.md",
+      "path": "centipede_sim/reliability/README.md",
+      "bytes": 6166,
+      "sha256": "3a87005a98d4d0d784f2aa5d39ecedb3899e7a72c50a28b2890e55542a6eecb2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\__init__.py",
+      "path": "centipede_sim/reliability/__init__.py",
+      "bytes": 272,
+      "sha256": "46f4215f4f6201ff8113fb466a46f1d6de58529330b8c574be5988c397890287"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\cave_grouped_wave_controller.py",
+      "path": "centipede_sim/reliability/cave_grouped_wave_controller.py",
+      "bytes": 8745,
+      "sha256": "c32e51ac475701afdbe6690601f695492dd8e4cf0a1b22bd47b9749c61ff3b91"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\finalize_physical_robot_iid_wave_outputs.py",
+      "path": "centipede_sim/reliability/finalize_physical_robot_iid_wave_outputs.py",
+      "bytes": 4578,
+      "sha256": "036bbcf48d321120f004d53de621a5ccdd30c5e3b05a06b65ebc1b5e7757f9f1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\generate_center_rooted_dynamic_null_models.py",
+      "path": "centipede_sim/reliability/generate_center_rooted_dynamic_null_models.py",
+      "bytes": 21463,
+      "sha256": "3d887155c1b633e461a7a10cfcf5aaa91ce1d687c7bf3f1117afe8c07e906f1a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\generate_center_rooted_physical_robot_models.py",
+      "path": "centipede_sim/reliability/generate_center_rooted_physical_robot_models.py",
+      "bytes": 27518,
+      "sha256": "16a72f858de8069d397451576187f4b2f7976be3f85d727f35e591c3b8346bd4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\generate_physical_primitive_null_models.py",
+      "path": "centipede_sim/reliability/generate_physical_primitive_null_models.py",
+      "bytes": 18727,
+      "sha256": "91ec7845931bad6bb885a154e8bfe2446837e039ddc8576c49a9d8d58d66534a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\optimize_original_contact_body_amplitude.py",
+      "path": "centipede_sim/reliability/optimize_original_contact_body_amplitude.py",
+      "bytes": 26450,
+      "sha256": "6c8589b65db9e2b7c9c48d7d9d94643a85a64219884e212268fbdf055a1433bf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\redraw_step40_histograms_shared_axes.py",
+      "path": "centipede_sim/reliability/redraw_step40_histograms_shared_axes.py",
+      "bytes": 3865,
+      "sha256": "a19606ca19b92810becd6fa2c74777b9efef77a3701f9e5017591d144ef40487"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_center_rooted_dynamic_null_iid.py",
+      "path": "centipede_sim/reliability/render_center_rooted_dynamic_null_iid.py",
+      "bytes": 7460,
+      "sha256": "b047f1027bfb664cc7484e6c00e59678eec8a80e06d52ec3e4842476e744cee3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_center_rooted_dynamic_null_wave_flip.py",
+      "path": "centipede_sim/reliability/render_center_rooted_dynamic_null_wave_flip.py",
+      "bytes": 10358,
+      "sha256": "de3a084aad9489ed7f1bb36d30e7b7f1df264cb291af9544ba6ccc463816fdda"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_center_rooted_physical_robot_iid.py",
+      "path": "centipede_sim/reliability/render_center_rooted_physical_robot_iid.py",
+      "bytes": 7506,
+      "sha256": "2893f99ea6c7bdf21b9115ed6137c815f3af8f954b9d313d88511751e687807e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_center_rooted_physical_robot_wave_demos.py",
+      "path": "centipede_sim/reliability/render_center_rooted_physical_robot_wave_demos.py",
+      "bytes": 24684,
+      "sha256": "b03dffa971c324a8395ae33dad641df43c64e326802e8c9458dd234d61da34c6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_high_frequency_iid_contact_erasure_demos.py",
+      "path": "centipede_sim/reliability/render_high_frequency_iid_contact_erasure_demos.py",
+      "bytes": 11253,
+      "sha256": "7ea6bf76b8e22aada679a99d86032fe0a8191bf6e772c15c933bacd223578789"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_locked_phase_segment_iid_demos.py",
+      "path": "centipede_sim/reliability/render_locked_phase_segment_iid_demos.py",
+      "bytes": 12210,
+      "sha256": "395f46f1d25e900924f7ed84b193ac94757ca09934ae8e0cbfc47c182e7cd188"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_physical_robot_cave_grouped_wave_demos.py",
+      "path": "centipede_sim/reliability/render_physical_robot_cave_grouped_wave_demos.py",
+      "bytes": 5058,
+      "sha256": "ef627e34a9fce825d2c3eb65680ba17eca48751a611bfe42c6c917ecfcc1786c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\render_physical_robot_original_contact_no_leg_yaw.py",
+      "path": "centipede_sim/reliability/render_physical_robot_original_contact_no_leg_yaw.py",
+      "bytes": 16547,
+      "sha256": "f37ec6018950911911c473fea42b45de0b13587cf7f99baf031fd62762d46ed7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_body_wave_only_random_pitch.py",
+      "path": "centipede_sim/reliability/run_body_wave_only_random_pitch.py",
+      "bytes": 62842,
+      "sha256": "32ce39ee1e7ae79a795117f0913cd7b045a9d4b021e28dfbcef247809e29affb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_center_rooted_dynamic_null_iid.py",
+      "path": "centipede_sim/reliability/run_center_rooted_dynamic_null_iid.py",
+      "bytes": 24107,
+      "sha256": "cabb0f9d1bd3977c5ed3a8fd6d7e929c70c2cf51f7318f9ab9494745e131da50"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_center_rooted_dynamic_null_wave_flip.py",
+      "path": "centipede_sim/reliability/run_center_rooted_dynamic_null_wave_flip.py",
+      "bytes": 56689,
+      "sha256": "9d7eac0d047c2e4abb99120dcea10512b33bb6ce0d556f927a478d560c528f5f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_center_rooted_physical_robot_iid.py",
+      "path": "centipede_sim/reliability/run_center_rooted_physical_robot_iid.py",
+      "bytes": 20132,
+      "sha256": "f3640c25d3c4490b1e3ceeb722033034667f726e0d7d8d03e4f82b1a8e1c8830"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_center_rooted_physical_robot_uniform512.py",
+      "path": "centipede_sim/reliability/run_center_rooted_physical_robot_uniform512.py",
+      "bytes": 24115,
+      "sha256": "c4cfd7cc3098999140b28d82074c81bbd16d17fefbf3a3aad98a463fd8187266"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_centered_duty_factor_sweep.py",
+      "path": "centipede_sim/reliability/run_centered_duty_factor_sweep.py",
+      "bytes": 30318,
+      "sha256": "486931d3a540f4ba1fe74c9ce8cc3743fa69f32c5d4f27cae1dae7b366f5b08c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_fixed_window_random_and_pitch_ablation.py",
+      "path": "centipede_sim/reliability/run_fixed_window_random_and_pitch_ablation.py",
+      "bytes": 53149,
+      "sha256": "e0c5dbd147617a8d648922c605e471cd00ba75b97865c64dab12fb114b849723"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_high_frequency_iid_contact_erasure_sweep.py",
+      "path": "centipede_sim/reliability/run_high_frequency_iid_contact_erasure_sweep.py",
+      "bytes": 40924,
+      "sha256": "88c7854be2f7f15faca9c9c4ca5924e5a8468fa72cf6a88d093c9b0549c22725"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_independent_random_leg_phases.py",
+      "path": "centipede_sim/reliability/run_independent_random_leg_phases.py",
+      "bytes": 59304,
+      "sha256": "9663626852472f2457f87fafda7dfadebfc013f76c1910918b6f1d5562b0c9bf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_locked_phase_all_down_reference.py",
+      "path": "centipede_sim/reliability/run_locked_phase_all_down_reference.py",
+      "bytes": 13529,
+      "sha256": "02e500acf52d86d6289af4b3b5e6d06c61fe8c937231ecb40efb07955f6dc672"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_locked_phase_segment_iid_sweep.py",
+      "path": "centipede_sim/reliability/run_locked_phase_segment_iid_sweep.py",
+      "bytes": 50376,
+      "sha256": "6168510d35c8811bcdeef09415169bc226a0459fa388fc0d5ab2511823dcd0a2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_phase_offset_duty_factor_sweep.py",
+      "path": "centipede_sim/reliability/run_phase_offset_duty_factor_sweep.py",
+      "bytes": 27268,
+      "sha256": "c9e67d072c419fd33798cd57ddb57bf1b3d3a1acbdcc213af968f92d5c8fa435"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\run_physical_robot_pitch_body_yaw_iid_wave_sweep.py",
+      "path": "centipede_sim/reliability/run_physical_robot_pitch_body_yaw_iid_wave_sweep.py",
+      "bytes": 60777,
+      "sha256": "f55ca3dad4d057904050443bc066aa7ea57c23bdbdbed51f4c9d007eca240aa0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\select_low_wobble_body_amplitudes.py",
+      "path": "centipede_sim/reliability/select_low_wobble_body_amplitudes.py",
+      "bytes": 16234,
+      "sha256": "27be21bcff57dfce6364900c54de65fb4443f824af844ff01ceb71b391580ddc"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\validate_center_rooted_dynamic_null.py",
+      "path": "centipede_sim/reliability/validate_center_rooted_dynamic_null.py",
+      "bytes": 10739,
+      "sha256": "78aacf7f2df5605c85e1422b77fedcce1c6e3cb97b3fb49176fe28da4b3112e4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\validate_center_rooted_physical_robot.py",
+      "path": "centipede_sim/reliability/validate_center_rooted_physical_robot.py",
+      "bytes": 13438,
+      "sha256": "59427b52cd23b2c5c388b150fab86b03dd96c3875645b86a8dbc6178af3b1730"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\reliability\\validate_physical_robot_iid_wave_controls.py",
+      "path": "centipede_sim/reliability/validate_physical_robot_iid_wave_controls.py",
+      "bytes": 5244,
+      "sha256": "76d335db519f89622a8ef400aa38997f886c1c63cc8c9df8811d288c72df8a7a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\scripts\\README.md",
+      "path": "centipede_sim/scripts/README.md",
+      "bytes": 445,
+      "sha256": "a4c8e45a748f1eed0ad3592d6190fe564408dc0b29d80bec07402a67136e8cde"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\centipede_sim\\scripts\\test_models.py",
+      "path": "centipede_sim/scripts/test_models.py",
+      "bytes": 25178,
+      "sha256": "551a947cf3b06d240031326f3c19bbe60a590abb90c01cf0abb6ee0a9bc5c887"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\README.md",
+      "path": "docs/README.md",
+      "bytes": 571,
+      "sha256": "40c308e89eda89040793b8e1962e0a149c076c71465fd7e016b45cf0f8bf031f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\NOTATION_STANDARD.md",
+      "path": "docs/reliability_framework/NOTATION_STANDARD.md",
+      "bytes": 11272,
+      "sha256": "5715ca3274fd664ce2c3bf1343dbc6f107b375a26eccbd116af4e1b26f3a8c19"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP10_BALANCED_CHANNEL_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP10_BALANCED_CHANNEL_RESULTS.md",
+      "bytes": 6929,
+      "sha256": "b431df05b29f2bf49e1165d6558ee05e902d3a2209839f56f262e52aacaf98c5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP10_HELD_OUT_CHANNEL_PROTOCOL.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP10_HELD_OUT_CHANNEL_PROTOCOL.md",
+      "bytes": 4988,
+      "sha256": "52ecf9cd1411ce024f35a734e2c0beb8eaf4de566531322cc3d3305e7a765b4e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP11_MULTI_USE_CHANNEL_PROTOCOL.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP11_MULTI_USE_CHANNEL_PROTOCOL.md",
+      "bytes": 6218,
+      "sha256": "cd233171c5d4b874080c709a3792514b98da00fa171298a1865cccacba3afdb4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP11_MULTI_USE_CHANNEL_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP11_MULTI_USE_CHANNEL_RESULTS.md",
+      "bytes": 9071,
+      "sha256": "a94aa121c899ace7d34bc2f505a41e18e8b1383981b4494bad998fda324b65d8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP12_LONG_HORIZON_Q_SWEEP_PROTOCOL.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP12_LONG_HORIZON_Q_SWEEP_PROTOCOL.md",
+      "bytes": 7654,
+      "sha256": "58bece91a720899ab2a935bdd8dfb91f219fb27a2b3b49bf02bc146d8084d1f0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP12_LONG_HORIZON_Q_SWEEP_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP12_LONG_HORIZON_Q_SWEEP_RESULTS.md",
+      "bytes": 8856,
+      "sha256": "5ba1556976494500a31adc00d425352ec2f9fcc59e99aa20f4d5e4c208de4a23"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP1_EVENT_BASELINE.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP1_EVENT_BASELINE.md",
+      "bytes": 3440,
+      "sha256": "68de8f1a6f47f402d9fbe6b847781aaf845d8c78ca74e87a2bdc0691e04c7d34"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP2_CHANNELS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP2_CHANNELS.md",
+      "bytes": 7648,
+      "sha256": "0edeb5e71bd2de0655c0ac42cd0dbe8ceb7afb758da664e397d384a00ca663ba"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP2_PERFORMANCE_AND_DEMOS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP2_PERFORMANCE_AND_DEMOS.md",
+      "bytes": 6109,
+      "sha256": "1624abe6cb868faa20567fa7f3679a4dd81d895f004e23b6ad18cb5145278c40"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP3_DETERMINISTIC_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP3_DETERMINISTIC_RESULTS.md",
+      "bytes": 3612,
+      "sha256": "85a616c1d972cd245eb25dec9a757814e9f582904c5f7b3bbe10ac14732e5ce0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP3_EXACT_CONTACT_ERASURE_PLAN.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP3_EXACT_CONTACT_ERASURE_PLAN.md",
+      "bytes": 13831,
+      "sha256": "b6f8e6342d0923ac6a0d17480e767c671a6b63f97eeafe770976794e1f173e88"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP4_CLEAN_REFERENCE_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP4_CLEAN_REFERENCE_RESULTS.md",
+      "bytes": 3301,
+      "sha256": "25695d7137e337f34a9e1b224335ff0e2eb200a05098cb8bda5db260dd702227"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP5_EXACT_CHANNEL_VALIDATION_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP5_EXACT_CHANNEL_VALIDATION_RESULTS.md",
+      "bytes": 6183,
+      "sha256": "ed3e6683644c2b4c76febc0379cba13900dd3fdc206b3c67772be921a01725f3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP6_SINGLE_ERASURE_SENSITIVITY_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP6_SINGLE_ERASURE_SENSITIVITY_RESULTS.md",
+      "bytes": 7406,
+      "sha256": "88dcf0306866270ea6d9ab3360902472c8997fcecf9b8a38e967cd3118093ebd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP7_BODY_CONTACT_AND_RESTORATION_POLICY_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP7_BODY_CONTACT_AND_RESTORATION_POLICY_RESULTS.md",
+      "bytes": 3965,
+      "sha256": "2cbe7c9e12fa551d0554b02d4d630faa413906e874147fadd65ce454d8c2eade"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP8_REPAIRED_CLEAN_REFERENCE_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP8_REPAIRED_CLEAN_REFERENCE_RESULTS.md",
+      "bytes": 1901,
+      "sha256": "b372a0aee6bc849e31df9f37940a72be821889ceca4bb6305e098c518b02cff5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\docs\\reliability_framework\\_archive_steps01_12\\STEP9_CORRECTED_SINGLE_ERASURE_RESULTS.md",
+      "path": "docs/reliability_framework/_archive_steps01_12/STEP9_CORRECTED_SINGLE_ERASURE_RESULTS.md",
+      "bytes": 3980,
+      "sha256": "082b322819df4ad6f79295dfe56263c2ff994ca2b21a835ba21a39fbef2934f4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\CLEANUP_MANIFEST_STEP40.md",
+      "path": "exp_data/reliability/CLEANUP_MANIFEST_STEP40.md",
+      "bytes": 4291,
+      "sha256": "c5204cdeaa11af807e26536fb4f2479b0cda7ea377fa35d0e1d4101802643578"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\README.md",
+      "path": "exp_data/reliability/README.md",
+      "bytes": 5465,
+      "sha256": "d7a83c31de01ccfa95791a04f1466212c934c19c1da2ed5d3ceacd7e6345794e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\FINDINGS.md",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/FINDINGS.md",
+      "bytes": 3299,
+      "sha256": "0850e9a10df5cc9b9f2e422d8b4a9c3c65b81fd7aac2761b6e7cf8c7e61c328d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\complement_pairs.csv",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/complement_pairs.csv",
+      "bytes": 10782,
+      "sha256": "a61b995aa947d8215e4f9d15ecb743717512a9edb1b0081d7f0da3e08183835f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\iid_summary.csv",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/iid_summary.csv",
+      "bytes": 1760,
+      "sha256": "11f9a0746f20128a2aa9a45f358066b905edc1d4acf2cbc0058f2fee14dd77f1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\iid_trials.csv",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/iid_trials.csv",
+      "bytes": 3785533,
+      "sha256": "82f68de1cb5cabb773515529ff43e150e229603c5fb8281375c174af4b90d022"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\matlab_iid_summary_check.csv",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/matlab_iid_summary_check.csv",
+      "bytes": 685,
+      "sha256": "6b287adf93d559fe3b84c70efc3a3c5542c25570ee511293a0bbe93f97928e8f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\model_manifest.json",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/model_manifest.json",
+      "bytes": 19812,
+      "sha256": "236b92c847e886cd05dd63630141fd43681b7aee4e4796b053b534ddf017053e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\run_configuration.json",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/run_configuration.json",
+      "bytes": 632,
+      "sha256": "8c10abd8581eee422d668d81d0008620a0e08334c82b1b73b7e698020f26af74"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\validation.json",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/validation.json",
+      "bytes": 586,
+      "sha256": "e4cb4253d6aea71029b278b47268b4605ad113f19d6ddf9677e287421c38c0aa"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_10seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_10seg_center_rooted_dynamic_null.xml",
+      "bytes": 67132,
+      "sha256": "ccafbb5faee7e7e3203f704e6ceff1ce22a6f71e1c0aebcc55405231ca956da2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_4seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_4seg_center_rooted_dynamic_null.xml",
+      "bytes": 26477,
+      "sha256": "a27f0c3ad336f19f29f1eac3e559c421e8b3def4d64bd745d34408e9ab740fd9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_5seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_5seg_center_rooted_dynamic_null.xml",
+      "bytes": 30290,
+      "sha256": "7e60852be098f92fd95a9945b977abc4a8280f91a2ecf3637fa4870a29f420b7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_6seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_6seg_center_rooted_dynamic_null.xml",
+      "bytes": 39609,
+      "sha256": "c8398b37eaa82a7ff45d46a4063072e0bdf06fafb6899a7857b86faf7d49ef4c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_7seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_7seg_center_rooted_dynamic_null.xml",
+      "bytes": 43422,
+      "sha256": "1ca234e5079d3621638e54f9cfb158bc6723e71d338297778628ddb155d9610c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_8seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_8seg_center_rooted_dynamic_null.xml",
+      "bytes": 53149,
+      "sha256": "63823360228d38924d129910136828ef704514836624042f9d65bde73d0b4db0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25b_center_rooted_dynamic_null_uniform512\\models\\center_rooted_dynamic_null\\centipede_9seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25b_center_rooted_dynamic_null_uniform512/models/center_rooted_dynamic_null/centipede_9seg_center_rooted_dynamic_null.xml",
+      "bytes": 56962,
+      "sha256": "31263be850fa53da6af768bb2bd2d9504df94044d7148c849d371e3847a0c761"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\FINDINGS.md",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/FINDINGS.md",
+      "bytes": 7395,
+      "sha256": "5804832b14b8bc3265827436a4eff8e5fde755cd40ad1a59de77d778aadcb33c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\center_rooted_demo_manifest.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/center_rooted_demo_manifest.csv",
+      "bytes": 989,
+      "sha256": "add1ea21a7e98fbd816a8fddbbfb35394e32b9e157e4450f1f2f97e26fdf949d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\center_rooted_demo_manifest.json",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/center_rooted_demo_manifest.json",
+      "bytes": 1387,
+      "sha256": "82c2d73087c5d9e5f1b0afa999d8d71fb833932fe87762edba39179b0ba90c3b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\complement_pairs.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/complement_pairs.csv",
+      "bytes": 10786,
+      "sha256": "269229fcb56e1e36592c1b72b5e0df017741b10b6d531422c8f6b1cc8f2e8cb4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\iid_summary.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/iid_summary.csv",
+      "bytes": 1755,
+      "sha256": "013850bc933f91bb468a3be226e1d829e5fc24b29d536f19e8e67c9b07793bba"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\iid_trials.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/iid_trials.csv",
+      "bytes": 1336339,
+      "sha256": "9263c5cd8bfadad1da2e815f7376475adf8f2a11e46aee06163a3a220be90b99"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\matlab_iid_summary_check.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/matlab_iid_summary_check.csv",
+      "bytes": 685,
+      "sha256": "cadaf98bf023c853ec6a9232edc23eca9292c56d95b16a5e602433191ad406ae"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\model_manifest.json",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/model_manifest.json",
+      "bytes": 19812,
+      "sha256": "236b92c847e886cd05dd63630141fd43681b7aee4e4796b053b534ddf017053e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\run_configuration.json",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/run_configuration.json",
+      "bytes": 632,
+      "sha256": "af769d630d11f4032e267e58f15e354fccc48254dce224cad30aba64432314cf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\validation.json",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/validation.json",
+      "bytes": 588,
+      "sha256": "d210225a94b347d87e37924d845d6a1387af873054d1088727a296e3a3fe2d96"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_10seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_10seg_center_rooted_dynamic_null.xml",
+      "bytes": 67132,
+      "sha256": "ccafbb5faee7e7e3203f704e6ceff1ce22a6f71e1c0aebcc55405231ca956da2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_4seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_4seg_center_rooted_dynamic_null.xml",
+      "bytes": 26477,
+      "sha256": "a27f0c3ad336f19f29f1eac3e559c421e8b3def4d64bd745d34408e9ab740fd9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_5seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_5seg_center_rooted_dynamic_null.xml",
+      "bytes": 30290,
+      "sha256": "7e60852be098f92fd95a9945b977abc4a8280f91a2ecf3637fa4870a29f420b7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_6seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_6seg_center_rooted_dynamic_null.xml",
+      "bytes": 39609,
+      "sha256": "c8398b37eaa82a7ff45d46a4063072e0bdf06fafb6899a7857b86faf7d49ef4c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_7seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_7seg_center_rooted_dynamic_null.xml",
+      "bytes": 43422,
+      "sha256": "1ca234e5079d3621638e54f9cfb158bc6723e71d338297778628ddb155d9610c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_8seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_8seg_center_rooted_dynamic_null.xml",
+      "bytes": 53149,
+      "sha256": "63823360228d38924d129910136828ef704514836624042f9d65bde73d0b4db0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\models\\center_rooted_dynamic_null\\centipede_9seg_center_rooted_dynamic_null.xml",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/models/center_rooted_dynamic_null/centipede_9seg_center_rooted_dynamic_null.xml",
+      "bytes": 56962,
+      "sha256": "31263be850fa53da6af768bb2bd2d9504df94044d7148c849d371e3847a0c761"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\validation\\deterministic_all_down.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/validation/deterministic_all_down.csv",
+      "bytes": 2095,
+      "sha256": "d3eaa428f41486a285d07ee50db83145c84ee28732d8eb35eb4ffee5c1177ba6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\validation\\structure.csv",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/validation/structure.csv",
+      "bytes": 657,
+      "sha256": "c4392ccaf235a6f2502199edf0690bdeac33f8341743b34918351053dc6c2370"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step25_center_rooted_dynamic_null\\validation\\validation_summary.json",
+      "path": "exp_data/reliability/step25_center_rooted_dynamic_null/validation/validation_summary.json",
+      "bytes": 387,
+      "sha256": "677eabfd4d9fa4966be02fa2ba9a90182c1314be9508a41a4e20f39cdbc7feb4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\FINDINGS.md",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/FINDINGS.md",
+      "bytes": 6158,
+      "sha256": "c5e78c4593d7d2f7acee74c0dcc393e6fabc515f68e358b3635e27dc55d8cf12"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\comparison_statistics.json",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/comparison_statistics.json",
+      "bytes": 1484,
+      "sha256": "28da1a9255d2d366ca027d18c50de3de668f2e21dd90757ae0e950be28f85bbc"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demo_manifest.csv",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/demo_manifest.csv",
+      "bytes": 1307,
+      "sha256": "c9dd0dd29b97fee78d23e10199ab5e608677b5a30f07bbb2c14132e896a0ce1d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\demo_manifest.json",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/demo_manifest.json",
+      "bytes": 1758,
+      "sha256": "ea358ea387834d42f9eeacca0b40939e90857931fccb8f17e0a28ff073e6e6c3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\iid_summary.csv",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/iid_summary.csv",
+      "bytes": 1718,
+      "sha256": "cd3839c76c9a4f4ab39597ba78c6c830a4f0e4fce8a1888dc1dc13414073fd7c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\iid_trials.csv",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/iid_trials.csv",
+      "bytes": 3886308,
+      "sha256": "4f8d1f48d2c2333d25ed40917bde0448614fbbbe39b491b3e6d3bec5c6435f02"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\model_manifest.json",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/model_manifest.json",
+      "bytes": 5018,
+      "sha256": "9c535bb2f40284380e1df97d5176a805ba47eb1c6cc005f5c42f3ba79bc8667b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\null_iid_summary.csv",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/null_iid_summary.csv",
+      "bytes": 1760,
+      "sha256": "11f9a0746f20128a2aa9a45f358066b905edc1d4acf2cbc0058f2fee14dd77f1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\robot_null_comparison.csv",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/robot_null_comparison.csv",
+      "bytes": 1158,
+      "sha256": "43e38139a93a03479555e90665bf70c5cc7cfbbb58af9df4983e57eab9b69706"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\run_configuration.json",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/run_configuration.json",
+      "bytes": 658,
+      "sha256": "4ed9b9c745538f76ff71c4966dd04ab2d59dad40cefa09039e5aa9f0cecc87f2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\validation.json",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/validation.json",
+      "bytes": 1307,
+      "sha256": "4a846701f97492bf1fe5f054df100f8b166b19e87370196dfa6b7292536363a2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_10seg_center_rooted_physical_robot.xml",
+      "bytes": 83451,
+      "sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_4seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_4seg_center_rooted_physical_robot.xml",
+      "bytes": 31484,
+      "sha256": "51e4a4226a7f401fc5987851ef9cc5a67b070f7e70fb060a5da91eb5f99c2960"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_5seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_5seg_center_rooted_physical_robot.xml",
+      "bytes": 39840,
+      "sha256": "ba136ad1cc8ccb189cae3f5f7c70b537363c4d5c64150feb285ed8e456b1ad8f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_6seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_6seg_center_rooted_physical_robot.xml",
+      "bytes": 48337,
+      "sha256": "619ba013b848e40ddd39559b5f7e0e2f7e99b09d717bd37e548c8aee3da380d4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_7seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_7seg_center_rooted_physical_robot.xml",
+      "bytes": 56917,
+      "sha256": "039d2a4427025fde4b26ec8d9b02fb4ce65b26c1d226a8b4bbdbc15722e60feb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_8seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_8seg_center_rooted_physical_robot.xml",
+      "bytes": 65635,
+      "sha256": "5366c182929664528af40d9d445db455c23b8ac29b5ec8263fe0aaf81f5bbfdb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26b_center_rooted_physical_robot_uniform512\\models\\center_rooted_physical_robot\\centipede_9seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26b_center_rooted_physical_robot_uniform512/models/center_rooted_physical_robot/centipede_9seg_center_rooted_physical_robot.xml",
+      "bytes": 74437,
+      "sha256": "dcbc03ec9a8549e8a5291cc26f322c8ed0a8c5f50c41888f81855126340f68e1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\FINDINGS.md",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/FINDINGS.md",
+      "bytes": 7464,
+      "sha256": "e52af1d594bd8431f78765bd80bbdd8fbe6df3bf5f78f0eac9f3c9e4023be279"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\deterministic_root_paired.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/deterministic_root_paired.csv",
+      "bytes": 2800,
+      "sha256": "0fbdd5062ad6786f659bddfee57f3fc9d0436c31c1020a0af89a1b8cca1411ba"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\deterministic_root_trials.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/deterministic_root_trials.csv",
+      "bytes": 8039,
+      "sha256": "6a4428d8c1b30b922f1d869e56565439fa1bb1d0510f836b76869b969ed169d8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\deterministic_root_validation.json",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/deterministic_root_validation.json",
+      "bytes": 226,
+      "sha256": "f568cf62075c01d26a33d7420707939ece89466fd5ebfc92ca32b1458173cfbf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\iid_root_run_configuration.json",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/iid_root_run_configuration.json",
+      "bytes": 547,
+      "sha256": "c8895089774407ab0bb0feb3d44e092064dbe5f018fc112d16e763a890e1ab26"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\iid_root_summary.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/iid_root_summary.csv",
+      "bytes": 3859,
+      "sha256": "fa6a7950d0a877fdbd6ed1a9050be3372fea851ce566fc1c79eb05842cf80c3f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\iid_root_trials.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/iid_root_trials.csv",
+      "bytes": 723309,
+      "sha256": "2f28f6e7753cc68a78eda185f7eaac937ebe2e89ce27b220bb9ed5a4c7d7dcb3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\iid_root_validation.json",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/iid_root_validation.json",
+      "bytes": 368,
+      "sha256": "7eeeeafcf780de79f4d9db3e6db36e7732491682d76bbe2f1f27a09a9762d8fb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\model_manifest.json",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/model_manifest.json",
+      "bytes": 45328,
+      "sha256": "d623a54e468c954e583447eafb2914a1dab520e12c9d9169967ba8600eb5a39d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\root_comparison_demo_manifest.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/root_comparison_demo_manifest.csv",
+      "bytes": 1413,
+      "sha256": "e5931985d497104cf406b834e76b55524ccdc5658fcb54531364eb0d80095aa0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\root_comparison_demo_manifest.json",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/root_comparison_demo_manifest.json",
+      "bytes": 2058,
+      "sha256": "89a5b20c2381a1e8d8b14414aafde3302f9cc41942370b63f65e1ea9bfdd9b30"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\root_paired_summary.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/root_paired_summary.csv",
+      "bytes": 2516,
+      "sha256": "e71256a0adbce3365a40543ca29de7c5a6545b50d811c9a0d814770b3c790574"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\root_paired_trials.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/root_paired_trials.csv",
+      "bytes": 30522,
+      "sha256": "45423a7fb8ad8b3f66118b0de334ac46f3b0ce430fb4665e20f86ec6056cda3f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_10seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_10seg_center_rooted_physical_robot.xml",
+      "bytes": 83451,
+      "sha256": "765343c6b830bfaaf920021244c99023086db4102ee5d7e7b16325930ea81e93"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_4seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_4seg_center_rooted_physical_robot.xml",
+      "bytes": 31484,
+      "sha256": "51e4a4226a7f401fc5987851ef9cc5a67b070f7e70fb060a5da91eb5f99c2960"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_5seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_5seg_center_rooted_physical_robot.xml",
+      "bytes": 39840,
+      "sha256": "ba136ad1cc8ccb189cae3f5f7c70b537363c4d5c64150feb285ed8e456b1ad8f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_6seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_6seg_center_rooted_physical_robot.xml",
+      "bytes": 48337,
+      "sha256": "619ba013b848e40ddd39559b5f7e0e2f7e99b09d717bd37e548c8aee3da380d4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_7seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_7seg_center_rooted_physical_robot.xml",
+      "bytes": 56917,
+      "sha256": "039d2a4427025fde4b26ec8d9b02fb4ce65b26c1d226a8b4bbdbc15722e60feb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_8seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_8seg_center_rooted_physical_robot.xml",
+      "bytes": 65635,
+      "sha256": "5366c182929664528af40d9d445db455c23b8ac29b5ec8263fe0aaf81f5bbfdb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\center_rooted_physical_robot\\centipede_9seg_center_rooted_physical_robot.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/center_rooted_physical_robot/centipede_9seg_center_rooted_physical_robot.xml",
+      "bytes": 74437,
+      "sha256": "dcbc03ec9a8549e8a5291cc26f322c8ed0a8c5f50c41888f81855126340f68e1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_10seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_10seg_endpoint_optimized_reference.xml",
+      "bytes": 85693,
+      "sha256": "fccb279b2519d9f3ceb07a0426960544f4aba636727555952586db060c2f8329"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_4seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_4seg_endpoint_optimized_reference.xml",
+      "bytes": 31170,
+      "sha256": "1e94f8cf9d84ca3071fa61f27e1e9d1c668383c2b2aca202d38f85738f46acbf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_5seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_5seg_endpoint_optimized_reference.xml",
+      "bytes": 39690,
+      "sha256": "7814f71281f2a76fab83e1cc091a6ca74676633ed7d0c18f5c3dbb0a84a4d063"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_6seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_6seg_endpoint_optimized_reference.xml",
+      "bytes": 48432,
+      "sha256": "06667c0e387eb0e80bc86e257f49dfba46cae5a559a170dec1ed5e5cab331919"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_7seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_7seg_endpoint_optimized_reference.xml",
+      "bytes": 57396,
+      "sha256": "094eb9676bd50039a568b57afec59832275a2539b6d0a1ac86c43208db08536d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_8seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_8seg_endpoint_optimized_reference.xml",
+      "bytes": 66582,
+      "sha256": "fc62a238592da1b6476ec94a7c9beec562b3077e1d9dc1b5007d9f38d2c65a48"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\endpoint_optimized_reference\\centipede_9seg_endpoint_optimized_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/endpoint_optimized_reference/centipede_9seg_endpoint_optimized_reference.xml",
+      "bytes": 75990,
+      "sha256": "47656d9310fdeb74cf86be0ad81bddf270ec9f360e489cb4b2f9699269c73b48"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_10seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_10seg_tail_rooted_physical_reference.xml",
+      "bytes": 88778,
+      "sha256": "12e6380852634cca05d7d1ab1fc0b48f04ceb1324952a637ad9ae127221eb72e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_4seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_4seg_tail_rooted_physical_reference.xml",
+      "bytes": 32256,
+      "sha256": "04a44dd187a26f19970294a83e701c470a5f19d9fecef8cbf78f28179edf070b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_5seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_5seg_tail_rooted_physical_reference.xml",
+      "bytes": 41109,
+      "sha256": "b021552d22f44240ebcf4a6e4a97c8763f42316eb3922c93717a8d06fbe93350"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_6seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_6seg_tail_rooted_physical_reference.xml",
+      "bytes": 50184,
+      "sha256": "7269d7573c75320462060aad490c5d3320a528f4d7b6defcadd522a4c32ddc7b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_7seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_7seg_tail_rooted_physical_reference.xml",
+      "bytes": 59482,
+      "sha256": "c5cbff6da161815838211cf279e508fcb925a46665b56f3eca51537388a7c3af"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_8seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_8seg_tail_rooted_physical_reference.xml",
+      "bytes": 69001,
+      "sha256": "34ed208943b146132d7e7ef525ef03677b6a6483fee5b88e7738205ec372e77e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\models\\tail_rooted_physical_reference\\centipede_9seg_tail_rooted_physical_reference.xml",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/models/tail_rooted_physical_reference/centipede_9seg_tail_rooted_physical_reference.xml",
+      "bytes": 78741,
+      "sha256": "d297cf6ae31e4675ff94156cc5af835e1bf7021ccc32ab23f2c396bf13a572ca"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\validation\\forward_kinematics_equivalence.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/validation/forward_kinematics_equivalence.csv",
+      "bytes": 5076,
+      "sha256": "9f0ca455db015521e11afc772d090e352520c4697a4162ecb88caad44885e14d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\validation\\stability_smoke.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/validation/stability_smoke.csv",
+      "bytes": 776,
+      "sha256": "ca4d2ad2e74b291bf314041935b7b7d5f108843e5d2731fa517dab1c5f5e64fd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\validation\\structure_equivalence.csv",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/validation/structure_equivalence.csv",
+      "bytes": 2144,
+      "sha256": "03728b3dfbbf08bedd4240d7e4cbbe722ed752a151515b86eefe1a7b5577568f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step26_center_rooted_physical_robot\\validation\\validation_summary.json",
+      "path": "exp_data/reliability/step26_center_rooted_physical_robot/validation/validation_summary.json",
+      "bytes": 306,
+      "sha256": "976520eb2b65917e2e9136f9ca36f6189b50528c4e62b8f2da9c6a7201b2c244"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\PROVENANCE_NOTE_2026-08-31.md",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/PROVENANCE_NOTE_2026-08-31.md",
+      "bytes": 977,
+      "sha256": "f2b604c955dd247d598c7c23ba4642528538b8d4ce868e1f32525633e683b725"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\README_CN.md",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/README_CN.md",
+      "bytes": 2147,
+      "sha256": "ae835f5bc54e0cf0c42ca2b78e018c55dbf01c6fe181d124fc0dc4e42e5dabcb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\REPORT.md",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/REPORT.md",
+      "bytes": 24290,
+      "sha256": "9ff01b767272ed357849c4a85d4e6d675c811031496306a7db533cdde16aff63"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\analysis_summary.json",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/analysis_summary.json",
+      "bytes": 3252,
+      "sha256": "c025ed68d245bb0954a7ae90a6c9d811c6fc8449a138673452ddf85d962062da"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\tables\\causal_evidence_matrix.csv",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/tables/causal_evidence_matrix.csv",
+      "bytes": 1515,
+      "sha256": "ae04cafced7fece0a2a7c66ae15379c0300354167511c2f64c0914814e0866e4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\tables\\model_stage_trends.csv",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/tables/model_stage_trends.csv",
+      "bytes": 1524,
+      "sha256": "a1b266f97c7b3c7d02d9412b954a9d83bf71c3cbe0d19f10a5c077c8f4d225de"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\tables\\robot_null_comparison.csv",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/tables/robot_null_comparison.csv",
+      "bytes": 2118,
+      "sha256": "cf62ea2b1428a13d895a0742fc42ce9e10861db83a0ae74e9376c39b9979c8f8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\tables\\source_artifact_manifest.csv",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/tables/source_artifact_manifest.csv",
+      "bytes": 4025,
+      "sha256": "b3a1b20e439b8714f0343912840a7de5f23c352223aa33460be13e4f5dc8d123"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step27_directional_bias_diagnosis\\tables\\source_artifact_reaudit_2026-08-31.csv",
+      "path": "exp_data/reliability/step27_directional_bias_diagnosis/tables/source_artifact_reaudit_2026-08-31.csv",
+      "bytes": 5675,
+      "sha256": "2bfd61995068202312a0ba659caf32b181903548f59be3a5ff23aecd2350e7dd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\COUPLING_AND_WAVE_NUMBER_DEFINITION.md",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/COUPLING_AND_WAVE_NUMBER_DEFINITION.md",
+      "bytes": 3151,
+      "sha256": "48ae6a4903256b3a409273286a1d461e501d8636b4e8e26b23f39fa6695934e9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\FINDINGS.md",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/FINDINGS.md",
+      "bytes": 3624,
+      "sha256": "048e758997664f034f5d55aa039d97d71fa10783e1934a7ba2d5974395d4f58a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\control_contract.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/control_contract.json",
+      "bytes": 492,
+      "sha256": "5d74f4926fa095d4a6660310d513c96dba1e8b287a4636e47a5708e66b57e649"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\directionality_comparison.csv",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/directionality_comparison.csv",
+      "bytes": 1707,
+      "sha256": "6c7bdd7c3131eeaad1b8193514aba6f7297ce618a1eca6844e86d7a01a95e27a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\paired_phase_comparison.csv",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/paired_phase_comparison.csv",
+      "bytes": 8438,
+      "sha256": "ad7306c1791cd53c11cdfa4c564fb09ec41a6394c8fcd90befc5c9fca905fa77"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\run_configuration.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/run_configuration.json",
+      "bytes": 1955,
+      "sha256": "4e5d697ee7b14d3df586c118e3133eaf63d17384755a313326032f415d72d5e3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\wave_contact_flip_summary.csv",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/wave_contact_flip_summary.csv",
+      "bytes": 7654,
+      "sha256": "da770e92e3a023150e661c52dfe5ebb361ee2dbcbd684cd5c992edf42f56027b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\wave_contact_flip_trials.csv",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/wave_contact_flip_trials.csv",
+      "bytes": 110962,
+      "sha256": "8a6dbf197e6585bfbbf8ee566313715899a26cc903d03df0c4d052d079766f14"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep000p00.json",
+      "bytes": 2347,
+      "sha256": "ef6c236cb712e0f3c3a2145ac98478b998ad5b0e59f9bfb99101b64a677074e9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep045p00.json",
+      "bytes": 2348,
+      "sha256": "332aaf446587ab9f07a9d55c11fd51ddedb1da9a505c759f387d7b78f1bcc3fd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep090p00.json",
+      "bytes": 2348,
+      "sha256": "4a02364cd97ef7fb7d6957c5e8409bb493fe1d35300f39774fde652ec7593288"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep135p00.json",
+      "bytes": 2349,
+      "sha256": "d324be8a0be323bbbfe5af47f1d31ee706c5519c410242df106e1afcb030851c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep180p00.json",
+      "bytes": 2350,
+      "sha256": "90b1a21d0a3132e29f67136389ae685e02734aed62b68b7ed251c03cce0e5adc"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep225p00.json",
+      "bytes": 2352,
+      "sha256": "0e825e44ba8e638b1671cc1319f8b17377a9c568c79b4cea01814f4d632a4c05"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep270p00.json",
+      "bytes": 2352,
+      "sha256": "5f5cc307fb41f66a8d3c6a10f5605ca0ca7abd9327edec7329d80d7a9d9870a3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave00p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave00p5_phasep315p00.json",
+      "bytes": 2352,
+      "sha256": "2a37a032f79e5296e6af3ae29d182a428b0dbd614cb8daa4dd6ab8f1fa9e0831"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep000p00.json",
+      "bytes": 2352,
+      "sha256": "cfce02784fd72bd216de53934771578506c63cfd957e7c33e2da00604130412d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep045p00.json",
+      "bytes": 2352,
+      "sha256": "4c3b67e7bf7c84113e26b741406aa32374fb048b85f4986d8e813511b5c44984"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep090p00.json",
+      "bytes": 2355,
+      "sha256": "754cbc9f9dbcc07f0bd67c9a7e4231436fd1868592c2df0763afc92dde844bb0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep135p00.json",
+      "bytes": 2359,
+      "sha256": "497230082696d2c23c30b00d6d2f4e1d1c006b6a34e1dfe502b63e428310498c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep180p00.json",
+      "bytes": 2353,
+      "sha256": "b3b887c33507f0a22542a581f9c8a87de9c94bf0387451777cf61c8bde5e0b6f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep225p00.json",
+      "bytes": 2354,
+      "sha256": "714601dc02ee2d66cf1e4e16fb4ff1104c3705becccb95a3730367f7f2327b5a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep270p00.json",
+      "bytes": 2354,
+      "sha256": "264a8caa11f6e4959092cac5df6a0983cc8fcff3340755a69cf00c5cde3d8f9b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p0_phasep315p00.json",
+      "bytes": 2353,
+      "sha256": "804596f7394ac099d23823d2341b025167f9015d24621bb470822e4acaec31d7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep000p00.json",
+      "bytes": 2364,
+      "sha256": "c134ccb483cc75997a491fe2c6470c587e6da51a87e52f9d886684371081c213"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep045p00.json",
+      "bytes": 2364,
+      "sha256": "2cd91b4d2bd9f76ab0ed8b8ec486fe3f04e86cf333dad80bd38154e042c9f233"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep090p00.json",
+      "bytes": 2364,
+      "sha256": "247d7a08b5734cd5e81d8d8a746b1b553e66200e70984d379055e727fd1c6f25"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep135p00.json",
+      "bytes": 2366,
+      "sha256": "3c6963500487afa09370d975dd98f99b14385bea0c0a0eb9d9e1076f5c4fd831"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep180p00.json",
+      "bytes": 2364,
+      "sha256": "3fc8269600f6bb369f966bc63169fad973c0a173c71c752a1438209e0cb49268"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep225p00.json",
+      "bytes": 2366,
+      "sha256": "2b969eef3e04866a8fcf9e401622df4d77b9e15901b21b50208a746b69207d98"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep270p00.json",
+      "bytes": 2362,
+      "sha256": "706e8277187b63173600e1f42d330f622a8ff554e26352c27b7d0e5548e83232"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave01p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave01p5_phasep315p00.json",
+      "bytes": 2364,
+      "sha256": "773de507aa8f9ffc2fb1c9e90ff3b88a6b21f2f7e6fbf5472e1eff7291362e10"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep000p00.json",
+      "bytes": 2351,
+      "sha256": "ca9050604bcef207471f24b60482e35d54bf46fab2f9a70403a1b533d19e3941"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep045p00.json",
+      "bytes": 2354,
+      "sha256": "74a3c9f5794fd4404427394f82d322f333ee3e56ca25236af8f812b32f016808"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep090p00.json",
+      "bytes": 2349,
+      "sha256": "4e22c149c55e717f9edc6b58b1c612890d30ba23a52449054476176eda288a08"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep135p00.json",
+      "bytes": 2353,
+      "sha256": "6a7ace7a99324d5f201b2e1dc545216bb8072f7fe61c93376630096abf43edc3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep180p00.json",
+      "bytes": 2353,
+      "sha256": "691333315c746de9318f752841089edec7f863ba5c71cbafbb72ec132560525d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep225p00.json",
+      "bytes": 2355,
+      "sha256": "f4db5e5a2178d2c7b15362e4440fa2cf2e4e1470e820e50c457c4c14b7d19538"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep270p00.json",
+      "bytes": 2355,
+      "sha256": "b8026f1f39ada3d53df17b817ed1c2aa8766f366c85c02c78ef7b8bfa99fddd8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p0_phasep315p00.json",
+      "bytes": 2352,
+      "sha256": "cdaa4e4e9d420a2da8ccf8ae1d51a88b9385d756ca857e8c86f4e48f874ee471"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep000p00.json",
+      "bytes": 2352,
+      "sha256": "f2eafc496d6aede21ac63a82675eaa42333d5518d0125263e1e928b4bb964ce2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep045p00.json",
+      "bytes": 2351,
+      "sha256": "b797f7240ae547c476a0ab7b1ebc16e767a646955c19a596059a119bcb4b4a9b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep090p00.json",
+      "bytes": 2354,
+      "sha256": "3d89be41be4b2ac5ed195570a0117ece9004ecab3b2af9a2159debb995882b39"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep135p00.json",
+      "bytes": 2353,
+      "sha256": "5ed198db1dd9cff34768309de4ca8ddd012953ec6ec0ce67a844210ba0ec4edf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep180p00.json",
+      "bytes": 2353,
+      "sha256": "572ffdeafc1c1428685e54803568cbb34202e319b869427b6abd1844ba783cc2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep225p00.json",
+      "bytes": 2355,
+      "sha256": "a5e539206de3ea2bf41084679b47202ad4840bf4cfb99f0aed0ac6772f1b6372"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep270p00.json",
+      "bytes": 2356,
+      "sha256": "29b515b3803fc32553569de6f4b6f37fea574494629398e6b9923429cab55bb1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave02p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave02p5_phasep315p00.json",
+      "bytes": 2359,
+      "sha256": "3d915dff8c8115d77007afa0deed79db6cfdd47694d4eca628f2a26d796ea658"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep000p00.json",
+      "bytes": 2368,
+      "sha256": "c8b5435df0f0f35e789bbc8533216aeb0d4b8c8e92d989d03738981a5fa42325"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep045p00.json",
+      "bytes": 2366,
+      "sha256": "fa80a5cdf188086fef8668250fc187cb9c7904d6a03d33e236c61368fcd39fdb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep090p00.json",
+      "bytes": 2367,
+      "sha256": "90058891a87085ecb7e4665fe248b1f52f006eabde81799832c11349e163c4e0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep135p00.json",
+      "bytes": 2368,
+      "sha256": "47498cfe04239da147fdfbb7233227dcde0fe105ca79d0753d1da950c1d5d77c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep180p00.json",
+      "bytes": 2365,
+      "sha256": "5de1e1ace3c5e842f6df66ddc01e22bd74267f12ad51937156870758b1dab8e5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep225p00.json",
+      "bytes": 2367,
+      "sha256": "28f80b1577ad1cc12b124634cd11d93301ae4ada4c5711365d859c77d66eedae"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep270p00.json",
+      "bytes": 2369,
+      "sha256": "8967dd1bcd0dffea629e10e9fb3cb5d5922f08ca7352093e824f1a925e6284a0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p0_phasep315p00.json",
+      "bytes": 2366,
+      "sha256": "fa15009835c3edf2ded03dbfac53b760c936c33efef4cff550aa8ad90482b89a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep000p00.json",
+      "bytes": 2353,
+      "sha256": "532db10330aa78576a652679a4ff7d221812197d2664c850bff3107852bd7625"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep045p00.json",
+      "bytes": 2355,
+      "sha256": "551b8239e25480dd1949061c6ba71e37e77601c97832b6cc52127e113c1fa75f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep090p00.json",
+      "bytes": 2353,
+      "sha256": "276c1c4a885fbe79386ea6b0f4995179081fb3b3f5b3044b78302f5b697abee8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep135p00.json",
+      "bytes": 2362,
+      "sha256": "7a6dfac1b664f1c863e599e7d0513629c40b3c1836f96dcad35c32fe11adcd17"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep180p00.json",
+      "bytes": 2352,
+      "sha256": "6d4ad5945d57aa87203ac89126484a4253b9af4ed111a6db4d7f62c2b0b429f6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep225p00.json",
+      "bytes": 2356,
+      "sha256": "58939a1071199910566be2e63e07eb93df8c340492d41c4f42b91921a0030ed9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep270p00.json",
+      "bytes": 2356,
+      "sha256": "16797f3144ffb06403c05290b214c30b93f39b468fca8cc430db8e17fd093c06"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave03p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave03p5_phasep315p00.json",
+      "bytes": 2360,
+      "sha256": "ec889e8a46cc5830f269dfb9f97a57337de7d88f625cccaf5b83c92bb9b9a5b0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep000p00.json",
+      "bytes": 2354,
+      "sha256": "fd313d58b19846508e6c64bb7b6dcd1c66f2e0c4f3ce806fd75444775aa173d1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep045p00.json",
+      "bytes": 2354,
+      "sha256": "5865ba8b4d242232b1b2d67fab0564352831086cf62076efa5eff4eebc5f214d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep090p00.json",
+      "bytes": 2354,
+      "sha256": "8c7ef6bd069a3e0c69d801dc941af2160734b4245f1e19ca025e0c7641890f9b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep135p00.json",
+      "bytes": 2355,
+      "sha256": "324fd9884be2959ca412e22198f685fa201c43aeb4a6d5dd5a1383ad248aaefe"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep180p00.json",
+      "bytes": 2353,
+      "sha256": "d271566a05943aec61ed4ecc130d1d588786ed0dfb010f8e4ff6ef576399b411"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep225p00.json",
+      "bytes": 2355,
+      "sha256": "f15bffeac2198faf7a7e6c9293abe3841d8c9fa7908ad7ebb8ff2044fb622054"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep270p00.json",
+      "bytes": 2359,
+      "sha256": "e0f72bb5b5f93766e6d1b31aa8f37b8a5fa8c9fd055bb4588436ae3d949ef1b1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\canonical_coupled_contact_Nwave04p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/canonical_coupled_contact_Nwave04p0_phasep315p00.json",
+      "bytes": 2356,
+      "sha256": "9fd1ce90ddabde9fae1b3046f3a9185f843986d97517a852c9b899a0d5015099"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep000p00.json",
+      "bytes": 2339,
+      "sha256": "d7e63f3c08062e30915805f870ed1cf94e43b131884c94d9d9e823b0d982e97f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep045p00.json",
+      "bytes": 2347,
+      "sha256": "537028c30c418b77efb248c6954af4ece763055cecb697df11aadd18901caab4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep090p00.json",
+      "bytes": 2340,
+      "sha256": "57456f22e95a541ce6f8742e54baba3342632acdf624a18777745f61d0e939d7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep135p00.json",
+      "bytes": 2348,
+      "sha256": "bd3029b93187d2982fbcd1b95f4ab706df13dc87d2ee81318253425157b40bae"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep180p00.json",
+      "bytes": 2344,
+      "sha256": "cb8c16eafbe6de3bfea71c8c0740223f75bef3ae67cdb301a35394926e5d0ca3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep225p00.json",
+      "bytes": 2342,
+      "sha256": "faa123595ca35f20a2d2a0e39ed18651c97808333e274da97ed65d72ef087ff4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep270p00.json",
+      "bytes": 2339,
+      "sha256": "b75a91d87af177266f192cfa7b89771a64638ceecde53791f1177a137fe737ca"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave00p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave00p5_phasep315p00.json",
+      "bytes": 2343,
+      "sha256": "26fe9a4d2f048d509b0a166e8220bbce1cc6dc1eee3f0a0e6035b745f2d888a0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep000p00.json",
+      "bytes": 2346,
+      "sha256": "01b8cccea5d8393a8f8f07fadc644d061b7d527ade3d8c1ba720a19cf6acfa2f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep045p00.json",
+      "bytes": 2352,
+      "sha256": "a8483ff4da09006a0e9d80b914a7457aaeffc50afc8969149d6a4028cdecfd87"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep090p00.json",
+      "bytes": 2351,
+      "sha256": "a2a3d0fbf98919c67810eb6253329345cdb539f7900c5343e7d247687f3696ca"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep135p00.json",
+      "bytes": 2350,
+      "sha256": "ec69b613d6b9f57b86f809d5c54812dd1dc48f13ef295d8f25b02124b16d6301"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep180p00.json",
+      "bytes": 2350,
+      "sha256": "76dbf03082df80f04a9feab8338d28c5e7809d04ce7d7d0a3c3a91423a1e01c8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep225p00.json",
+      "bytes": 2354,
+      "sha256": "3d0c81df41031ce6881aa099cb276f6a8a8153dfe84da403ce1f067de63b8e4c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep270p00.json",
+      "bytes": 2354,
+      "sha256": "7d445f5d42725b211dadd9480a4ce20ebab1b06e746ec171becb484dad5997b2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p0_phasep315p00.json",
+      "bytes": 2349,
+      "sha256": "ac48e7e58db3553a549a9869245614022e44ce8db67d68ec65df3011817ca23c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep000p00.json",
+      "bytes": 2363,
+      "sha256": "1b50e2b931effaa02e42ac44b6837b78758e8b3e994f33233a4f0414f50f4a19"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep045p00.json",
+      "bytes": 2358,
+      "sha256": "529b5015bf076e6fe937a7c2b32aa2c70f433e953ae9a96f027b4ea237e53a69"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep090p00.json",
+      "bytes": 2359,
+      "sha256": "62773ab313fa46b8aceb73970903035715cc2c476a64199445e8616026f164c8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep135p00.json",
+      "bytes": 2359,
+      "sha256": "fa9715773b8a15d0f6b21c7cb52f758d579f2b68946c1628784d00e637e5a409"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep180p00.json",
+      "bytes": 2364,
+      "sha256": "2c6e37fcd64fdf340413113866136467be71684f55aaf6eb7707169d5bbe07ed"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep225p00.json",
+      "bytes": 2360,
+      "sha256": "04382e70db8a0f75d42e78df5562336c2feaf1e06d924fa17ca9459702d11618"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep270p00.json",
+      "bytes": 2366,
+      "sha256": "4aea33d42fca4ed9fbd482259dc1ea8fe60b126d1c7d70018e54721e2cd29b06"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave01p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave01p5_phasep315p00.json",
+      "bytes": 2363,
+      "sha256": "d9f87349afcf06f60190e9aead90e05387addf2c3405554b2a8f0298b66a29da"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep000p00.json",
+      "bytes": 2350,
+      "sha256": "52b5be3a23548b09222f1e8749b3d14b464e30f4a22b8ef2d64fdf15fd9836f9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep045p00.json",
+      "bytes": 2347,
+      "sha256": "2d7f5c5128a79fe8f03d13432eb1a2a94ba7bcff529ae63059571ea49b5578bd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep090p00.json",
+      "bytes": 2346,
+      "sha256": "f86a6180eb9c9f2b844a30ae21c0fec908bc66a54abbd1adb3794454221398ea"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep135p00.json",
+      "bytes": 2352,
+      "sha256": "47632e2d883311b5686a760cc6f3b3a52440cf837a9a0916741ac90738c044c5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep180p00.json",
+      "bytes": 2346,
+      "sha256": "6f938282850d98cdb6dc1784da2d02007d333067ae8058697686afe4481272e8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep225p00.json",
+      "bytes": 2349,
+      "sha256": "aa5931ada39b9c0c00a0f4f938aa8fec21e03a7ee56b134c2b27ce3edd50e098"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep270p00.json",
+      "bytes": 2349,
+      "sha256": "ad80434f7864545e90cb1e518d1ad85b2ff9a040bd4a71b66391bf0f6bc1974b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p0_phasep315p00.json",
+      "bytes": 2345,
+      "sha256": "93857ab0662367f91b63c9a3a7b86cc1b1b4cebf8bb4ce7b25220767eb22a3e9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep000p00.json",
+      "bytes": 2333,
+      "sha256": "dcc9e09c8df46dc8d0dccbb05872aee309b41946f526b5b0f54d71f2a6b9ca97"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep045p00.json",
+      "bytes": 2351,
+      "sha256": "1b489c64bc48e26b307b1f1b2bc84df7f704a5ddd974fc7e140fbf15de4ded8c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep090p00.json",
+      "bytes": 2351,
+      "sha256": "5af3152596a13bcbf032b8430a7189d38f3b2d5f4432affa880f245dc980cfcf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep135p00.json",
+      "bytes": 2349,
+      "sha256": "47026e9f17dd51dfe91bfb4febc636051f98fd30be2184b52be7c8d3ed4c9870"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep180p00.json",
+      "bytes": 2351,
+      "sha256": "1303cfaf176c59e8561c0ca9ab19cfbb5261c53d413fa261dd6642967f4fc4b3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep225p00.json",
+      "bytes": 2348,
+      "sha256": "83115994e3274b86e02684e90a3b509d997521af894ec1c77459543e33e1f4fa"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep270p00.json",
+      "bytes": 2350,
+      "sha256": "e83537c8504945c462ce3bca8801ff6ecf8a0552d3a873832f94aa88118549cb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave02p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave02p5_phasep315p00.json",
+      "bytes": 2350,
+      "sha256": "2245694244f1d64244952d64a65aeac9dce5ccdf30141317884bce74717db026"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep000p00.json",
+      "bytes": 2366,
+      "sha256": "48c1b93027ce0aac94ab97e462b88bea14ba0b69018c5d76c07874d9e0e1a134"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep045p00.json",
+      "bytes": 2365,
+      "sha256": "78ac7e781b5bde5dd693eaa1c24c68086f2142a4fc7398dc8548e7332304883b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep090p00.json",
+      "bytes": 2362,
+      "sha256": "e8dcabe15198d5d7d590dd74664e2a39a132bac3ee92b3c451dc452f33e77335"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep135p00.json",
+      "bytes": 2363,
+      "sha256": "6196dc9c689c8010fce6d79a447545cf45ff18d712e3223324801937e91acf35"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep180p00.json",
+      "bytes": 2365,
+      "sha256": "6e97cb6d9d53a39c9987b46fb46d2f3dd3e7420e10e7416d6f6b9b32f6a6af77"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep225p00.json",
+      "bytes": 2362,
+      "sha256": "8acf3cdf4e37e4fb54b79447943363789c61359dec2ec09e224074953608db3e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep270p00.json",
+      "bytes": 2360,
+      "sha256": "071b0cc11bd7c67cfbf7127eb2172eb2ee907e58416b5c9c689b726e6192da2d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p0_phasep315p00.json",
+      "bytes": 2365,
+      "sha256": "f179d522d67a3cb9f71885dfb0c3bfd132b43d3251912f6e03b9336bbacc9775"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep000p00.json",
+      "bytes": 2354,
+      "sha256": "8febf2ecdccf00cf39d1fb0a9f4edba447ea5b5c134aa705427b52b26c060c1b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep045p00.json",
+      "bytes": 2352,
+      "sha256": "cace3d07afb37a04f7eb71c558d1af473f4755abe699fd756589546010084e57"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep090p00.json",
+      "bytes": 2352,
+      "sha256": "9bb3a368cb7995bb8f46056e51b0138c7b7e321c7adec381a95ddb3a75c64599"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep135p00.json",
+      "bytes": 2351,
+      "sha256": "53f32e5e22f94acd77dcefe5daa49131ecebd32a9191d37b9fddf9a8c40bea06"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep180p00.json",
+      "bytes": 2350,
+      "sha256": "20805917eb134e563ef9fa5418cba3d63fc599d2aed3ec9d45691cf2b02674f6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep225p00.json",
+      "bytes": 2351,
+      "sha256": "8d3366be19a2f3bf94534073939a2892ed45ca64f326e0c981e2dc898f8540fb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep270p00.json",
+      "bytes": 2350,
+      "sha256": "ae866f9b27c3b3e022e7e302981e29253ba9654cce5a027a7806d1edaa42bca4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave03p5_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave03p5_phasep315p00.json",
+      "bytes": 2351,
+      "sha256": "cfc8a0765ee39e9575ff04f7b0f79de3d91a9a98520e557b7c41f135f8a222f3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep000p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep000p00.json",
+      "bytes": 2348,
+      "sha256": "ef3d4bd2cc99616a31bc9735a7b94bab4755f5340fa8acb128056b30f27a2df7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep045p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep045p00.json",
+      "bytes": 2350,
+      "sha256": "c8a2627465728ad7a519856c6bab6d620c9e3124359c7df6d0a7a4ce0dd038fc"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep090p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep090p00.json",
+      "bytes": 2350,
+      "sha256": "bc1445d263cdd9ebfaacb50f7a514cef99b59432099e07f364c4cb70cd663f7a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep135p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep135p00.json",
+      "bytes": 2351,
+      "sha256": "f29b111132e4fec36e1b444739e94b04b088d8fce3a535c23eaaf90a965cd77f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep180p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep180p00.json",
+      "bytes": 2353,
+      "sha256": "a5a08bd0f21d349833d6ea41b0747d820cc41380e27193eab57c56cc2dac60fb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep225p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep225p00.json",
+      "bytes": 2350,
+      "sha256": "908923ba31af6260e8145ee8c7481dcc2101b550f9ee65c68c0ba5398b3218f2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep270p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep270p00.json",
+      "bytes": 2353,
+      "sha256": "b09af735fdf2ef1ef7d99e1eaa2310447b2c17890e1d43b505dd5898a7cb579e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step30_symmetric_null_fixed_body_leg_phase_coupling\\trial_records\\lr_pitch_phase_flipped_Nwave04p0_phasep315p00.json",
+      "path": "exp_data/reliability/step30_symmetric_null_fixed_body_leg_phase_coupling/trial_records/lr_pitch_phase_flipped_Nwave04p0_phasep315p00.json",
+      "bytes": 2347,
+      "sha256": "eb5857f18af2629746dd787dfa0382ff3fcc4b9b01ebf6206fbc05c5d9285096"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step31_physical_robot_wave_number_demos\\README.md",
+      "path": "exp_data/reliability/step31_physical_robot_wave_number_demos/README.md",
+      "bytes": 2214,
+      "sha256": "ec4959c8a07b6e720cb0cc0fcaac8ac9aec8592ee1188c757cecd207ee0f863a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step31_physical_robot_wave_number_demos\\pitch_dynamic_audit.csv",
+      "path": "exp_data/reliability/step31_physical_robot_wave_number_demos/pitch_dynamic_audit.csv",
+      "bytes": 1729,
+      "sha256": "6dac724ab415b27c4f12ff6880292603d650e05fd5bc3c4ab8d075e9fbd7e8c6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step31_physical_robot_wave_number_demos\\pitch_dynamic_audit.json",
+      "path": "exp_data/reliability/step31_physical_robot_wave_number_demos/pitch_dynamic_audit.json",
+      "bytes": 5009,
+      "sha256": "0c31c885d6ca675eb42365e08d39373014be43a5e2e948b7bf84404aed045c1a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step31_physical_robot_wave_number_demos\\pitch_kinematic_audit.json",
+      "path": "exp_data/reliability/step31_physical_robot_wave_number_demos/pitch_kinematic_audit.json",
+      "bytes": 6495,
+      "sha256": "25ea2bd9519ac09d2a5114c6acf671705952df426193ecf0a612b10974b5fdff"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step31_physical_robot_wave_number_demos\\run_configuration.json",
+      "path": "exp_data/reliability/step31_physical_robot_wave_number_demos/run_configuration.json",
+      "bytes": 949,
+      "sha256": "1ded539ba0bb6b3406744cf854761229407c83d59d6d66219240d00e7a4d7ff7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step31_physical_robot_wave_number_demos\\validation_summary.json",
+      "path": "exp_data/reliability/step31_physical_robot_wave_number_demos/validation_summary.json",
+      "bytes": 814,
+      "sha256": "2e3325fda0da713ab04f6776515dcda97ce91058e96259df5a8b0f15ce6312cf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\README.md",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/README.md",
+      "bytes": 1054,
+      "sha256": "0e5ab313e6949a7f4ef0d03db238727301217c6a03ec7127f596b4861a5c0e07"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\cave_grouping_validation.json",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/cave_grouping_validation.json",
+      "bytes": 3008,
+      "sha256": "ade83b7acfa69709593ed1078243bd11b3a602cbac5b382779e5c2b28d8ab454"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\pitch_dynamic_audit.csv",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/pitch_dynamic_audit.csv",
+      "bytes": 1726,
+      "sha256": "903fbed62d23390620d0783fd5f6e22863bb6e59ebfcf0d3846c5b0bc2f46c78"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\pitch_dynamic_audit.json",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/pitch_dynamic_audit.json",
+      "bytes": 5006,
+      "sha256": "05746330f8fa27aa408f233dec68bd24a676557fac4305cce9d4e18616db016d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\pitch_kinematic_audit.json",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/pitch_kinematic_audit.json",
+      "bytes": 6495,
+      "sha256": "25ea2bd9519ac09d2a5114c6acf671705952df426193ecf0a612b10974b5fdff"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\run_configuration.json",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/run_configuration.json",
+      "bytes": 1326,
+      "sha256": "95f7dfefe7d90f08c47a4d3d553805675904b8a8b0f4d5fe85897bfef19fbd58"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step32_physical_robot_cave_grouped_wave_demos\\validation_summary.json",
+      "path": "exp_data/reliability/step32_physical_robot_cave_grouped_wave_demos/validation_summary.json",
+      "bytes": 813,
+      "sha256": "01ea13144139b75a3d32e54e65ae901baab62c70933788d7e746da295526f063"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\METHODS.md",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/METHODS.md",
+      "bytes": 5434,
+      "sha256": "14a20de0b6c4775dff119e63393595b292802e29d2d7153e45a550ad68d75fcd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\README.md",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/README.md",
+      "bytes": 3693,
+      "sha256": "23935daebc424f3d4c6e24c2caf3c7bdcbfb0f95f42969337c857caaed93a7a6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\artifact_validation.json",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/artifact_validation.json",
+      "bytes": 3671,
+      "sha256": "da488f25b92877d7da3a651a62c04147219cd731f0c2d3e76087a1cf0393af74"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\demo_manifest.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/demo_manifest.csv",
+      "bytes": 4223,
+      "sha256": "922cf4e7d5b8c44bbae1d08813eb164c78030072a5f19e2edc8825aa84c3a37a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\demo_manifest.json",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/demo_manifest.json",
+      "bytes": 6732,
+      "sha256": "07cef5670dbc6b519f845695e17dddd3a95e866a8f665da5a3a804b5b1a77d16"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\iid_summary.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/iid_summary.csv",
+      "bytes": 3601,
+      "sha256": "f1e8a87b593e6c04ba832332dc111c51bfdee51d784ab772f3fbde42b7778e62"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\iid_trials.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/iid_trials.csv",
+      "bytes": 829533,
+      "sha256": "292f4e7750def65591c7ddebde9f1969f002c1eb466d15bf067d29286e5b5749"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\rollout_control_validation.json",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/rollout_control_validation.json",
+      "bytes": 2626,
+      "sha256": "8d2bceeefc0486babb59f331920121b802f1c1701128ecbb2e42916dee8eba0a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\run_configuration.json",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/run_configuration.json",
+      "bytes": 1066,
+      "sha256": "8db92bbe66699e508607eb1358d9a132fb26e04a2f1feaa8c52cb3b67bf130fa"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\semantic_validation.json",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/semantic_validation.json",
+      "bytes": 5794,
+      "sha256": "1670a495984605aafb635679e72aeb7dc43d4d8bfc1162951e74d27d0fb9c21f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\validation.json",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/validation.json",
+      "bytes": 865,
+      "sha256": "6068c557f556f81e3d710bffb82901ef3c03bda6d6c1a0aa071957536e028e20"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave00p5.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave00p5.csv",
+      "bytes": 104512,
+      "sha256": "28b1cef816da3bafacde406c1accae4e53fc7ac734e254f84478f7128b45f8f9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave01p0.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave01p0.csv",
+      "bytes": 104369,
+      "sha256": "c3ad7a9646bc952bfa2ba1c1840340bead75df1555ca162c0cde375b0ba4d71a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave01p5.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave01p5.csv",
+      "bytes": 104422,
+      "sha256": "d054985497b9c88595885848e7baa759466575ddf318b6aec0f5d823ffcdc026"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave02p0.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave02p0.csv",
+      "bytes": 104340,
+      "sha256": "96b2234cc069173983ff2509677641613ce810caa5bca9589bca2d1c672de35d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave02p5.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave02p5.csv",
+      "bytes": 104529,
+      "sha256": "cc9a8574c2d0dd77f5bd1b4ec81a117b2198cf0654e2c4d89ab964e4d03729ab"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave03p0.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave03p0.csv",
+      "bytes": 104606,
+      "sha256": "aa30422c5bd51358fcfd53adccd405b0d39cb9c8bf8ca89c1d889b1baf7074ad"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave03p5.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave03p5.csv",
+      "bytes": 104551,
+      "sha256": "26090a207c83f797f22176c9711c67444dcd267a44ddcf0c7b4910d5e747d025"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step33_physical_robot_pitch_body_yaw_iid_wave_sweep\\checkpoints\\Nwave04p0.csv",
+      "path": "exp_data/reliability/step33_physical_robot_pitch_body_yaw_iid_wave_sweep/checkpoints/Nwave04p0.csv",
+      "bytes": 104539,
+      "sha256": "b2c93f42953468048df1575709923865a4fa7672e18e335e331586039e40405b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step34_physical_robot_original_contact_no_leg_yaw_demos\\README.md",
+      "path": "exp_data/reliability/step34_physical_robot_original_contact_no_leg_yaw_demos/README.md",
+      "bytes": 1817,
+      "sha256": "29f13b56eee9c5815cd955012022d789154c17e538061d3100f666e8b7b6f5d1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step34_physical_robot_original_contact_no_leg_yaw_demos\\controller_validation.json",
+      "path": "exp_data/reliability/step34_physical_robot_original_contact_no_leg_yaw_demos/controller_validation.json",
+      "bytes": 2592,
+      "sha256": "8fd23501fb754757e4c08666df31b93e3ff971b4f8019adb2e9a52367abd5e8b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step34_physical_robot_original_contact_no_leg_yaw_demos\\demo_manifest.csv",
+      "path": "exp_data/reliability/step34_physical_robot_original_contact_no_leg_yaw_demos/demo_manifest.csv",
+      "bytes": 5798,
+      "sha256": "9bc4f7371bd0a92a1e86389d0b68efa8508d80b64f378e6bbde908ecc90eb774"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step34_physical_robot_original_contact_no_leg_yaw_demos\\demo_manifest.json",
+      "path": "exp_data/reliability/step34_physical_robot_original_contact_no_leg_yaw_demos/demo_manifest.json",
+      "bytes": 9462,
+      "sha256": "8009cd8789cf190759f4bbdfd9520ab565e5f8c2afcf3ee8b02c94cb827bd2c4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step34_physical_robot_original_contact_no_leg_yaw_demos\\run_configuration.json",
+      "path": "exp_data/reliability/step34_physical_robot_original_contact_no_leg_yaw_demos/run_configuration.json",
+      "bytes": 1062,
+      "sha256": "e96651025c84e6cf6fd04b11f6509f2d4f54ce3b860cde5f86250f1a27f5c89a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step34_physical_robot_original_contact_no_leg_yaw_demos\\validation.json",
+      "path": "exp_data/reliability/step34_physical_robot_original_contact_no_leg_yaw_demos/validation.json",
+      "bytes": 214,
+      "sha256": "6665b59410f0bf91d381294ad3af4d7e17cd0252cca3a298ae7e76ad5b61ba15"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\README.md",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/README.md",
+      "bytes": 2700,
+      "sha256": "f7be9421110162b4341f343ec33ce6d48cfaf46555b0eb91d50b9dbd4e775bc9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\controller_validation.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/controller_validation.json",
+      "bytes": 7872,
+      "sha256": "55865e86e9d7e63f8ad61ed5c5e5b45d0069e88718032f625f14ba4b64c40dfa"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\demo_manifest.csv",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/demo_manifest.csv",
+      "bytes": 3335,
+      "sha256": "d0aff7d2b7f0fbee0f38055d2d0e52b80dfaf4cfe962dada4c7ec29d6a5a7086"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\demo_manifest.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/demo_manifest.json",
+      "bytes": 6009,
+      "sha256": "9c715f2bf648fa2aa4ce2e93ae8f5de437c14cd7417248c4e5f99dc74c6245bd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\demo_validation.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/demo_validation.json",
+      "bytes": 112,
+      "sha256": "33ce250647d25679bd27a31b4e1542537272832c72c3cb75d87c0c9d1914f711"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\optimal_amplitudes.csv",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/optimal_amplitudes.csv",
+      "bytes": 1698,
+      "sha256": "fe9cacc6d54131c47f2c62090e2af4398d0aa17cdccf7b53cd857c66faae6514"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\results.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/results.json",
+      "bytes": 6046,
+      "sha256": "cbda1f7eb036fda531ad9b513003e74eb90f68807a88be0d98a7f04a06acaa70"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\run_configuration.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/run_configuration.json",
+      "bytes": 1076,
+      "sha256": "59efb65c0606eb7e5ee2dd23275303bffe7d0042322d94a118f9640b1aa98a02"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\smoke.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/smoke.json",
+      "bytes": 1516,
+      "sha256": "aa5dd98b40e738d86e506721e9282dc619692b6a76129d65d777d1f283472c2d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\step34_replay_validation.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/step34_replay_validation.json",
+      "bytes": 354,
+      "sha256": "d986134581c9750b1366298ac99dfae4934060f9e4e6617cf43a981e7929ed8d"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\trials.csv",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/trials.csv",
+      "bytes": 64703,
+      "sha256": "cc17dbbbb0c0700c486d2ba7d564b4a401818dcfee4ae4f1fc5c3aa52b448f2a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\trials.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/trials.json",
+      "bytes": 176244,
+      "sha256": "a48056907f4c30cad58bae4cf76ceecc32bf36ae2076b294e5d80b1ed3ecf052"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step35_original_contact_amplitude_optimization\\validation.json",
+      "path": "exp_data/reliability/step35_original_contact_amplitude_optimization/validation.json",
+      "bytes": 340,
+      "sha256": "c261e22481e4761e8a2b52fef77df18fc3d2b4402047dbb9fd285e10e5a8a3b9"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\README.md",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/README.md",
+      "bytes": 1868,
+      "sha256": "09eb6b2ebe3e74ea1946ef152caa0a86733a9163a09becf639cc96d28504b3e3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\demo_manifest.csv",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/demo_manifest.csv",
+      "bytes": 3413,
+      "sha256": "9838136d4abf1a78bc6959c914e0df016c7d4b9f264ca525c249aabc303e839f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\demo_manifest.json",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/demo_manifest.json",
+      "bytes": 6087,
+      "sha256": "4e963b7f4a951125f81cdee6a6494c2b1a48175b5c97fd4fd21c6aa44e33ca5e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\demo_validation.json",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/demo_validation.json",
+      "bytes": 112,
+      "sha256": "33ce250647d25679bd27a31b4e1542537272832c72c3cb75d87c0c9d1914f711"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\results.json",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/results.json",
+      "bytes": 11917,
+      "sha256": "dff8fd811c6d6c0f7bc4a3c7b0cdb74efb2e9cee208272c37c9de8fb6999cab4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\run_configuration.json",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/run_configuration.json",
+      "bytes": 976,
+      "sha256": "8c9af9fbed0944630b5a0b166bd995adcc9975183b42a82a205531a08e7023b4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\selected_amplitudes.csv",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/selected_amplitudes.csv",
+      "bytes": 4259,
+      "sha256": "78ebf92fe87325ead96122f15f39abcd8d946925ead4fc8e5537a22e62dcbf1f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\validation.json",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/validation.json",
+      "bytes": 357,
+      "sha256": "ab58f5840425ab9f2988b58b57464050d66e17068a43c92cbcd077090435a413"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\wobble_limits.csv",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/wobble_limits.csv",
+      "bytes": 961,
+      "sha256": "e6a5b3b7b7c69500cf475358db2ad9916aa33ace35c5c0ed80edc51e498d48a4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\wobble_trials.csv",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/wobble_trials.csv",
+      "bytes": 37951,
+      "sha256": "c65bb46a7fe6c9f7c15c327fb36411b2250436fc0671bc0bf2814028b0c87ff4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step36_original_contact_low_wobble_amplitudes\\wobble_trials.json",
+      "path": "exp_data/reliability/step36_original_contact_low_wobble_amplitudes/wobble_trials.json",
+      "bytes": 106556,
+      "sha256": "64269c3c80dbabde58e94ea2fbd3b5ea2d1772a88227e6c871a877644216ab5e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\DEMO_INDEX.md",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/DEMO_INDEX.md",
+      "bytes": 9749,
+      "sha256": "2df27e7fb6a05fe0385f79825bc5d98c25479621ad880211e9db735ddb2e33ec"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\FINDINGS.md",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/FINDINGS.md",
+      "bytes": 11674,
+      "sha256": "9ddca6179160989527b7f7da16cdb580459fcd7ca6fb529b81b0e0e493d4cc84"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\README.md",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/README.md",
+      "bytes": 1733,
+      "sha256": "a46709029e5ca53d190b2d6940a6d7bc953aa9e3136ad01ed83364784f98272e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\demo_manifest.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/demo_manifest.csv",
+      "bytes": 4005,
+      "sha256": "3c3b4d4a37b960445d0fedc7b5c645f3ea50448c704d114bed16fa9fcf9e6633"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\demo_manifest.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/demo_manifest.json",
+      "bytes": 6831,
+      "sha256": "ed006010ed29cd61974f177b98bb94adab6fe624bc78da032d88980ef01ad967"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\demo_validation.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/demo_validation.json",
+      "bytes": 514,
+      "sha256": "beaf5530fb1df83634daa0b681c33f173295fd038cee06584b26ca8c9f82753b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\dispersion_trends.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/dispersion_trends.csv",
+      "bytes": 1631,
+      "sha256": "b60e55aa8957c2d9ae116c2cb30bc8836e1c59b5d40ce6d0e66b04f68aba3fb3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\findings.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/findings.json",
+      "bytes": 3788,
+      "sha256": "13cdd2176b38898b18f60ff5b540eb8f9a372f7bfd8203e558703f4e31bf7c0b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\iid_summary.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/iid_summary.csv",
+      "bytes": 12517,
+      "sha256": "9f86a9b067223281c01718654ac09c3651412273715252adf032e0bcddb7eddb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\iid_trials.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/iid_trials.csv",
+      "bytes": 3772658,
+      "sha256": "6c9762f08d30366f273d496aebbb6ffa82f23ba99531fe6e9f1b25eab058f8df"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\pd_pilot_summary.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/pd_pilot_summary.csv",
+      "bytes": 500,
+      "sha256": "7561c2624d5f753c9190825e1153b6e63a8f70f9b662fc62cffe75e85e882a34"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\pd_pilot_trials.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/pd_pilot_trials.csv",
+      "bytes": 49963,
+      "sha256": "e36f8b5c135da983d3c76f769fda6d269409918f0b3cb40c4f7d46d00b324e13"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\pd_pilot_validation.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/pd_pilot_validation.json",
+      "bytes": 1438,
+      "sha256": "f2c56e0287065d602f27bd896c418199951568f9a85520ed32514fd0aabec4cd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\phase_endpoint_comparison.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/phase_endpoint_comparison.csv",
+      "bytes": 1398,
+      "sha256": "74e804cc090eab915ae6a2ff4d2cf3bf2c9f1b105e5bca8bf93ad2e1753a5827"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\run_configuration.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/run_configuration.json",
+      "bytes": 1167,
+      "sha256": "d11c59e098f9fd75e135e8ef7930e81f692a9e1caea42ad04c1bec28679f116a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\sd_by_phase_and_segment.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/sd_by_phase_and_segment.csv",
+      "bytes": 3510,
+      "sha256": "0769619629e31b719fb68be64d6ac58724bdfc5ffc7d72c0f8b45f9e8fe490a3"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\sd_dispersion_trends.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/sd_dispersion_trends.csv",
+      "bytes": 880,
+      "sha256": "1382b3b18e06e06fb813bafb039c05febdea0ded149ba96da48b1f07ce6175ba"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\semantic_validation.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/semantic_validation.json",
+      "bytes": 31600,
+      "sha256": "32461c387d94ed0f8c008d66946dd09f559095c04b87399a525966f245a70c97"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\small_N_demo_manifest.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/small_N_demo_manifest.csv",
+      "bytes": 8106,
+      "sha256": "4b4f8340ed13ba21eb87ad0dead3c81ab3c8aa2a29dadfece755989b7344bbae"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\small_N_demo_manifest.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/small_N_demo_manifest.json",
+      "bytes": 14688,
+      "sha256": "e7555b5f3a52ec04f2a99a9a60134900e6f9ff136c523725665ca659cacf0b1f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\small_N_demo_validation.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/small_N_demo_validation.json",
+      "bytes": 620,
+      "sha256": "3643c389758234faef2106c908f6e763b636acce836a1f4624c44de594e282d7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\validation.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/validation.json",
+      "bytes": 217,
+      "sha256": "cd6bc50c0b4dc7fdd1b4fc055984c186467635ed46b1db0e3f4575869fd96362"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\all_pitch_down_reference\\README.md",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/all_pitch_down_reference/README.md",
+      "bytes": 641,
+      "sha256": "72103dd99999714fd0d7e3f73adc9eee99eb0c14272e1ef4829728205cb6d2c2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\all_pitch_down_reference\\all_pitch_down_reference.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/all_pitch_down_reference/all_pitch_down_reference.csv",
+      "bytes": 6450,
+      "sha256": "06103a4f58c62178827a77b30742d9dbc6cfce267ed3f609c62e1b899cbc50e5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\all_pitch_down_reference\\all_pitch_down_time_series.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/all_pitch_down_reference/all_pitch_down_time_series.csv",
+      "bytes": 193014,
+      "sha256": "ae9154c849ac78390e8bf00ceaae782aa67552487f57c91838cda6b6d6c9ead0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\all_pitch_down_reference\\run_configuration.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/all_pitch_down_reference/run_configuration.json",
+      "bytes": 535,
+      "sha256": "85989260573499ca9374f7afc49b37d96fe52bcfbeb3121c9f46be62cea335f6"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\all_pitch_down_reference\\validation.json",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/all_pitch_down_reference/validation.json",
+      "bytes": 354,
+      "sha256": "c6f3796b370251ec0e6abcee14c822e43047ab76747b55c935ac075d0d7e75d5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p0_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p0_Nseg05.csv",
+      "bytes": 90252,
+      "sha256": "56f98cfb303828aedabd0408c134d462ba155a248e1db4c7262b00331f400b74"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p0_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p0_Nseg06.csv",
+      "bytes": 90192,
+      "sha256": "c736fe8036a4515d17df5ace396f6244fd3395d0b775244d1a36b8efb7657a70"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p0_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p0_Nseg07.csv",
+      "bytes": 90147,
+      "sha256": "ce249362679f04847572374e37e2a8df67b5696d5cd2ff9e14ea665fc3716c9f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p0_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p0_Nseg08.csv",
+      "bytes": 90265,
+      "sha256": "9a3840348e87cbf131c0c12156941d6a79a2007a17de22059d54b73d5a1419f7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p0_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p0_Nseg09.csv",
+      "bytes": 90263,
+      "sha256": "7be1e7e7c6d5024f6f8b5e513384fb3e2ef52f7a8678e796cee8b2b3551fbe41"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p0_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p0_Nseg10.csv",
+      "bytes": 88274,
+      "sha256": "1d8b5f364c0ffb04853a50ca011b92663cb5304acfabe2853fddfc11065b8bd7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p5_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p5_Nseg05.csv",
+      "bytes": 91943,
+      "sha256": "775d17be3a25e14db821934ee69dc0147617c9b64df9c1cdfa525f7d1d2a4b85"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p5_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p5_Nseg06.csv",
+      "bytes": 92000,
+      "sha256": "a45cb48486004748d102fa3ebd4a6c114fc85ae553b36d8c74ba2c48ac3110a7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p5_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p5_Nseg07.csv",
+      "bytes": 90024,
+      "sha256": "08c733108fe2a45539b21aed7ed2825a6a8fa11116df76b5a0e0d6e4640d91e7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p5_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p5_Nseg08.csv",
+      "bytes": 91968,
+      "sha256": "b139dc4b4c21da7b4d6a5554ef7067bc8b69237d79185153d2d207be54563493"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p5_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p5_Nseg09.csv",
+      "bytes": 91968,
+      "sha256": "7241317a6cf7152e68e256739c30e8825f92da56226bb05ef7db66deca3a2d1b"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_1p5_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_1p5_Nseg10.csv",
+      "bytes": 90198,
+      "sha256": "11cbab5222752f85f324a42b9c8ba871a3bfe48d280dc5fa6b75474c5dd9a365"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p0_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p0_Nseg05.csv",
+      "bytes": 90253,
+      "sha256": "86749c7e11a0827daf3180ce5d3c5613024be55f94f3833c55edfe94e2e1b7db"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p0_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p0_Nseg06.csv",
+      "bytes": 90423,
+      "sha256": "6375b37a07081f5f3acb7568c4a0bc3e4922c614d220b668d07135a2d244d068"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p0_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p0_Nseg07.csv",
+      "bytes": 90456,
+      "sha256": "79c1b8eb0c91a7e02942bbc64c902cc9169f5e6885cd56800fe65b19a8969b90"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p0_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p0_Nseg08.csv",
+      "bytes": 90431,
+      "sha256": "0c8c49648778b145173a889dbe0515274696943393ea8563041cf811cf624ed8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p0_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p0_Nseg09.csv",
+      "bytes": 90440,
+      "sha256": "9769ea98dd1d97092e643bd6b62b96320130889b4f02f2e31a9d320e35db8e2c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p0_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p0_Nseg10.csv",
+      "bytes": 88698,
+      "sha256": "c37ac07ba7e6ac9008707f7fafd9af3aec4fa4b668eb9a7ac09d515fb9cf9513"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p5_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p5_Nseg05.csv",
+      "bytes": 90542,
+      "sha256": "a17f556d977329ae0662629b60bce032cebde07e3ff64ea0464f1b2f08e8cb08"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p5_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p5_Nseg06.csv",
+      "bytes": 90666,
+      "sha256": "6a1eac95cdc0804dd35ad9276a3f105b6a861c99d11aff4c400a5ea21b6a0ce5"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p5_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p5_Nseg07.csv",
+      "bytes": 90659,
+      "sha256": "fee87a7c3f8f25db744319e31176477272e360a74ec20f2f43f1824f6c1bcd78"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p5_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p5_Nseg08.csv",
+      "bytes": 90624,
+      "sha256": "201a807832fb900f84ba86fe25b81db4f76c9a4efd974772aad43e3bdcb92680"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p5_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p5_Nseg09.csv",
+      "bytes": 90685,
+      "sha256": "97bf85d4742253c29f43868efcd30274491d304a67abc52479585772f859e9fb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_2p5_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_2p5_Nseg10.csv",
+      "bytes": 88907,
+      "sha256": "8b62cec3de1f2e2eefb8c11f31f3f6bbe1f3c81e5e32f2949aaa2e240639b4fd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p0_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p0_Nseg05.csv",
+      "bytes": 92309,
+      "sha256": "8527746c05e2886a6f68a6ec7bffa1ec8033592c9b0f24a6f25bd5f8682cfb15"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p0_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p0_Nseg06.csv",
+      "bytes": 92350,
+      "sha256": "67b15f0105afaaefc7ea1879173c27629022bd39042777c40fe016dfb9d9a569"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p0_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p0_Nseg07.csv",
+      "bytes": 90478,
+      "sha256": "a6c7959e1826039191219302a94b4c41ab828f29b9ebbcc9d0777769430749d2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p0_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p0_Nseg08.csv",
+      "bytes": 92394,
+      "sha256": "716af75093008829968f5a9a6a190938c24d73ff1ee41031ac374dd862b7a6b8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p0_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p0_Nseg09.csv",
+      "bytes": 92462,
+      "sha256": "eb4443c1db1c3a6b217f9026d5517609a1b4f45ccd337e2d255dfc1f0cc32853"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p0_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p0_Nseg10.csv",
+      "bytes": 90598,
+      "sha256": "36a402928dbb64714bc3200dd3fd1d2d429239eff75f59a1f6d98460888bdc3e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p5_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p5_Nseg05.csv",
+      "bytes": 90508,
+      "sha256": "45ed695d4d915aa29fe579bdb2f4521eacbbc2a6c4487f9f79c6d18af4bfd903"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p5_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p5_Nseg06.csv",
+      "bytes": 90619,
+      "sha256": "45cc4959e4b20b522b417ab808c408b4fd1703e4ffbb761c8bbc7616853718f0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p5_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p5_Nseg07.csv",
+      "bytes": 90591,
+      "sha256": "c52b4b59147ebdefb7251993e8733e8ab3f52291f817258d12c6ddc12c23bb8e"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p5_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p5_Nseg08.csv",
+      "bytes": 90679,
+      "sha256": "ca3d133800e36de92b338401c1f1cf9e78f95792f2f470f707e290343d61eeea"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p5_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p5_Nseg09.csv",
+      "bytes": 90495,
+      "sha256": "77ab1943f82d4bc2bad358221ce777bcc05f690cebcfa6100b0f8c2d1f37b346"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_3p5_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_3p5_Nseg10.csv",
+      "bytes": 88828,
+      "sha256": "767b6f047275b4b7713c4992d78b997339539103391ee26cb37d6e6ac0ba6260"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_4p0_Nseg05.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_4p0_Nseg05.csv",
+      "bytes": 90601,
+      "sha256": "5e5fb8b2b12388acfb49b38bca77d9e053d08087f79a784b93653530a3d7117f"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_4p0_Nseg06.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_4p0_Nseg06.csv",
+      "bytes": 90655,
+      "sha256": "b33e97ed8fe5dcb6c72e2777102fa0a0911596b609f67bd0cf7581c29ce7c1b7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_4p0_Nseg07.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_4p0_Nseg07.csv",
+      "bytes": 90557,
+      "sha256": "0af02a5b285a02f31e6ec6afd9c7b0018a5d0198a2a862b1bac10760d7befb14"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_4p0_Nseg08.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_4p0_Nseg08.csv",
+      "bytes": 90563,
+      "sha256": "43253226e4afb4267287f72df947e8372ca72efadb723305e287648e95ace233"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_4p0_Nseg09.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_4p0_Nseg09.csv",
+      "bytes": 90659,
+      "sha256": "8411e4baec5de0445498d321a28d0d6b3443bd10e5733e57a937552bbd25fb8c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step37_locked_phase_segment_iid_sweep\\checkpoints\\Nwave10_4p0_Nseg10.csv",
+      "path": "exp_data/reliability/step37_locked_phase_segment_iid_sweep/checkpoints/Nwave10_4p0_Nseg10.csv",
+      "bytes": 88891,
+      "sha256": "44c5ef106acb962f6a5ed094b26acf38888717b8e115b602c9046cdece65f322"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\README.md",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/README.md",
+      "bytes": 4944,
+      "sha256": "0d258c9d0252891b730cdf21741cf51a8a9a3a028292469a087698dc7f1366e2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\controller_validation.json",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/controller_validation.json",
+      "bytes": 5650,
+      "sha256": "05ebc05c4fa5719e37338e811e6cd310dd13f2cd0aa662e44efd9c41f4e89fd7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\per_leg_contact_summary.csv",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/per_leg_contact_summary.csv",
+      "bytes": 10892,
+      "sha256": "4fd89300f6665da837693cfa4a461880a6722d268542e00a8283fd67ac6dc3e7"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\run_configuration.json",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/run_configuration.json",
+      "bytes": 1566,
+      "sha256": "f26d8fe4f997b8c6ba2f75f9174b81dd6f60d35901297e739ca80459d3685c61"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\time_series.csv",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/time_series.csv",
+      "bytes": 995222,
+      "sha256": "1a27b87087f46da82ec79ce64db6c999802813814c7ea57759495009cc236c48"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\trials.csv",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/trials.csv",
+      "bytes": 8707,
+      "sha256": "c963904ad85aed8511b5bbaceefceb9d41b935ab9b3a1130bc07e9dbc6d7d25a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step38_centered_duty_factor_sweep\\validation.json",
+      "path": "exp_data/reliability/step38_centered_duty_factor_sweep/validation.json",
+      "bytes": 352,
+      "sha256": "7ec6a60787d51fb6dcda5d4f748676e347d9a9cfd0a24b1299be73ea10663126"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\README.md",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/README.md",
+      "bytes": 8346,
+      "sha256": "c99451479171151c763ee743148f859e5a349209a10ab717d23e22fab59e6824"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\controller_validation.json",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/controller_validation.json",
+      "bytes": 48025,
+      "sha256": "2eb76f7b6cc3a8f50fa7b684e20969ba42096615a4b5f4909fd3b3ea650d49ee"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\media_header_validation.csv",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/media_header_validation.csv",
+      "bytes": 6811,
+      "sha256": "bf8eeee0529cc413e426cd54e72e3afc184d5b267710f5b367e990bcef584a4c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\per_leg_contact_summary.csv",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/per_leg_contact_summary.csv",
+      "bytes": 93947,
+      "sha256": "b2c3cd9f0acd3b587caf2c5680067ff636bf8d14f430463b5ef65091f4c0f714"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\run_configuration.json",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/run_configuration.json",
+      "bytes": 2023,
+      "sha256": "b348776b705874850319d3086c4941ac909ceccdb0d9ad9211c1496e87104c4a"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\trials.csv",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/trials.csv",
+      "bytes": 47567,
+      "sha256": "615cf87dd93c64061e6b11b80a6172c9f46247defe2536889c8a5fbc81a8de87"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\validation.json",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/validation.json",
+      "bytes": 669,
+      "sha256": "eae54d560a3b2c1402e32783ea7defd49834fb951e37d8a0e25dc90f92f7cdba"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\EXPERIMENT_CONTRACT.md",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/EXPERIMENT_CONTRACT.md",
+      "bytes": 3412,
+      "sha256": "9e11ed367801eca4d2ae72ef36fc7ed803252caa0e60588685680de20e3fd3da"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\FINAL_REPORT.md",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/FINAL_REPORT.md",
+      "bytes": 4741,
+      "sha256": "4e85108e016b61743fde137fc3aa670f6d659d583aa1dca2b517b3898360d534"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\README.md",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/README.md",
+      "bytes": 1193,
+      "sha256": "2481211dd5ac21f751296ba679e5fb519c164ffa0dd9df3a7076e43f2e8c22be"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demo_manifest.csv",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/demo_manifest.csv",
+      "bytes": 8816,
+      "sha256": "fd2eb322ebab6c46965c97bfac79f8d323301f4826eb6015279f728d9f0b6ec8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\demo_validation.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/demo_validation.json",
+      "bytes": 391,
+      "sha256": "70b3d5fdd1189aaeeed3fc7d0e4e3875fe0af9e81a53aadd9fc0633ee9b1e19c"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\iid_contact_erasure_summary.csv",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/iid_contact_erasure_summary.csv",
+      "bytes": 15149,
+      "sha256": "152c84732b62ba8b0a88e4ca2414b2529d7910e392eebc06235995ba79034fd8"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\matched_clean_references.csv",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/matched_clean_references.csv",
+      "bytes": 33062,
+      "sha256": "0df6a66b92f16109950aaba2a162aee53948495ce04a5c3eaf187a11579f2da2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\run_configuration.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/run_configuration.json",
+      "bytes": 909,
+      "sha256": "69a03c458ff3567c37b23722bbe36dbf3b391c30b0930bd758a84ec03dd848eb"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\validation.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/validation.json",
+      "bytes": 494,
+      "sha256": "d156af72e3f2b5f98df02d29c9e11d7c09fe5b7970ab4283edb105d0dd71bbaf"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\audit\\audit_canonical.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/audit/audit_canonical.json",
+      "bytes": 54096,
+      "sha256": "8f8ec42559d2155e5d61358c2198a90feca243ab7ff5fb93bc9891b31d4549c4"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\audit\\audit_premerge.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/audit/audit_premerge.json",
+      "bytes": 53150,
+      "sha256": "d9afc959568408a90ad709f3773ab262f1cb43f3b1299eb9d076253c8d1ee1db"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\audit\\merge_receipt_20260907.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/audit/merge_receipt_20260907.json",
+      "bytes": 20177,
+      "sha256": "7e5c3e338f1096fe829718135701a7d204506c69b005fb3e24d4d1170788bd75"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\audit\\resume_receipt_20260907.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/audit/resume_receipt_20260907.json",
+      "bytes": 5595,
+      "sha256": "2db013a51aff7a49cd8d6052f2d3ec8f3c131fff9f591f193d1495af80611dbd"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\audit\\video_visual_audit.json",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/audit/video_visual_audit.json",
+      "bytes": 15487,
+      "sha256": "bf5b6524a4a01b249d464493efddd7b769e8b358bcc5ca03337d792393b3d2f2"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\deliverables\\directional_bias_stage_atlas\\stage_curve_data.csv",
+      "path": "deliverables/directional_bias_stage_atlas/stage_curve_data.csv",
+      "bytes": 16903,
+      "sha256": "a9447fac988bdaf53f530670d182c5bdadd4a013c51fb0d8bb96d1b2088715ce"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\deliverables\\directional_bias_stage_atlas\\stage_slope_data.csv",
+      "path": "deliverables/directional_bias_stage_atlas/stage_slope_data.csv",
+      "bytes": 1358,
+      "sha256": "9850e719538d28545361b03919ffdf1e4ebedc77aa91a8742293ccd817eb4543"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\deliverables\\directional_bias_stage_atlas\\visual_source_manifest.csv",
+      "path": "deliverables/directional_bias_stage_atlas/visual_source_manifest.csv",
+      "bytes": 2600,
+      "sha256": "e6c864847639d58ad0bbeebd15fe5c5c68f72cbd3bab33ab00fe68bf08316aec"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\deliverables\\null_vs_physical_uniform512_matlab\\null_iid_trials.csv",
+      "path": "deliverables/null_vs_physical_uniform512_matlab/null_iid_trials.csv",
+      "bytes": 116686,
+      "sha256": "7dc124a463441b8f2c81ad929a777ad04a09ecab11c9c942bc45892cc4b85873"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\deliverables\\null_vs_physical_uniform512_matlab\\physical_iid_trials.csv",
+      "path": "deliverables/null_vs_physical_uniform512_matlab/physical_iid_trials.csv",
+      "bytes": 115352,
+      "sha256": "7ca185289c7978aad65eb3a336e5f69281c52fb5f9b5f921f27bbf16185702e1"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\deliverables\\null_vs_physical_uniform512_matlab\\summary_statistics.csv",
+      "path": "deliverables/null_vs_physical_uniform512_matlab/summary_statistics.csv",
+      "bytes": 978,
+      "sha256": "23110eda3fbff0d8f19d3777fa2205c8d18682688d5e3baf10ed46b3a8d512e0"
+    },
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step40_high_frequency_iid_contact_erasure_sweep\\iid_contact_erasure_trials.csv",
+      "path": "exp_data/reliability/step40_high_frequency_iid_contact_erasure_sweep/iid_contact_erasure_trials.csv",
+      "bytes": 16496625,
+      "sha256": "42431498b4583e661f4559c848ba3820a82b6cb4bad6e3a977b33d98d36794b0"
+    }
+  ],
+  "omitted_large": [
+    {
+      "source": "X:\\Projects\\Centipede_robot_MUJOCO\\exp_data\\reliability\\step39_phase_offset_duty_factor_sweep\\time_series.csv",
+      "path": "exp_data/reliability/step39_phase_offset_duty_factor_sweep/time_series.csv",
+      "bytes": 7821119,
+      "reason": "large generated table/asset; local source preserved"
+    }
+  ],
+  "verification": {
+    "files": 480,
+    "bytes": 55794001,
+    "python": 34,
+    "syntax_errors": [],
+    "omitted_large": 1
+  }
+}

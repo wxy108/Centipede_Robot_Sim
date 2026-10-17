@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "definition": {
+    "body_joint_phase": "omega*t + j*Delta_phi",
+    "segment_center_phase": "omega*t + (i-1/2)*Delta_phi",
+    "Delta_phi": "-2*pi*N_wave/(N_segments-1)",
+    "cave_index": "floor((segment_center_phase+tol)/pi)",
+    "pitch_rule": "one complementary L/R binary state per cave parity"
+  },
+  "rows": [
+    {
+      "N_wave": 0.5,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.5,
+      "passed": true
+    },
+    {
+      "N_wave": 1.0,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.3333333333333333,
+      "passed": true
+    },
+    {
+      "N_wave": 1.5,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.25,
+      "passed": true
+    },
+    {
+      "N_wave": 2.0,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.5001386962552011,
+      "passed": true
+    },
+    {
+      "N_wave": 2.5,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.6666666666666666,
+      "passed": true
+    },
+    {
+      "N_wave": 3.0,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.786011491975431,
+      "passed": true
+    },
+    {
+      "N_wave": 3.5,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.875,
+      "passed": true
+    },
+    {
+      "N_wave": 4.0,
+      "same_cave_has_one_pitch_state": true,
+      "left_right_are_complementary": true,
+      "body_joints_are_between_segment_phase_samples": true,
+      "head_to_tail_phase_span_is_2pi_N_wave": true,
+      "legacy_step31_same_cave_uniform_fraction": 0.9445214979195562,
+      "passed": true
+    }
+  ]
+}

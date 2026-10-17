@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "flip_samples_checked": 584,
+  "coupling_samples_checked": 5840,
+  "body_yaw_unchanged": true,
+  "leg_yaw_unchanged": true,
+  "pitch_is_exact_lr_exchange": true,
+  "absolute_wave_number_definition_verified": true,
+  "body_wave_amplitude_0p4_rad_verified": true,
+  "fixed_leg_yaw_phase_pi_over_2_verified": true,
+  "pitch_precursor_phase_3pi_over_2_verified": true,
+  "pitch_zero_crossing_step_verified": true,
+  "left_right_pitch_antiphase_verified": true
+}

@@ -1,0 +1,58 @@
+{
+  "all_trials_pass": true,
+  "ordinary_trial_count": 3584,
+  "ordinary_trials_by_N": {
+    "4": 512,
+    "5": 512,
+    "6": 512,
+    "7": 512,
+    "8": 512,
+    "9": 512,
+    "10": 512
+  },
+  "seed_audit": {
+    "4": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    },
+    "5": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    },
+    "6": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    },
+    "7": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    },
+    "8": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    },
+    "9": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    },
+    "10": {
+      "count": 512,
+      "unique_seed_count": 512,
+      "missing_seeds": []
+    }
+  },
+  "center_rooted": true,
+  "strict_independent_rng": true,
+  "source_stl_and_inertials_preserved": true,
+  "geometric_fore_aft_symmetry_imposed": false,
+  "maximum_warning_count": 0,
+  "signed_mean_slope_m_per_segment": 0.0009953285158396886,
+  "maximum_absolute_ensemble_mean_m": 0.033025856858960624,
+  "pooled_mean_signed_displacement_m": 0.02907084137885902
+}

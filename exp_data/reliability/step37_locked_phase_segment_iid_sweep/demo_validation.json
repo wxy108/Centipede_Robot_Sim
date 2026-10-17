@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "expected_video_count": 7,
+  "video_count": 7,
+  "all_media_readable": true,
+  "all_displacement_signs_consistent_with_raw_trials": true,
+  "cross_runtime_displacement_difference_is_diagnostic_not_gate": true,
+  "reason_exact_replay_is_not_a_gate": "The original sweep did not record its MuJoCo version; the available approved rendering runtime is recorded per video.",
+  "maximum_cross_runtime_displacement_difference_m": 0.018834174353711264,
+  "maximum_mujoco_warning_count": 0
+}

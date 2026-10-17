@@ -1,0 +1,12 @@
+{
+  "completed_all_requested_conditions": true,
+  "all_checks_passed": true,
+  "conditions_completed": 9,
+  "conditions_passing": 9,
+  "controller_audit_passed": true,
+  "source_xml_unchanged": true,
+  "video_count": 9,
+  "maximum_warning_count": 0,
+  "commands_not_forced_contacts": true,
+  "all_metrics_and_video_from_same_rollout": true
+}

@@ -1,0 +1,11 @@
+candidate,test,result,diagnosis
+World-axis or floor-direction bias,Rotate complete robot by 180 deg,World displacement reverses; body-frame forward displacement is preserved,Rejected
+Inherited initialization momentum,"Straight all-down settle, smooth bridge, warm-up; body-wave-off control",Static drift is micrometer-scale,Rejected as main cause
+Non-foot chassis/shoulder rubbing,Disable non-leg collision and log contacts,No non-foot ground contacts; result unchanged,Rejected
+Foot patch shape or foot-tip offset,Spherical point feet; zero and mirrored offsets,Direction is preserved,Rejected as sign selector
+Passive friction or rolling/torsional terms,Remove terms independently,Magnitude changes but sign remains,"Contributor, not selector"
+Tangential ground friction,Frictionless-ground ablation,More than 96 percent of deterministic displacement disappears,Necessary mechanism
+Chassis mass asymmetry alone,Chassis centering and endpoint ballast,Trend and sign remain,Rejected as sufficient cause
+Distributed fore-aft mechanical polarity,Exact mechanical reflection,Displacement reverses with machine-precision cancellation,Confirmed physical sign source
+One-ended dynamics tree/contact ordering,Head/tail re-root and center-root reconstruction,Head-tail sign/bias reverses; center removes 92-99 percent of first-order bias,Confirmed numerical amplifier
+IID process intrinsically has positive mean,Center-rooted symmetric dynamic null,Every mean CI contains zero; slope approximately zero,Rejected

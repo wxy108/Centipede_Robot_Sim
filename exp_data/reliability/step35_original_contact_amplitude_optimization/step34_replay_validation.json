@@ -1,0 +1,16 @@
+[
+  {
+    "N_wave": 1.0,
+    "reference_m": 1.009441245482221,
+    "replay_m": 1.009441245482237,
+    "absolute_error_m": 1.5987211554602254e-14,
+    "passed": true
+  },
+  {
+    "N_wave": 1.5,
+    "reference_m": 0.8571668919884131,
+    "replay_m": 0.8571668919884124,
+    "absolute_error_m": 6.661338147750939e-16,
+    "passed": true
+  }
+]

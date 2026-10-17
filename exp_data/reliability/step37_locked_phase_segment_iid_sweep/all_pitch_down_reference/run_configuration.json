@@ -1,0 +1,25 @@
+{
+  "n_segments": 10,
+  "reference_wave_labels": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "locked_phase_formula": "Delta_phi=-2*pi*N_wave_ref10/9",
+  "body_yaw_half_amplitude_deg": 19.0,
+  "body_yaw_PD": {
+    "kp_scale": 2.0,
+    "kv_scale": 1.4142135623730951,
+    "force_scale": 2.0
+  },
+  "leg_yaw_fixed": true,
+  "leg_pitch_after_settle": "all legs always commanded down",
+  "pitch_down_deg": 5.0,
+  "warmup_cycles": 4,
+  "evaluation_cycles": 12,
+  "mujoco_version": "3.3.7"
+}
